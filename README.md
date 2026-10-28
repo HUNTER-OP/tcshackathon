@@ -189,3 +189,18 @@ data/raw/    downloaded datasets      models/  trained intent model (git-ignored
 ```
 
 Developer API reference: [docs/API.md](docs/API.md). Demo script: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md).
+
+
+## Add-ons (built in parallel on a second workstation)
+
+| Add-on | Where | How to use |
+|---|---|---|
+| Next-best-offer | `backend/app/addons/offers.py` | Runs automatically in `/chat`. Adds one `offer` card, for example an FD for an idle balance ≥ ₹1 lakh, a pre-approved personal loan, a Platinum card, or the cheapest loan rate. Never shown without consent, or during complaints and handoffs. |
+| Human agent console | `tools/agent_console/index.html` | Open `http://localhost:8000/agent/`. Shows a live ticket queue with transcript, mood and priority, an editable suggested reply, Resolve, and the deflection rate. |
+| Command-line client | `tools/cli/hisab_cli.py` | `python tools/cli/hisab_cli.py --base-url http://localhost:8000 --customer CUST001 --mode hybrid` |
+| Privacy leak tests | `eval/test_pii_leak.py` | `set HISAB_API=http://localhost:8000` then `python -m pytest eval/test_pii_leak.py`. 36 checks, all passing. |
+| Compliance | `docs/compliance.md` | Maps our controls to the DPDP Act 2023 and RBI guidance |
+| Results report | `docs/eval_report.html` | Built by `python tools/reports/eval_report.py --hybrid eval/results_hybrid.json --local eval/results_local.json --out docs/eval_report.html` |
+| Simulated query logs | `data/logs/query_logs.txt` and `.jsonl` | 5,000 synthetic log lines in text format, as the brief asks. Illustrative only, not real results. |
+
+**Before a demo:** `POST /admin/reset-demo` reseeds the bank and clears metrics and tickets.
