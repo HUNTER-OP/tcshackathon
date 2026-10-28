@@ -58,6 +58,12 @@ SENSITIVE_MSG = {
     "hi": "मैं आपका आधार, पैन, पिन, ओटीपी या पासवर्ड जैसी संवेदनशील जानकारी न देख सकता हूँ, न साझा कर सकता हूँ — यह आपकी सुरक्षा के लिए है। एक सत्यापित बैंक सहायता एजेंट इसमें मदद कर सकते हैं। क्या मैं आपको उनसे जोड़ दूँ?",
     "kn": "ನಿಮ್ಮ ಆಧಾರ್, ಪ್ಯಾನ್, ಪಿನ್, ಒಟಿಪಿ ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್‌ನಂತಹ ಸೂಕ್ಷ್ಮ ಮಾಹಿತಿಯನ್ನು ನಾನು ನೋಡಲು ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಿಲ್ಲ — ಇದು ನಿಮ್ಮ ಸುರಕ್ಷತೆಗಾಗಿ. ಪರಿಶೀಲಿತ ಬ್ಯಾಂಕ್ ಸಹಾಯ ಏಜೆಂಟ್ ಸಹಾಯ ಮಾಡಬಹುದು. ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲೇ?",
 }
+CARD_KEPT_MSG = {
+    "en": "Okay, your card stays active. If you notice any transaction you don't recognise, tell me and I'll block it immediately.",
+    "hinglish": "Theek hai, aapka card active rahega. Koi anjaan transaction dikhe toh batayiye, main turant block kar dunga.",
+    "hi": "ठीक है, आपका कार्ड चालू रहेगा। कोई अनजान लेनदेन दिखे तो बताइए, मैं तुरंत ब्लॉक कर दूँगा।",
+    "kn": "ಸರಿ, ನಿಮ್ಮ ಕಾರ್ಡ್ ಸಕ್ರಿಯವಾಗಿರುತ್ತದೆ. ಯಾವುದೇ ಅಪರಿಚಿತ ವಹಿವಾಟು ಕಂಡರೆ ತಿಳಿಸಿ, ತಕ್ಷಣ ಬ್ಲಾಕ್ ಮಾಡುತ್ತೇನೆ.",
+}
 AGENT_OFFER = {
     "en": ("Would you like to talk to a bank support agent?", ["Yes, connect me to a support agent", "No, thanks"]),
     "hinglish": ("Kya aap bank support agent se baat karna chahenge?", ["Haan, support agent se connect karo", "Nahi, thanks"]),
@@ -164,7 +170,14 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
     reply = ""
     model_used = "rules"
 
-    if _asks_sensitive(text) and intent != "human_agent":
+    confirmed_last4 = tools.block_confirmation(text)
+    if confirmed_last4:
+        intent, conf = "card_block", 1.0
+    if tools.BLOCK_DECLINE.search(text):
+        intent, conf = "card_block", 1.0
+        reply = CARD_KEPT_MSG[lang]
+        t = stage("card_block", t, "customer declined")
+    elif _asks_sensitive(text) and intent != "human_agent":
         intent, conf = "sensitive_info", 1.0
         reply = SENSITIVE_MSG[lang]
         cards.append(_agent_offer(lang))
@@ -184,7 +197,7 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
         unsure = conf < HANDOFF_CONF
         try:
             # unsure: answer from the FAQ only (no account actions) and offer a human instead of forcing a ticket
-            res = tools.run("faq_general" if unsure else intent, ents, customer_id, query_en)
+            res = tools.run("faq_general" if unsure else intent, ents, customer_id, query_en, lang, confirmed_last4)
             data, cards, calls = res["data"], res["cards"], res["calls"]
             if unsure:
                 data = {**data, "note": "Intent unclear. Answer only if the FAQ clearly covers it, otherwise say you are not sure; the app offers a support agent."}

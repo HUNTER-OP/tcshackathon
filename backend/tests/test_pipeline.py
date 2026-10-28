@@ -120,3 +120,38 @@ async def test_no_offer_without_consent_or_on_handoff():
     r1 = await pipeline.handle_message("what are the FD interest rates", "CUST004")
     r2 = await pipeline.handle_message("talk to a human", "CUST001")
     assert not any(c["type"] == "offer" for c in r1.cards + r2.cards)
+
+
+def _card_status(cid="CUST001"):
+    return {c["last4"]: c["status"] for c in bank_api.get_cards(cid)}
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("q", ["mera debit card kho gaya", "I lost my debit card", "block my card"])
+async def test_card_block_asks_for_confirmation_first(q):
+    before = _card_status()
+    r = await pipeline.handle_message(q, "CUST001")
+    assert r.intent == "card_block"
+    assert _card_status() == before  # nothing blocked yet
+    confirm = next(c for c in r.cards if c["type"] == "followup")
+    assert any("XXXX" in o for o in confirm["data"]["options"])
+    assert not any(c["type"] == "card_action" for c in r.cards)
+
+
+@pytest.mark.asyncio
+async def test_confirm_button_blocks_the_named_card():
+    r1 = await pipeline.handle_message("mera debit card kho gaya", "CUST005")
+    yes = next(c for c in r1.cards if c["type"] == "followup")["data"]["options"][0]
+    r2 = await pipeline.handle_message(yes, "CUST005")
+    action = next(c for c in r2.cards if c["type"] == "card_action")
+    assert action["data"]["status"] == "blocked"
+    assert _card_status("CUST005")[action["data"]["card"][-4:]] == "blocked"
+
+
+@pytest.mark.asyncio
+async def test_decline_keeps_card_active():
+    r1 = await pipeline.handle_message("I lost my debit card", "CUST001")
+    no = next(c for c in r1.cards if c["type"] == "followup")["data"]["options"][-1]
+    before = _card_status()
+    r2 = await pipeline.handle_message(no, "CUST001")
+    assert _card_status() == before and "active" in r2.reply.lower()
