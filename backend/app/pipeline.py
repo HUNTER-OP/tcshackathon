@@ -1,5 +1,6 @@
 """The /chat pipeline: language -> PII firewall -> intent -> entities -> tools -> LLM reply, with a trace."""
 import json
+import re
 import random
 import time
 
@@ -39,6 +40,35 @@ HANDOFF_MSG = {
     "hi": "मैंने टिकट {t} बना दिया है, एक विशेषज्ञ जल्द ही आपको कॉल करेंगे। सारांश साझा कर दिया गया है।",
     "kn": "ನಾನು ಟಿಕೆಟ್ {t} ರಚಿಸಿದ್ದೇನೆ, ತಜ್ಞರು ಶೀಘ್ರದಲ್ಲೇ ನಿಮಗೆ ಕರೆ ಮಾಡುತ್ತಾರೆ. ಸಾರಾಂಶವನ್ನು ಹಂಚಿಕೊಳ್ಳಲಾಗಿದೆ.",
 }
+
+# Identifiers we never reveal; secrets (password/PIN) only flagged when not a reset/change request.
+IDENTIFIER = re.compile(r"\b(aadhaa?r|adhaa?r|aadhar|pan\s*(?:no|number|card\s*number)|otp|cvv)\b|आधार|पैन\s*नंबर|ओटीपी|ಆಧಾರ್|ಒಟಿಪಿ", re.I)
+SECRET = re.compile(r"\b(password|passcode|pin)\b|पासवर्ड|पिन|ಪಾಸ್‌ವರ್ಡ್|ಪಿನ್", re.I)
+RESET = re.compile(r"\b(reset|change|forgot|forget|bhool|bhul|new|set\s*up|unlock|blocked|generate|create|kaise)\b|बदल|भूल|नया|रीसेट|ಮರೆ|ಬದಲ|ಹೊಸ|ರೀಸೆಟ್", re.I)
+
+
+def _asks_sensitive(text: str) -> bool:
+    return bool(IDENTIFIER.search(text) or (SECRET.search(text) and not RESET.search(text)))
+
+
+SENSITIVE_MSG = {
+    "en": "I can't see or share sensitive identifiers like your Aadhaar, PAN, PIN, OTP or passwords — they're never stored in this chat, for your safety. A verified bank support agent can help you with it. Would you like me to connect you?",
+    "hinglish": "Main aapka Aadhaar, PAN, PIN, OTP ya password jaisi sensitive details na dekh sakta hoon na share kar sakta hoon — aapki safety ke liye. Ek verified bank support agent isme madad kar sakte hain. Kya main aapko connect karun?",
+    "hi": "मैं आपका आधार, पैन, पिन, ओटीपी या पासवर्ड जैसी संवेदनशील जानकारी न देख सकता हूँ, न साझा कर सकता हूँ — यह आपकी सुरक्षा के लिए है। एक सत्यापित बैंक सहायता एजेंट इसमें मदद कर सकते हैं। क्या मैं आपको उनसे जोड़ दूँ?",
+    "kn": "ನಿಮ್ಮ ಆಧಾರ್, ಪ್ಯಾನ್, ಪಿನ್, ಒಟಿಪಿ ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್‌ನಂತಹ ಸೂಕ್ಷ್ಮ ಮಾಹಿತಿಯನ್ನು ನಾನು ನೋಡಲು ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಿಲ್ಲ — ಇದು ನಿಮ್ಮ ಸುರಕ್ಷತೆಗಾಗಿ. ಪರಿಶೀಲಿತ ಬ್ಯಾಂಕ್ ಸಹಾಯ ಏಜೆಂಟ್ ಸಹಾಯ ಮಾಡಬಹುದು. ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಲೇ?",
+}
+AGENT_OFFER = {
+    "en": ("Would you like to talk to a bank support agent?", ["Yes, connect me to a support agent", "No, thanks"]),
+    "hinglish": ("Kya aap bank support agent se baat karna chahenge?", ["Haan, support agent se connect karo", "Nahi, thanks"]),
+    "hi": ("क्या आप बैंक सहायता एजेंट से बात करना चाहेंगे?", ["हाँ, मुझे सपोर्ट एजेंट से जोड़ो", "नहीं, धन्यवाद"]),
+    "kn": ("ಬ್ಯಾಂಕ್ ಸಹಾಯ ಏಜೆಂಟ್ ಜೊತೆ ಮಾತನಾಡಲು ಬಯಸುವಿರಾ?", ["ಹೌದು, ಸಪೋರ್ಟ್ ಏಜೆಂಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಿ", "ಬೇಡ, ಧನ್ಯವಾದ"]),
+}
+
+
+def _agent_offer(lang: str) -> dict:
+    q, opts = AGENT_OFFER[lang]
+    return {"type": "followup", "data": {"missing": [], "question": q, "options": opts}}
+
 
 SYSTEM = """You are Hisab Kitab, a friendly, precise AI banking assistant for an Indian bank.
 Rules:
@@ -133,11 +163,16 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
     reply = ""
     model_used = "rules"
 
-    if intent == "human_agent" or conf < HANDOFF_CONF:
+    if _asks_sensitive(text) and intent != "human_agent":
+        intent, conf = "sensitive_info", 1.0
+        reply = SENSITIVE_MSG[lang]
+        cards.append(_agent_offer(lang))
+        t = stage("sensitive_guard", t, "declined: identifier/secret request")
+    elif intent == "human_agent":
         handoff = {"ticket_id": f"HK-{random.randint(10000, 99999)}",
-                   "summary": f"Customer {customer_id} ({lang}) asked: \"{clean[:160]}\". Bot intent guess: {intent} ({conf:.0%}).",
+                   "summary": f"Customer {customer_id} ({lang}) asked: \"{clean[:160]}\".",
                    "sentiment": _sentiment(text), "priority": "high" if _sentiment(text) == "negative" else "normal",
-                   "reason": "customer requested a human" if intent == "human_agent" else "low confidence"}
+                   "reason": "customer requested a human"}
         cards.append({"type": "handoff", "data": handoff})
         TICKETS.insert(0, {**handoff, "customer_id": customer_id, "language": lang, "intent_guess": intent,
                            "confidence": round(conf, 4), "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -145,9 +180,14 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
         reply = HANDOFF_MSG[lang].format(t=handoff["ticket_id"])
         t = stage("handoff", t, handoff["ticket_id"])
     else:
+        unsure = conf < HANDOFF_CONF
         try:
-            res = tools.run(intent, ents, customer_id, query_en)
+            # unsure: answer from the FAQ only (no account actions) and offer a human instead of forcing a ticket
+            res = tools.run("faq_general" if unsure else intent, ents, customer_id, query_en)
             data, cards, calls = res["data"], res["cards"], res["calls"]
+            if unsure:
+                data = {**data, "note": "Intent unclear. Answer only if the FAQ clearly covers it, otherwise say you are not sure; the app offers a support agent."}
+                cards.append(_agent_offer(lang))
             t = stage("tools", t, ", ".join(c["tool"] for c in calls) or "none")
         except bank_api.ConsentError:
             cards.append({"type": "consent", "data": {"message": CONSENT_MSG[lang]}})

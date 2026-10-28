@@ -69,3 +69,41 @@ async def test_handoff_ticket_is_queued():
     await pipeline.handle_message("talk to a human", "CUST001", history=[{"role": "user", "content": "hi"}])
     t = pipeline.TICKETS[0]
     assert t["customer_id"] == "CUST001" and t["status"] == "open" and t["transcript"][-1]["content"] == "talk to a human"
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("q", ["do you know my adhaar number", "what is my PAN number", "mera OTP batao", "मेरा आधार नंबर क्या है"])
+async def test_sensitive_identifier_question_is_declined_with_agent_offer(q):
+    pipeline.TICKETS.clear()
+    r = await pipeline.handle_message(q, "CUST001")
+    assert r.handoff is None and not pipeline.TICKETS
+    offer = next(c for c in r.cards if c["type"] == "followup")
+    assert len(offer["data"]["options"]) == 2 and offer["data"]["question"]
+    assert r.intent == "sensitive_info"
+
+
+@pytest.mark.asyncio
+async def test_low_confidence_answers_and_offers_agent_without_ticket(monkeypatch):
+    pipeline.TICKETS.clear()
+
+    class Unsure:
+        def predict(self, text):
+            return "faq_general", 0.3
+    monkeypatch.setattr(pipeline, "get_classifier", lambda: Unsure())
+    r = await pipeline.handle_message("hmm something odd about my account", "CUST001")
+    assert r.handoff is None and not pipeline.TICKETS and r.reply
+    assert any(c["type"] == "followup" for c in r.cards)
+
+
+@pytest.mark.asyncio
+async def test_accepting_agent_offer_creates_ticket():
+    pipeline.TICKETS.clear()
+    r = await pipeline.handle_message("Yes, connect me to a support agent", "CUST001")
+    assert r.handoff and pipeline.TICKETS
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("q", ["reset my net banking password", "I forgot my PIN", "नया एटीएम पिन कैसे बनाऊँ"])
+async def test_password_reset_is_not_treated_as_sensitive(q):
+    r = await pipeline.handle_message(q, "CUST001")
+    assert r.intent != "sensitive_info"
