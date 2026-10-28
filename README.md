@@ -24,7 +24,7 @@ Customers wait in call-centre queues for simple answers: balance, recent transac
 | Latency p50 / p95 / max | 1.3 s / 6.0 s / 12.2 s | p95 < 15 s |
 | Intent model (internal split) | 96.4% accuracy, trained in 36 s on RTX PRO 4000 | — |
 
-<!-- EVAL_RESULTS_LOCAL -->
+**Fully offline mode** (`--mode local`, everything on the local GPU with Ollama `qwen2.5:7b-instruct`): resolution **88.5%**, latency p50 2.3 s / p95 8.2 s / max 13.4 s, no internet required.
 _Run `eval/run_eval.py` (below) and paste the summary table here._
 
 | Metric | Hybrid (cloud) | Local (offline) |
