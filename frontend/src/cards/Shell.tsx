@@ -24,7 +24,7 @@ export function ActionButton({ children, onClick, tone = 'quiet' }: { children: 
       onClick={onClick}
       className={clsx(
         'rounded-full border-2 border-line px-3.5 py-1.5 text-[13px] font-semibold transition-all active:translate-x-[1px] active:translate-y-[1px]',
-        tone === 'accent' ? 'bg-accent text-accent-ink shadow-[2px_2px_0_var(--line)] hover:brightness-105' : 'bg-white text-ink hover:bg-surface-3',
+        tone === 'accent' ? 'bg-accent text-accent-ink shadow-[2px_2px_0_var(--shadow)] hover:brightness-105' : 'bg-surface text-ink hover:bg-surface-3',
       )}
     >
       {children}

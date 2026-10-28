@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { BarChart3, Cloud, ExternalLink, HardDrive, Headset, Lock, MessageSquarePlus, MessagesSquare } from 'lucide-react'
+import { BarChart3, Cloud, ExternalLink, HardDrive, Headset, Lock, MessageSquarePlus, MessagesSquare, Moon, Sun } from 'lucide-react'
 import type { Customer, Lang, Mode } from '../lib/types'
 import { LANG_LABEL } from '../lib/format'
 import { API } from '../lib/api'
@@ -15,6 +15,8 @@ type Props = {
   view: 'chat' | 'dashboard'
   onView: (v: 'chat' | 'dashboard') => void
   onNewChat: () => void
+  theme: 'light' | 'dark'
+  onToggleTheme: () => void
 }
 
 const LANGS: Lang[] = ['en', 'hi', 'kn', 'hinglish']
@@ -23,7 +25,7 @@ export default function Sidebar(p: Props) {
   return (
     <nav className="flex h-full flex-col gap-5 overflow-y-auto bg-surface p-4 scroll-quiet" aria-label="Main">
       <div className="px-1">
-        <div className="rounded-2xl border-2 border-line bg-white px-3 py-2.5">
+        <div className="rounded-2xl border-2 border-line bg-surface px-3 py-2.5">
           <img src="/logo.jpeg" alt="Hisab Kitab" className="mix-blend-multiply brightness-[1.1] contrast-[1.15] h-11 w-auto" />
         </div>
         <p className="mt-2.5 text-[11px] font-semibold uppercase tracking-[0.06em] text-ink-2">AI-powered banking customer query assistant</p>
@@ -50,7 +52,7 @@ export default function Sidebar(p: Props) {
               <li key={c.id}>
                 <button type="button" onClick={() => p.onCustomer(c.id)} aria-pressed={on}
                   className={clsx('flex w-full items-center gap-3 rounded-xl border-2 px-2 py-1.5 text-left transition-colors', on ? 'border-line bg-accent' : 'border-transparent hover:bg-surface-2')}>
-                  <span className={clsx('grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-line text-[12px] font-bold', on ? 'bg-white text-ink' : 'bg-surface-3 text-ink')}>
+                  <span className={clsx('grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-line text-[12px] font-bold', on ? 'bg-surface text-ink' : 'bg-surface-3 text-ink')}>
                     {c.name.split(' ').map((s) => s[0]).join('').slice(0, 2)}
                   </span>
                   <span className="min-w-0 flex-1">
@@ -85,7 +87,14 @@ export default function Sidebar(p: Props) {
         </div>
       </section>
 
-      <p className="mt-auto px-1 pt-2 text-[12px] text-ink-3">Fictional bank · synthetic data</p>
+      <div className="mt-auto flex items-center justify-between gap-2 px-1 pt-2">
+        <p className="text-[12px] text-ink-3">Fictional bank · synthetic data</p>
+        <button type="button" onClick={p.onToggleTheme} aria-pressed={p.theme === 'dark'}
+          aria-label={p.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'} title={p.theme === 'dark' ? 'Light mode' : 'Dark mode'}
+          className="grid h-9 w-9 shrink-0 place-items-center rounded-full border-2 border-line bg-surface-2 text-ink shadow-[2px_2px_0_var(--shadow)] transition-colors hover:bg-accent hover:text-accent-ink">
+          {p.theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+        </button>
+      </div>
     </nav>
   )
 }
@@ -102,7 +111,7 @@ function NavBtn({ on, onClick, icon, children }: { on: boolean; onClick: () => v
 function ModeBtn({ on, onClick, icon, title, sub }: { on: boolean; onClick: () => void; icon: React.ReactNode; title: string; sub: string }) {
   return (
     <button type="button" onClick={onClick} aria-pressed={on}
-      className={clsx('flex items-start gap-2.5 rounded-xl border-2 px-2.5 py-2 text-left transition-colors', on ? 'border-line bg-accent text-ink shadow-[3px_3px_0_var(--line)]' : 'border-edge bg-surface-2 text-ink-2 hover:border-line hover:text-ink')}>
+      className={clsx('flex items-start gap-2.5 rounded-xl border-2 px-2.5 py-2 text-left transition-colors', on ? 'border-line bg-accent text-ink shadow-[3px_3px_0_var(--shadow)]' : 'border-edge bg-surface-2 text-ink-2 hover:border-line hover:text-ink')}>
       <span className="mt-0.5">{icon}</span>
       <span>
         <span className="block text-[14px] font-semibold">{title}</span>

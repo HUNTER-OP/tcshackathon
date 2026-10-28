@@ -2,7 +2,9 @@
 
 /* Pitch-deck palette: forest-green slide, white notebook cards with black outline, highlighter yellow. */
 :root {
+  --page: #2e6b43;
   --ground: #2e6b43;
+  --shadow: #111111;
   --ground-2: #285e3b;
   --surface: #ffffff;
   --surface-2: #f2f9ec;
@@ -26,8 +28,44 @@
   color-scheme: light;
 }
 
+/* Dark mode: same notebook language, night ledger palette. Brand green (--ground) stays green. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0b1610;
+  --ground: #2f7d4c;
+  --ground-2: #276a40;
+  --shadow: #000000;
+  --surface: #14231a;
+  --surface-2: #1a2d21;
+  --surface-3: #21402c;
+  --edge: #2b4535;
+  --line: #7fbf8c;
+  --ink: #eef6ea;
+  --ink-2: #c6d5ca;
+  --ink-3: #93a99b;
+  --accent: #ffe14d;
+  --accent-ink: #111111;
+  --mint: #5bc27e;
+  --lime: #a6d77f;
+  --teal: #62b6b9;
+  --navy: #a9b3e6;
+  --bahi: #3f9a60;
+  --credit: #63d48f;
+  --debit: #ff7b70;
+  --warn: #e3a64a;
+  --focus: #ffe14d;
+}
+:root[data-theme="dark"] body {
+  background-image:
+    radial-gradient(ellipse 60% 40% at 8% 100%, rgba(91, 194, 126, 0.12), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 100% 0%, rgba(184, 224, 138, 0.08), transparent 70%);
+}
+:root[data-theme="dark"] .md strong { background: linear-gradient(transparent 55%, rgba(255, 225, 77, 0.35) 55%); }
+
 @theme inline {
   --color-ground: var(--ground);
+  --color-page: var(--page);
+  --color-shadow: var(--shadow);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
   --color-surface-3: var(--surface-3);
@@ -53,7 +91,8 @@
 html, body, #root { height: 100%; }
 body {
   margin: 0;
-  background-color: var(--ground);
+  background-color: var(--page);
+  transition: background-color 0.25s ease;
   /* soft brush-stroke glow like the deck background */
   background-image:
     radial-gradient(ellipse 60% 40% at 8% 100%, rgba(91, 194, 126, 0.22), transparent 70%),
@@ -76,7 +115,7 @@ h1, h2, h3, .font-display { font-family: var(--font-display); }
 /* white notebook surface with the deck's thick black outline */
 .nb { background: var(--surface); border: 3px solid var(--line); border-radius: 28px; }
 /* small flat card inside a notebook */
-.nb-card { background: var(--surface); border: 2px solid var(--line); border-radius: 18px; box-shadow: 4px 4px 0 var(--line); }
+.nb-card { background: var(--surface); border: 2px solid var(--line); border-radius: 18px; box-shadow: 4px 4px 0 var(--shadow); }
 /* highlighter bar, like "Build Better Money Habits" */
 .hl { background: var(--accent); color: var(--accent-ink); padding: 0.05em 0.45em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 
@@ -101,3 +140,15 @@ input[type="range"] { accent-color: var(--ground); width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* dark mode: anything on the yellow highlighter keeps dark ink (except green buttons / dark chips inside it) */
+:root[data-theme="dark"] .bg-accent,
+:root[data-theme="dark"] .bg-accent * { color: #111111; }
+:root[data-theme="dark"] .bg-accent .bg-ground,
+:root[data-theme="dark"] .bg-accent .bg-ground * { color: #ffffff; }
+:root[data-theme="dark"] .bg-accent .bg-surface,
+:root[data-theme="dark"] .bg-accent .bg-surface * { color: var(--ink); }
+:root[data-theme="dark"] .hover\:bg-accent:hover,
+:root[data-theme="dark"] .hover\:bg-accent:hover * { color: #111111; }
+/* dark mode: the logo is a white-background JPEG, so show it on its own paper tile */
+:root[data-theme="dark"] img[src="/logo.jpeg"] { mix-blend-mode: normal; filter: none; background: #fff; border-radius: 10px; padding: 3px 8px; }

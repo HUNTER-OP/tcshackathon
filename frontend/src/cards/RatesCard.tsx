@@ -60,7 +60,7 @@ export default function RatesCard({ data }: { data: { deposits?: Deposits; loans
               </div>
               <div className="flex items-center gap-3">
                 <span className="tabular font-display text-[22px] text-ink">{l.rate}%</span>
-                <button type="button" onClick={() => send(`Am I eligible for a ${k} loan?`)} className="rounded-full border-2 border-line bg-white px-3 py-1 text-[12px] font-medium text-ink hover:bg-accent">Check eligibility</button>
+                <button type="button" onClick={() => send(`Am I eligible for a ${k} loan?`)} className="rounded-full border-2 border-line bg-surface px-3 py-1 text-[12px] font-medium text-ink hover:bg-accent">Check eligibility</button>
               </div>
             </li>
           ))}

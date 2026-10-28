@@ -4,7 +4,7 @@ import type { Metrics } from '../lib/types'
 import { getMetrics } from '../lib/api'
 import { LANG_LABEL, humanize, modelLabel } from '../lib/format'
 
-const tooltip = { contentStyle: { background: '#fff', border: '2px solid var(--line)', borderRadius: 10, color: 'var(--ink)', fontSize: 13 }, itemStyle: { color: 'var(--ink)' }, cursor: { fill: 'var(--surface-2)' } }
+const tooltip = { contentStyle: { background: 'var(--surface)', border: '2px solid var(--line)', borderRadius: 10, color: 'var(--ink)', fontSize: 13 }, itemStyle: { color: 'var(--ink)' }, cursor: { fill: 'var(--surface-2)' } }
 const SHADES = ['var(--ground)', 'var(--mint)', 'var(--accent)', 'var(--teal)', 'var(--navy)', 'var(--lime)']
 
 export default function Dashboard() {

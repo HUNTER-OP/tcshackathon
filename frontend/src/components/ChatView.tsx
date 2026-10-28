@@ -50,7 +50,7 @@ export default function ChatView({ messages, pending, lang, customerName, select
                 {PROMPTS[lang].map((p) => (
                   <li key={p}>
                     <button type="button" onClick={() => submit(p)}
-                      className="w-full rounded-2xl border-2 border-line bg-white px-4 py-3 text-left text-[15px] font-medium text-ink shadow-[3px_3px_0_var(--line)] transition-all hover:bg-surface-3 active:translate-x-[1px] active:translate-y-[1px]">{p}</button>
+                      className="w-full rounded-2xl border-2 border-line bg-surface px-4 py-3 text-left text-[15px] font-medium text-ink shadow-[3px_3px_0_var(--shadow)] transition-all hover:bg-surface-3 active:translate-x-[1px] active:translate-y-[1px]">{p}</button>
                   </li>
                 ))}
               </ul>
@@ -79,11 +79,11 @@ export default function ChatView({ messages, pending, lang, customerName, select
         {!pending && last?.result?.suggestions && last.result.suggestions.length > 0 && (
           <div className="mb-2 flex flex-wrap gap-1.5" aria-label="Suggested questions">
             {last.result.suggestions.map((s) => (
-              <button key={s} type="button" onClick={() => submit(s)} className="rounded-full border-2 border-line bg-white px-3 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-accent">{s}</button>
+              <button key={s} type="button" onClick={() => submit(s)} className="rounded-full border-2 border-line bg-surface px-3 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-accent">{s}</button>
             ))}
           </div>
         )}
-        <form onSubmit={(e) => { e.preventDefault(); submit() }} className="flex items-end gap-2 rounded-2xl border-[3px] border-line bg-white p-2 shadow-[4px_4px_0_var(--line)] focus-within:ring-4 focus-within:ring-accent">
+        <form onSubmit={(e) => { e.preventDefault(); submit() }} className="flex items-end gap-2 rounded-2xl border-[3px] border-line bg-surface p-2 shadow-[4px_4px_0_var(--shadow)] focus-within:ring-4 focus-within:ring-accent">
           <label htmlFor="composer" className="sr-only">Ask Hisab Kitab</label>
           <textarea id="composer" ref={box} rows={1} value={text} onChange={(e) => setText(e.target.value)}
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit() } }}

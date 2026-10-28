@@ -29,7 +29,13 @@ export default function App() {
   const [navOpen, setNavOpen] = useState(false)
   const [traceOpen, setTraceOpen] = useState(false)
 
-  useEffect(() => { document.documentElement.dataset.theme = 'light'; store.set('hk-theme', 'light') }, [])
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    const saved = new URLSearchParams(window.location.search).get('theme') || store.get('hk-theme')
+    if (saved === 'light' || saved === 'dark') return saved
+    return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  })
+  useEffect(() => { document.documentElement.dataset.theme = theme; store.set('hk-theme', theme) }, [theme])
+  const toggleTheme = useCallback(() => setTheme((t) => (t === 'dark' ? 'light' : 'dark')), [])
   useEffect(() => {
     const on = () => setView(viewFromHash())
     window.addEventListener('hashchange', on)
@@ -94,7 +100,7 @@ export default function App() {
 
   const sidebar = (
     <Sidebar customers={customers} customerId={customerId} onCustomer={pickCustomer} mode={mode} onMode={setMode} lang={lang} onLang={setLang}
-      view={view} onView={go} onNewChat={() => { setMessages([]); setSelectedId(null); go('chat') }} />
+      view={view} onView={go} onNewChat={() => { setMessages([]); setSelectedId(null); go('chat') }} theme={theme} onToggleTheme={toggleTheme} />
   )
 
   return (
