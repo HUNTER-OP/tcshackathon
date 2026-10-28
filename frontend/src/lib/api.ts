@@ -1,7 +1,7 @@
 import type { ChatResult, Customer, Metrics, Mode } from './types'
 import { demoChat, demoCustomers, demoMetrics } from './demo'
 
-export const API = (import.meta.env.VITE_API as string | undefined) ?? 'http://localhost:8000'
+export const API = (import.meta.env.VITE_API as string | undefined) ?? ''  // same origin; Vite proxies to the backend
 export const DEMO = new URLSearchParams(window.location.search).get('demo') === '1'
 
 async function j<T>(path: string, init?: RequestInit): Promise<T> {
