@@ -1,68 +1,96 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Bahi-khata palette: ledger-cloth green ground, paper ink, marigold thread, bahi red. */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --ground: #0f1d19;
+  --surface: #15271f;
+  --surface-2: #1c3229;
+  --surface-3: #244036;
+  --edge: #2b4a3f;
+  --ink: #ece6d6;
+  --ink-2: #b9c2b4;
+  --ink-3: #849186;
+  --accent: #e3a72f;
+  --accent-ink: #1a1405;
+  --bahi: #b8232c;
+  --credit: #7fd1a0;
+  --debit: #f08a7e;
+  --warn: #f2c14e;
+  --focus: #e3a72f;
+  color-scheme: dark;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+[data-theme="light"] {
+  --ground: #f4f5f1;
+  --surface: #ffffff;
+  --surface-2: #ebeee7;
+  --surface-3: #dfe4da;
+  --edge: #d3d9cd;
+  --ink: #13241f;
+  --ink-2: #3c4f47;
+  --ink-3: #66776f;
+  --accent: #a86a12;
+  --accent-ink: #ffffff;
+  --bahi: #9e1b22;
+  --credit: #1d7a4a;
+  --debit: #b4342a;
+  --warn: #8a6100;
+  --focus: #a86a12;
+  color-scheme: light;
 }
 
+@theme inline {
+  --color-ground: var(--ground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-edge: var(--edge);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-bahi: var(--bahi);
+  --color-credit: var(--credit);
+  --color-debit: var(--debit);
+  --color-warn: var(--warn);
+  --font-sans: "Instrument Sans", "Noto Sans Devanagari", "Noto Sans Kannada", system-ui, sans-serif;
+  --font-display: "Fraunces", "Noto Sans Devanagari", "Noto Sans Kannada", Georgia, serif;
+}
+
+html, body, #root { height: 100%; }
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+::selection { background: var(--accent); color: var(--accent-ink); }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+.tabular { font-variant-numeric: tabular-nums; }
+.scroll-quiet { scrollbar-width: thin; scrollbar-color: var(--surface-3) transparent; }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* markdown in messages */
+.md p { margin: 0 0 0.6em; }
+.md p:last-child { margin-bottom: 0; }
+.md ul, .md ol { margin: 0.2em 0 0.6em 1.2em; }
+.md ul { list-style: disc; }
+.md ol { list-style: decimal; }
+.md li { margin: 0.15em 0; }
+.md strong { font-weight: 600; color: var(--ink); }
+.md table { border-collapse: collapse; margin: 0.4em 0; font-size: 0.92em; }
+.md th, .md td { padding: 4px 10px; border-bottom: 1px solid var(--edge); text-align: left; }
+.md code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+
+input[type="range"] { accent-color: var(--accent); width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }

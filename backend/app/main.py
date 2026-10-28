@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 from . import bank_api, llm, metrics
 from .bank_api import router as bank_router
-from .pipeline import ChatResult, handle_message
+from .pipeline import TICKETS, ChatResult, handle_message
 from .seed import seed
 
 logging.basicConfig(level=logging.INFO)
@@ -53,6 +53,20 @@ def customers():
 @app.get("/metrics")
 def get_metrics():
     return metrics.snapshot()
+
+
+@app.get("/tickets")
+def tickets(status: str | None = None):
+    return [t for t in TICKETS if not status or t["status"] == status]
+
+
+@app.post("/tickets/{ticket_id}/resolve")
+def resolve_ticket(ticket_id: str, reply: str = ""):
+    for t in TICKETS:
+        if t["ticket_id"] == ticket_id:
+            t["status"], t["agent_reply"] = "resolved", reply
+            return t
+    return {"error": "not found"}
 
 
 @app.get("/health")

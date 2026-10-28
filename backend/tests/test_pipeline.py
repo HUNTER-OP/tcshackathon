@@ -61,3 +61,11 @@ async def test_empty_llm_falls_back_to_template(monkeypatch):
     monkeypatch.setattr(llm, "generate", empty)
     r = await pipeline.handle_message("what is my account balance", "CUST001")
     assert r.reply and r.model_used == "template"
+
+
+@pytest.mark.asyncio
+async def test_handoff_ticket_is_queued():
+    pipeline.TICKETS.clear()
+    await pipeline.handle_message("talk to a human", "CUST001", history=[{"role": "user", "content": "hi"}])
+    t = pipeline.TICKETS[0]
+    assert t["customer_id"] == "CUST001" and t["status"] == "open" and t["transcript"][-1]["content"] == "talk to a human"

@@ -1,6 +1,7 @@
 """LLM providers with cloud -> local fallback. Every provider returns plain text or raises."""
 import asyncio
 import logging
+import time
 from typing import Literal
 
 import httpx
@@ -9,6 +10,8 @@ from .config import settings
 
 log = logging.getLogger("hisab.llm")
 _gemini = None
+_cooldown: dict[str, float] = {}  # provider -> unix time until which it is skipped (rate limited)
+COOLDOWN_S = 30
 
 
 def _gemini_client():
@@ -74,12 +77,17 @@ def _chain(mode: str) -> list[tuple[str, object, float]]:
 
 async def generate(system: str, user: str, mode: Literal["hybrid", "local"] = "hybrid") -> tuple[str, str]:
     for name, fn, timeout in _chain(mode):
+        if _cooldown.get(name, 0) > time.time():
+            continue
         try:
             text = await asyncio.wait_for(fn(system, user), timeout=timeout)
             if text:
                 return text, name
         except Exception as e:  # noqa: BLE001 - any provider failure falls through to the next
-            log.warning("LLM %s failed: %s", name, str(e)[:200])
+            msg = str(e)
+            if "429" in msg or "RESOURCE_EXHAUSTED" in msg or "rate" in msg.lower():
+                _cooldown[name] = time.time() + COOLDOWN_S
+            log.warning("LLM %s failed: %s", name, msg[:200])
     return "", "none"
 
 

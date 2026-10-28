@@ -3,6 +3,7 @@ import csv
 import itertools
 import json
 import random
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -12,6 +13,7 @@ from .templates import FILL, PREFIX, SUFFIX, T
 
 RAW = Path(settings.data_dir) / "raw"
 OUT = Path(settings.data_dir) / "processed"
+EVAL = Path(settings.data_dir).parent / "eval" / "queries.jsonl"
 CAP_PER_INTENT_EN = 600  # keep source-heavy intents from drowning the rest
 
 
@@ -35,6 +37,22 @@ def template_examples(rng: random.Random, per_lang: int = 45) -> list[dict]:
     return rows
 
 
+def _norm(t: str) -> str:
+    return re.sub(r"[^\w]+", " ", t.lower()).strip()
+
+
+def llm_paraphrases() -> list[dict]:
+    """LLM-generated paraphrases, minus anything that matches a held-out eval query."""
+    path = OUT / "llm_paraphrases.jsonl"
+    if not path.exists():
+        return []
+    held_out = {_norm(json.loads(l)["text"]) for l in open(EVAL, encoding="utf-8")} if EVAL.exists() else set()
+    rows = [json.loads(l) for l in open(path, encoding="utf-8")]
+    kept = [{"text": r["text"], "label": r["label"], "lang": r["lang"]} for r in rows if _norm(r["text"]) not in held_out]
+    print("llm paraphrases", len(rows), "kept", len(kept))
+    return kept
+
+
 def main(seed: int = 42) -> None:
     rng = random.Random(seed)
     src = []
@@ -50,7 +68,7 @@ def main(seed: int = 42) -> None:
         if per[r["label"]] < CAP_PER_INTENT_EN:
             per[r["label"]] += 1
             capped.append(r)
-    rows = capped + template_examples(rng)
+    rows = capped + template_examples(rng) + llm_paraphrases()
     rng.shuffle(rows)
     assert {r["label"] for r in rows} == set(UNIFIED_INTENTS)
     n_test = int(len(rows) * 0.12)

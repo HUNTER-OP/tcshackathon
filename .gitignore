@@ -6,3 +6,6 @@ node_modules/
 models/
 *.db
 .superpowers/
+backend_server.log
+eval/run_*.log
+frontend/dist/

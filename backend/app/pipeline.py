@@ -12,6 +12,7 @@ from .nlu.lang import NAMES, detect_language
 from .nlu.pii import redact
 
 HANDOFF_CONF = 0.45
+TICKETS: list[dict] = []  # in-memory handoff queue, read by GET /tickets (agent console)
 TRANSLATE_CONF = 0.6
 NEGATIVE = ["angry", "worst", "fraud", "useless", "frustrat", "bakwas", "bekar", "गुस्सा", "बेकार", "ಕೋಪ", "not helping", "nahi kar raha"]
 
@@ -138,6 +139,9 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
                    "sentiment": _sentiment(text), "priority": "high" if _sentiment(text) == "negative" else "normal",
                    "reason": "customer requested a human" if intent == "human_agent" else "low confidence"}
         cards.append({"type": "handoff", "data": handoff})
+        TICKETS.insert(0, {**handoff, "customer_id": customer_id, "language": lang, "intent_guess": intent,
+                           "confidence": round(conf, 4), "created_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                           "status": "open", "transcript": [*(history or [])[-8:], {"role": "user", "content": clean}]})
         reply = HANDOFF_MSG[lang].format(t=handoff["ticket_id"])
         t = stage("handoff", t, handoff["ticket_id"])
     else:

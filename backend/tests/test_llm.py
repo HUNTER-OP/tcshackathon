@@ -51,3 +51,21 @@ async def test_all_fail_returns_empty(monkeypatch):
 async def test_live_providers(provider):
     out = await getattr(llm, provider)("Reply with one word.", "Say hi")
     assert out
+
+
+@pytest.mark.asyncio
+async def test_rate_limited_provider_is_skipped(monkeypatch):
+    calls = []
+
+    async def limited(*a):
+        calls.append(1)
+        raise RuntimeError("429 RESOURCE_EXHAUSTED")
+    monkeypatch.setattr(settings, "gemini_api_key", "x")
+    monkeypatch.setattr(settings, "groq_api_key", "")
+    monkeypatch.setattr(settings, "openrouter_api_key", "")
+    monkeypatch.setattr(llm, "gemini", limited)
+    monkeypatch.setattr(llm, "ollama", _ok)
+    monkeypatch.setattr(llm, "_cooldown", {})
+    await llm.generate("s", "u")
+    await llm.generate("s", "u")
+    assert len(calls) == 1
