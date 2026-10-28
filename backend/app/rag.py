@@ -8,6 +8,7 @@ import numpy as np
 
 from .bank_api import PRODUCTS
 from .config import settings
+from .nlu.profanity import has_profanity
 
 EMB_MODEL = "BAAI/bge-small-en-v1.5"
 PER_INTENT = 4
@@ -23,6 +24,8 @@ def _corpus() -> list[dict]:
     seen: dict[str, int] = {}
     path = Path(settings.data_dir) / "raw" / "bitext_banking.csv"
     for r in csv.DictReader(open(path, encoding="utf-8")):
+        if has_profanity(r["instruction"]) or has_profanity(r["response"]):
+            continue
         if seen.get(r["intent"], 0) < PER_INTENT:
             seen[r["intent"]] = seen.get(r["intent"], 0) + 1
             docs.append({"q": r["instruction"], "a": _clean(r["response"])[:900]})

@@ -1096,7 +1096,6 @@
 {"text": "bhai net banking ka password bhul gaya, kal 5000 transfer karne the", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
 {"text": "atm pin change karna hai, kitna time lagega?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
 {"text": "bhai mere a/c se 2 baar paise cut gye ek hi transaction ke liye pls check rn", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
-{"text": "txn failed at atm but cash got debited wtf refund when??", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
 {"text": "arey yaar ek unrecognised transaction dikh rha hai 500 ka jo maine kiya hi nahi", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
 {"text": "amazon refund was initiated 5 days ago still not credited in my a/c", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
 {"text": "atm machine ne cash nahi diya par message aa gya ki debited 2000 rupees", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}

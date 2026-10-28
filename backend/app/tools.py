@@ -89,13 +89,21 @@ def run(intent: str, e: Entities, customer_id: str, query_en: str, lang: str = "
             cards.append({"type": "card_action", "data": data})
         else:
             # never block on the first message: list active cards and ask the customer to confirm with a button
-            active = [c for c in _call(calls, "get_cards", bank_api.get_cards, customer_id) if c["status"] == "active"]
-            want = "credit" if re.search(r"credit|क्रेडिट|ಕ್ರೆಡಿಟ್", query_en, re.I) else "debit"
-            active.sort(key=lambda c: (c["last4"] != e.card_last4, c["type"] != want))
-            options = [BLOCK_YES[lang].format(kind=KIND.get(c["type"], KIND["debit"])[lang], card=f"XXXX{c['last4']}") for c in active]
-            data = {"awaiting_confirmation": True, "active_cards": [f"{c['type']} XXXX{c['last4']}" for c in active],
-                    "note": "Do NOT say the card is blocked. Tell the customer you can block it right away and ask them to confirm using the buttons."}
-            cards.append({"type": "followup", "data": {"missing": [], "question": BLOCK_Q[lang], "options": options + [BLOCK_NO[lang]]}})
+            owned = _call(calls, "get_cards", bank_api.get_cards, customer_id)
+            want = ("credit" if re.search(r"credit|क्रेडिट|ಕ್ರೆಡಿಟ್", query_en, re.I)
+                    else "debit" if re.search(r"debit|डेबिट|ಡೆಬಿಟ್", query_en, re.I) else None)
+            # only offer the card they named (or all cards if they didn't say which); never swap in a different card
+            candidates = [c for c in owned if c["status"] == "active" and (want is None or c["type"] == want)]
+            candidates.sort(key=lambda c: c["last4"] != e.card_last4)
+            blocked = [f"{c['type']} XXXX{c['last4']}" for c in owned if c["status"] == "blocked" and (want is None or c["type"] == want)]
+            if not candidates:
+                data = {"already_blocked": blocked, "replacement_eta_days": 7,
+                        "note": "Tell the customer this card is already blocked, so no further action is needed and a replacement is on its way. Do not offer to block any other card."}
+            else:
+                options = [BLOCK_YES[lang].format(kind=KIND.get(c["type"], KIND["debit"])[lang], card=f"XXXX{c['last4']}") for c in candidates]
+                data = {"awaiting_confirmation": True, "active_cards": [f"{c['type']} XXXX{c['last4']}" for c in candidates],
+                        "note": "Do NOT say the card is blocked. Tell the customer you can block it right away and ask them to confirm using the buttons."}
+                cards.append({"type": "followup", "data": {"missing": [], "question": BLOCK_Q[lang], "options": options + [BLOCK_NO[lang]]}})
     elif intent == "transfer_money":
         if e.amount_inr is None or not re.search(r"\b(send|transfer|pay|bhejo|bhej|भेज|ಕಳುಹಿಸ)", query_en.lower()):
             data = {"faq": rag.search(query_en, k=2)}

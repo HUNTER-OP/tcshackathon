@@ -12,6 +12,7 @@ from .nlu.entities import extract_entities
 from .nlu.intent import get_classifier
 from .nlu.lang import NAMES, detect_language
 from .nlu.pii import redact
+from .nlu.profanity import clean as mask_profanity, has_profanity
 
 HANDOFF_CONF = 0.45
 TICKETS: list[dict] = []  # in-memory handoff queue, read by GET /tickets (agent console)
@@ -125,7 +126,7 @@ def _template_reply(intent: str, data: dict) -> str:
 
 def _sentiment(text: str) -> str:
     t = text.lower()
-    return "negative" if any(w in t for w in NEGATIVE) or text.count("!") >= 2 else "neutral"
+    return "negative" if has_profanity(text) or any(w in t for w in NEGATIVE) or text.count("!") >= 2 else "neutral"
 
 
 async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "hybrid",
@@ -142,6 +143,7 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
     lang = detect_language(text)
     t = stage("language", t, lang)
     clean, n_red = redact(text)
+    clean, n_abuse = mask_profanity(clean)  # abusive words never reach the LLM, tickets, logs or the UI
     t = stage("privacy_filter", t, f"{n_red} redacted")
 
     clf = get_classifier()
@@ -221,6 +223,7 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
             t = stage("llm_reply", t, model_used)
 
     sugg = SUGGEST.get(lang, {})
+    reply, _ = mask_profanity(reply)  # and the bot never says them either
     result = ChatResult(
         reply=reply, language=lang, intent=intent, confidence=round(conf, 4), entities=ents.dict(),
         tool_calls=calls, redactions=n_red, redacted_text=clean, handoff=handoff, model_used=model_used,

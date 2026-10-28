@@ -155,3 +155,19 @@ async def test_decline_keeps_card_active():
     before = _card_status()
     r2 = await pipeline.handle_message(no, "CUST001")
     assert _card_status() == before and "active" in r2.reply.lower()
+
+
+@pytest.mark.asyncio
+async def test_already_blocked_card_is_reported_not_swapped():
+    bank_api.conn().execute("update cards set status='blocked' where customer_id='CUST005' and type='debit'")
+    r = await pipeline.handle_message("mera debit card kho gaya", "CUST005")
+    opts = [o for c in r.cards if c["type"] == "followup" for o in c["data"]["options"]]
+    assert not any("credit" in o.lower() for o in opts)
+    assert "already blocked" in r.reply.lower() or "XXXX" in r.reply
+
+
+@pytest.mark.asyncio
+async def test_no_active_cards_means_no_block_buttons():
+    bank_api.conn().execute("update cards set status='blocked' where customer_id='CUST005'")
+    r = await pipeline.handle_message("block my card", "CUST005")
+    assert not any(c["type"] == "followup" for c in r.cards)

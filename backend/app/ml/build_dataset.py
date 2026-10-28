@@ -10,6 +10,7 @@ from pathlib import Path
 from ..config import settings
 from .intents import UNIFIED_INTENTS, map_banking77, map_bitext
 from .templates import FILL, PREFIX, SUFFIX, T
+from ..nlu.profanity import has_profanity
 
 RAW = Path(settings.data_dir) / "raw"
 OUT = Path(settings.data_dir) / "processed"
@@ -69,6 +70,7 @@ def main(seed: int = 42) -> None:
             per[r["label"]] += 1
             capped.append(r)
     rows = capped + template_examples(rng) + llm_paraphrases()
+    rows = [r for r in rows if not has_profanity(r["text"])]  # never train on abusive text
     rng.shuffle(rows)
     assert {r["label"] for r in rows} == set(UNIFIED_INTENTS)
     n_test = int(len(rows) * 0.12)
