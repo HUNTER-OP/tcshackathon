@@ -1,7 +1,10 @@
 import asyncio
 import logging
 
+from pathlib import Path
+
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -15,6 +18,9 @@ app = FastAPI(title="Hisab Kitab API", version="1.0",
               description="Multilingual AI banking assistant + mock core-banking API")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.include_router(bank_router)
+AGENT_CONSOLE = Path(__file__).resolve().parents[2] / "tools" / "agent_console"
+if AGENT_CONSOLE.exists():
+    app.mount("/agent", StaticFiles(directory=AGENT_CONSOLE, html=True), name="agent")
 
 
 class ChatReq(BaseModel):
@@ -67,6 +73,15 @@ def resolve_ticket(ticket_id: str, reply: str = ""):
             t["status"], t["agent_reply"] = "resolved", reply
             return t
     return {"error": "not found"}
+
+
+@app.post("/admin/reset-demo")
+def reset_demo():
+    """Reseed the synthetic bank and clear metrics + tickets (run before a demo)."""
+    seed(bank_api.conn())
+    metrics.reset()
+    TICKETS.clear()
+    return {"status": "reset", "customers": bank_api.conn().execute("select count(*) from customers").fetchone()[0]}
 
 
 @app.get("/health")

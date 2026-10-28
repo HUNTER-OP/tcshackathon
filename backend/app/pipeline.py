@@ -7,6 +7,7 @@ import time
 from pydantic import BaseModel
 
 from . import bank_api, llm, metrics, tools
+from .addons.offers import suggest_offer
 from .nlu.entities import extract_entities
 from .nlu.intent import get_classifier
 from .nlu.lang import NAMES, detect_language
@@ -189,6 +190,9 @@ async def handle_message(text: str, customer_id: str = "CUST001", mode: str = "h
                 data = {**data, "note": "Intent unclear. Answer only if the FAQ clearly covers it, otherwise say you are not sure; the app offers a support agent."}
                 cards.append(_agent_offer(lang))
             t = stage("tools", t, ", ".join(c["tool"] for c in calls) or "none")
+            if not unsure and (offer := suggest_offer(bank_api.get_customer(customer_id), intent, data, bank_api.PRODUCTS)):
+                cards.append(offer)
+                t = stage("next_best_offer", t, offer["data"]["offer_id"])
         except bank_api.ConsentError:
             cards.append({"type": "consent", "data": {"message": CONSENT_MSG[lang]}})
             reply = CONSENT_MSG[lang]

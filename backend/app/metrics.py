@@ -25,3 +25,12 @@ def snapshot() -> dict:
     return {**_c, "avg_latency_ms": round(sum(lat) / len(lat)) if lat else 0, "p95_latency_ms": p95,
             "by_intent": dict(_by["intent"]), "by_language": dict(_by["language"]),
             "by_model": dict(_by["model"]), "recent": list(_recent)}
+
+
+def reset() -> None:
+    _lat.clear()
+    _recent.clear()
+    for k in _c:
+        _c[k] = 0
+    for c in _by.values():
+        c.clear()

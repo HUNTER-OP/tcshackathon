@@ -107,3 +107,16 @@ async def test_accepting_agent_offer_creates_ticket():
 async def test_password_reset_is_not_treated_as_sensitive(q):
     r = await pipeline.handle_message(q, "CUST001")
     assert r.intent != "sensitive_info"
+
+
+@pytest.mark.asyncio
+async def test_rates_question_includes_offer_card():
+    r = await pipeline.handle_message("what is the home loan interest rate", "CUST001")
+    assert any(c["type"] == "offer" for c in r.cards)
+
+
+@pytest.mark.asyncio
+async def test_no_offer_without_consent_or_on_handoff():
+    r1 = await pipeline.handle_message("what are the FD interest rates", "CUST004")
+    r2 = await pipeline.handle_message("talk to a human", "CUST001")
+    assert not any(c["type"] == "offer" for c in r1.cards + r2.cards)

@@ -46,3 +46,15 @@ def test_entities_days():
 def test_label_maps_cover_targets():
     assert set(BANKING77_MAP.values()) <= set(UNIFIED_INTENTS)
     assert set(BITEXT_MAP.values()) <= set(UNIFIED_INTENTS)
+
+
+@pytest.mark.parametrize("text,raw,token", [
+    ("call me on +91-98765-43210", "43210", "[PHONE]"),
+    ("my number is +91 9876543210", "9876543210", "[PHONE]"),
+    ("account number 123456789012345", "123456789012345", "[ACCOUNT]"),
+    ("bank wale ne otp maanga 739201 diya kya", "739201", "[OTP]"),
+    ("OTP is 4521", "4521", "[OTP]"),
+])
+def test_redact_pc2_gaps(text, raw, token):
+    out, n = redact(text)
+    assert raw not in out and token in out and n >= 1

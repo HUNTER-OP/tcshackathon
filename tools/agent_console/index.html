@@ -1,0 +1,280 @@
+<!doctype html>
+<!--
+  Hisab Kitab human agent console: live handoff queue, transcript, drafted reply, resolve.
+  Usage: open index.html?api=http://10.127.10.203:8000  (or serve: python -m http.server 8090)
+  Polls GET /tickets every 3 s and GET /metrics for the deflection rate. No LLM key in the browser.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hisab Kitab Agent Console</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --panel2: #1c2230; --line: #2a3140; --text: #e6edf3;
+    --muted: #8b949e; --accent: #4f9dff; --ok: #3fb950; --warn: #d29922; --bad: #f85149; --chip: #222a38;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, "Segoe UI", "Noto Sans", sans-serif; }
+  header { display: flex; align-items: center; gap: 24px; padding: 14px 24px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  header h1 { font-size: 17px; margin: 0; font-weight: 650; }
+  header h1 span { color: var(--muted); font-weight: 400; }
+  .kpis { display: flex; gap: 12px; margin-left: auto; }
+  .kpi { background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 6px 14px; min-width: 110px; }
+  .kpi b { display: block; font-size: 20px; font-variant-numeric: tabular-nums; }
+  .kpi small { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+  .kpi.hero b { color: var(--ok); }
+  .conn { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+  .dot.on { background: var(--ok); } .dot.off { background: var(--bad); }
+  main { display: grid; grid-template-columns: 380px 1fr; height: calc(100vh - 67px); }
+  #queue { border-right: 1px solid var(--line); overflow-y: auto; }
+  .qhead { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); }
+  .qhead select { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 2px 6px; }
+  .ticket { padding: 12px 16px; border-bottom: 1px solid var(--line); cursor: pointer; border-left: 3px solid transparent; }
+  .ticket:hover { background: var(--panel); }
+  .ticket.sel { background: var(--panel2); border-left-color: var(--accent); }
+  .ticket .row1 { display: flex; justify-content: space-between; gap: 8px; }
+  .ticket .id { font-weight: 600; font-family: ui-monospace, Consolas, monospace; }
+  .ticket .age { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .ticket .who { margin: 3px 0 6px; color: var(--text); }
+  .ticket .snip { color: var(--muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .chip { background: var(--chip); border-radius: 999px; padding: 1px 9px; font-size: 11.5px; color: var(--muted); }
+  .chip.high { background: rgba(248,81,73,.15); color: var(--bad); }
+  .chip.normal { background: rgba(79,157,255,.12); color: var(--accent); }
+  .chip.low { color: var(--muted); }
+  .chip.negative { background: rgba(248,81,73,.12); color: #ff9b95; }
+  .chip.neutral { color: var(--muted); }
+  .chip.positive { background: rgba(63,185,80,.13); color: var(--ok); }
+  .empty { padding: 40px 20px; text-align: center; color: var(--muted); }
+  #detail { overflow-y: auto; padding: 24px 32px; }
+  #detail h2 { margin: 0 0 4px; font-size: 20px; }
+  .sub { color: var(--muted); margin-bottom: 18px; }
+  .grid { display: grid; grid-template-columns: 1fr 320px; gap: 20px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 16px; }
+  .card h3 { margin: 0 0 10px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+  .summary { font-size: 15px; }
+  .msg { padding: 8px 12px; border-radius: 10px; margin: 6px 0; max-width: 85%; white-space: pre-wrap; }
+  .msg.user { background: var(--panel2); }
+  .msg.assistant { background: rgba(79,157,255,.12); margin-left: auto; }
+  .msg .r { font-size: 11px; color: var(--muted); display: block; margin-bottom: 2px; }
+  dl { display: grid; grid-template-columns: 120px 1fr; gap: 6px 10px; margin: 0; }
+  dt { color: var(--muted); } dd { margin: 0; font-variant-numeric: tabular-nums; }
+  textarea { width: 100%; min-height: 130px; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font: inherit; resize: vertical; }
+  textarea:focus { outline: 1px solid var(--accent); }
+  .actions { display: flex; gap: 10px; margin-top: 10px; align-items: center; }
+  button { background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 8px 16px; font: inherit; font-weight: 600; cursor: pointer; }
+  button.ghost { background: transparent; border: 1px solid var(--line); color: var(--text); font-weight: 500; }
+  button:disabled { opacity: .5; cursor: default; }
+  .toast { color: var(--ok); font-size: 13px; }
+  .toast.err { color: var(--bad); }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Hisab Kitab <span>· Agent Console</span></h1>
+  <div class="conn"><span id="dot" class="dot"></span><span id="conn">connecting…</span></div>
+  <div class="kpis">
+    <div class="kpi hero"><small>Deflection rate</small><b id="k-defl">–</b></div>
+    <div class="kpi"><small>Total queries</small><b id="k-total">–</b></div>
+    <div class="kpi"><small>Handoffs</small><b id="k-hand">–</b></div>
+    <div class="kpi"><small>Open tickets</small><b id="k-open">–</b></div>
+    <div class="kpi"><small>Avg latency</small><b id="k-lat">–</b></div>
+  </div>
+</header>
+<main>
+  <section id="queue">
+    <div class="qhead"><span>Queue</span>
+      <select id="sort"><option value="priority">Priority</option><option value="age">Oldest first</option></select>
+    </div>
+    <div id="list"><div class="empty">Loading tickets…</div></div>
+  </section>
+  <section id="detail"><div class="empty">Select a ticket from the queue.</div></section>
+</main>
+<script>
+const API = (new URLSearchParams(location.search).get("api") || (location.protocol.startsWith("http") && location.port === "8000" ? location.origin : "http://localhost:8000")).replace(/\/$/, "");
+const LANG = { en: "English", hi: "Hindi", kn: "Kannada", hinglish: "Hinglish" };
+const PRI = { high: 0, normal: 1, low: 2 };
+let tickets = [], customers = {}, selected = null, drafts = {};
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const inr = (n) => n == null ? "–" : "₹" + Number(n).toLocaleString("en-IN", { maximumFractionDigits: 0 });
+
+// Backend timestamps are naive local time of the server (IST). Override with ?tz=+05:30
+const SERVER_TZ = new URLSearchParams(location.search).get("tz") || "+05:30";
+function parseTs(ts) {
+  const s = String(ts || "");
+  return new Date(/[zZ]|[+-]\d\d:?\d\d$/.test(s) ? s : s + SERVER_TZ);
+}
+
+function age(ts) {
+  const t = parseTs(ts); if (isNaN(t)) return "";
+  const s = Math.max(0, (Date.now() - t) / 1000);
+  if (s < 60) return Math.floor(s) + "s";
+  if (s < 3600) return Math.floor(s / 60) + "m";
+  if (s < 86400) return Math.floor(s / 3600) + "h " + Math.floor((s % 3600) / 60) + "m";
+  return Math.floor(s / 86400) + "d";
+}
+
+const TOPIC = {
+  card_block: { en: "blocking your card", hi: "आपका कार्ड ब्लॉक करने", kn: "ನಿಮ್ಮ ಕಾರ್ಡ್ ಬ್ಲಾಕ್ ಮಾಡುವ", hinglish: "aapka card block karne" },
+  dispute_refund: { en: "your dispute / refund", hi: "आपके डिस्प्यूट / रिफंड", kn: "ನಿಮ್ಮ ವಿವಾದ / ಮರುಪಾವತಿ", hinglish: "aapke dispute / refund" },
+  loan_eligibility: { en: "your loan query", hi: "आपके लोन के सवाल", kn: "ನಿಮ್ಮ ಸಾಲದ ಪ್ರಶ್ನೆ", hinglish: "aapke loan query" },
+  transfer_money: { en: "your transfer", hi: "आपके ट्रांसफर", kn: "ನಿಮ್ಮ ವರ್ಗಾವಣೆ", hinglish: "aapke transfer" },
+  _default: { en: "your request", hi: "आपके अनुरोध", kn: "ನಿಮ್ಮ ವಿನಂತಿ", hinglish: "aapki request" },
+};
+
+function draftReply(t) {
+  const lang = LANG[t.language] ? t.language : "en";
+  const name = (customers[t.customer_id]?.name || "").split(" ")[0] || "";
+  const topic = (TOPIC[t.intent_guess] || TOPIC._default)[lang];
+  const upset = t.sentiment === "negative";
+  const T = {
+    en: `Hello ${name}, this is your Hisab Kitab support specialist (ticket ${t.ticket_id}).\n` +
+        (upset ? "I'm sorry for the trouble you've faced, and thank you for your patience. " : "Thanks for reaching out. ") +
+        `I've read your conversation about ${topic}, so you won't need to repeat anything.\n` +
+        "[Resolution / next step here]\nIs there anything else I can help you with?",
+    hi: `नमस्ते ${name} जी, मैं Hisab Kitab सहायता टीम से बात कर रहा/रही हूँ (टिकट ${t.ticket_id})।\n` +
+        (upset ? "आपको हुई परेशानी के लिए हमें खेद है, धैर्य रखने के लिए धन्यवाद। " : "संपर्क करने के लिए धन्यवाद। ") +
+        `मैंने ${topic} के बारे में आपकी बातचीत पढ़ ली है, आपको कुछ दोहराने की ज़रूरत नहीं है।\n` +
+        "[समाधान / अगला कदम]\nक्या मैं आपकी और कोई मदद कर सकता/सकती हूँ?",
+    kn: `ನಮಸ್ಕಾರ ${name}, ನಾನು Hisab Kitab ಸಹಾಯ ತಂಡದಿಂದ ಮಾತನಾಡುತ್ತಿದ್ದೇನೆ (ಟಿಕೆಟ್ ${t.ticket_id}).\n` +
+        (upset ? "ನಿಮಗೆ ಆದ ತೊಂದರೆಗೆ ಕ್ಷಮಿಸಿ, ನಿಮ್ಮ ತಾಳ್ಮೆಗೆ ಧನ್ಯವಾದಗಳು. " : "ಸಂಪರ್ಕಿಸಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು. ") +
+        `${topic} ಬಗ್ಗೆ ನಿಮ್ಮ ಸಂಭಾಷಣೆಯನ್ನು ಓದಿದ್ದೇನೆ, ನೀವು ಮತ್ತೆ ಹೇಳುವ ಅಗತ್ಯವಿಲ್ಲ.\n` +
+        "[ಪರಿಹಾರ / ಮುಂದಿನ ಹಂತ]\nಇನ್ನೇನಾದರೂ ಸಹಾಯ ಬೇಕೇ?",
+    hinglish: `Namaste ${name} ji, main Hisab Kitab support team se baat kar raha/rahi hoon (ticket ${t.ticket_id}).\n` +
+        (upset ? "Aapko hui pareshani ke liye sorry, patience rakhne ke liye thank you. " : "Contact karne ke liye thank you. ") +
+        `Maine ${topic} ke baare mein aapki chat padh li hai, aapko kuch repeat karne ki zarurat nahi.\n` +
+        "[Resolution / next step]\nKya main aur kuch help kar sakta/sakti hoon?",
+  };
+  return T[lang];
+}
+
+function sorted() {
+  const list = tickets.slice();
+  if ($("sort").value === "age") list.sort((a, b) => parseTs(a.created_at) - parseTs(b.created_at));
+  else list.sort((a, b) => (PRI[a.priority] ?? 1) - (PRI[b.priority] ?? 1) || parseTs(a.created_at) - parseTs(b.created_at));
+  return list;
+}
+
+function renderQueue() {
+  $("k-open").textContent = tickets.length;
+  if (!tickets.length) { $("list").innerHTML = '<div class="empty">No open tickets. The bot is handling everything.</div>'; return; }
+  $("list").innerHTML = sorted().map((t) => `
+    <div class="ticket ${t.ticket_id === selected ? "sel" : ""}" data-id="${esc(t.ticket_id)}">
+      <div class="row1"><span class="id">${esc(t.ticket_id)}</span><span class="age">${age(t.created_at)} ago</span></div>
+      <div class="who">${esc(customers[t.customer_id]?.name || t.customer_id)} <span style="color:var(--muted)">· ${esc(t.customer_id)}</span></div>
+      <div class="snip">${esc(t.transcript?.filter((m) => m.role === "user").slice(-1)[0]?.content || t.summary)}</div>
+      <div class="chips">
+        <span class="chip ${esc(t.priority)}">${esc(t.priority)}</span>
+        <span class="chip ${esc(t.sentiment)}">${esc(t.sentiment)}</span>
+        <span class="chip">${esc(LANG[t.language] || t.language)}</span>
+      </div>
+    </div>`).join("");
+  document.querySelectorAll(".ticket").forEach((el) => el.onclick = () => select(el.dataset.id));
+}
+
+function renderDetail() {
+  const t = tickets.find((x) => x.ticket_id === selected);
+  if (!t) { $("detail").innerHTML = '<div class="empty">Select a ticket from the queue.</div>'; return; }
+  const c = customers[t.customer_id] || {};
+  if (!(t.ticket_id in drafts)) drafts[t.ticket_id] = draftReply(t);
+  const conf = typeof t.confidence === "number" ? (t.confidence * 100).toFixed(0) + "%" : "–";
+  $("detail").innerHTML = `
+    <h2>${esc(c.name || t.customer_id)} <span style="color:var(--muted);font-weight:400">· ${esc(t.ticket_id)}</span></h2>
+    <div class="sub">Opened ${esc(t.created_at)} · ${age(t.created_at)} ago · reason: ${esc(t.reason)}</div>
+    <div class="grid">
+      <div>
+        <div class="card"><h3>AI summary</h3><div class="summary">${esc(t.summary)}</div>
+          <div class="chips" style="margin-top:10px">
+            <span class="chip ${esc(t.priority)}">priority: ${esc(t.priority)}</span>
+            <span class="chip ${esc(t.sentiment)}">sentiment: ${esc(t.sentiment)}</span>
+            <span class="chip">bot guess: ${esc(t.intent_guess)} (${conf})</span>
+          </div></div>
+        <div class="card"><h3>Transcript</h3>
+          ${(t.transcript || []).map((m) => `<div class="msg ${m.role === "user" ? "user" : "assistant"}"><span class="r">${m.role === "user" ? "Customer" : "Bot"}</span>${esc(m.content)}</div>`).join("") || '<div class="hint">No transcript.</div>'}
+        </div>
+        <div class="card"><h3>Reply to customer (${esc(LANG[t.language] || t.language)})</h3>
+          <textarea id="reply">${esc(drafts[t.ticket_id])}</textarea>
+          <div class="hint">Drafted from a template using the summary, sentiment and language. Edit before sending.</div>
+          <div class="actions">
+            <button id="resolve">Resolve &amp; send</button>
+            <button class="ghost" id="redraft">Re-draft</button>
+            <span id="toast" class="toast"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card"><h3>Customer</h3><dl>
+          <dt>ID</dt><dd>${esc(t.customer_id)}</dd>
+          <dt>Name</dt><dd>${esc(c.name || "–")}</dd>
+          <dt>City</dt><dd>${esc(c.city || "–")}</dd>
+          <dt>Language</dt><dd>${esc(LANG[c.preferred_language] || c.preferred_language || "–")}</dd>
+          <dt>Monthly income</dt><dd>${inr(c.monthly_income)}</dd>
+          <dt>Credit score</dt><dd>${esc(c.credit_score ?? "–")}</dd>
+          <dt>Data consent</dt><dd style="color:${c.consent ? "var(--ok)" : "var(--bad)"}">${c.consent == null ? "–" : c.consent ? "Given" : "Not given"}</dd>
+        </dl></div>
+      </div>
+    </div>`;
+  $("reply").oninput = (e) => drafts[t.ticket_id] = e.target.value;
+  $("redraft").onclick = () => { drafts[t.ticket_id] = draftReply(t); $("reply").value = drafts[t.ticket_id]; };
+  $("resolve").onclick = () => resolve(t.ticket_id);
+}
+
+function select(id) { selected = id; renderQueue(); renderDetail(); }
+
+async function resolve(id) {
+  const btn = $("resolve"), toast = $("toast"), reply = $("reply").value.trim();
+  if (!reply) { toast.className = "toast err"; toast.textContent = "Reply is empty."; return; }
+  btn.disabled = true; toast.className = "toast"; toast.textContent = "Sending…";
+  try {
+    const r = await fetch(`${API}/tickets/${encodeURIComponent(id)}/resolve?reply=${encodeURIComponent(reply)}`, { method: "POST" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    toast.textContent = "Resolved ✓";
+    delete drafts[id];
+    tickets = tickets.filter((x) => x.ticket_id !== id);
+    selected = sorted()[0]?.ticket_id || null;
+    setTimeout(() => { renderQueue(); renderDetail(); poll(); }, 700);
+  } catch (e) {
+    toast.className = "toast err"; toast.textContent = "Failed: " + e.message; btn.disabled = false;
+  }
+}
+
+function setConn(ok, msg) { $("dot").className = "dot " + (ok ? "on" : "off"); $("conn").textContent = msg; }
+
+async function poll() {
+  try {
+    const r = await fetch(`${API}/tickets?status=open`);
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    tickets = await r.json();
+    setConn(true, `live · ${API.replace(/^https?:\/\//, "")}`);
+    if (selected && !tickets.some((t) => t.ticket_id === selected)) selected = null;
+    if (!selected && tickets.length) selected = sorted()[0].ticket_id;
+    renderQueue();
+    // only re-render detail if the user isn't typing in it
+    if (document.activeElement?.id !== "reply") renderDetail();
+  } catch (e) { setConn(false, "offline: " + e.message); }
+  try {
+    const m = await (await fetch(`${API}/metrics`)).json();
+    const total = m.total || 0, hand = m.handoffs || 0;
+    $("k-total").textContent = total;
+    $("k-hand").textContent = hand;
+    $("k-defl").textContent = total ? ((1 - hand / total) * 100).toFixed(1) + "%" : "–";
+    $("k-lat").textContent = m.avg_latency_ms != null ? (m.avg_latency_ms / 1000).toFixed(2) + " s" : "–";
+  } catch (e) { /* metrics optional */ }
+}
+
+async function loadCustomers() {
+  try { (await (await fetch(`${API}/customers`)).json()).forEach((c) => customers[c.id] = c); } catch (e) {}
+}
+
+$("sort").onchange = renderQueue;
+loadCustomers().then(poll);
+setInterval(poll, 3000);
+setInterval(() => document.querySelectorAll(".ticket .age").length && renderQueue(), 30000);
+</script>
+</body>
+</html>

@@ -49,3 +49,12 @@ def test_transfer_over_balance_fails():
 def test_rates_endpoint():
     r = client().get("/api/products/rates")
     assert r.status_code == 200 and "car" in r.text
+
+
+def test_reset_demo_and_agent_console():
+    from app import metrics, pipeline
+    pipeline.TICKETS.append({"ticket_id": "HK-1", "status": "open"})
+    c = client()
+    assert c.post("/admin/reset-demo").json()["customers"] == 50
+    assert not pipeline.TICKETS and metrics.snapshot()["total"] == 0
+    assert c.get("/agent/").status_code == 200
