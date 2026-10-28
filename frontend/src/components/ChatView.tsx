@@ -43,14 +43,14 @@ export default function ChatView({ messages, pending, lang, customerName, select
           {messages.length === 0 && (
             <div className="pt-[6vh]">
               <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.08em] text-teal">AI-powered banking customer query assistant</p>
-              <h1 className="font-display text-[38px] font-bold leading-[1.15] tracking-[-0.02em] sm:text-[52px]"><span className="hl">{g.title}</span></h1>
+              <h1 className="font-display text-[38px] font-bold leading-[1.15] tracking-[-0.02em] sm:text-[52px]">{g.title}</h1>
               <p className="mt-4 max-w-[52ch] text-[17px] text-ink-2">{g.line}</p>
               {customerName && <p className="mt-2 text-[14px] text-ink-3">Signed in as {customerName}.</p>}
               <ul className="mt-8 grid gap-2 sm:grid-cols-2">
                 {PROMPTS[lang].map((p) => (
                   <li key={p}>
                     <button type="button" onClick={() => submit(p)}
-                      className="w-full rounded-2xl border-[1.5px] border-line bg-surface px-4 py-3 text-left text-[15px] font-medium text-ink shadow-[2px_2px_0_var(--shadow)] transition-all hover:bg-surface-3 active:translate-x-[1px] active:translate-y-[1px]">{p}</button>
+                      className="w-full rounded-2xl border border-line bg-surface px-4 py-3 text-left text-[15px] font-medium text-ink transition-all hover:bg-surface-3">{p}</button>
                   </li>
                 ))}
               </ul>
@@ -62,7 +62,7 @@ export default function ChatView({ messages, pending, lang, customerName, select
               <motion.div key={m.id} initial={reduce ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
                 {m.role === 'user' ? (
                   <div className="flex justify-end">
-                    <p className="max-w-[85%] whitespace-pre-wrap rounded-2xl rounded-br-md border-[1.5px] border-line bg-ground px-4 py-2.5 text-[15px] text-white">{m.content}</p>
+                    <p className="max-w-[85%] whitespace-pre-wrap rounded-2xl rounded-br-md border border-line bg-ground px-4 py-2.5 text-[15px] text-white">{m.content}</p>
                   </div>
                 ) : (
                   <AssistantMessage m={m} selected={selectedId === m.id} onSelect={() => onSelect(m.id)} />
@@ -79,11 +79,11 @@ export default function ChatView({ messages, pending, lang, customerName, select
         {!pending && last?.result?.suggestions && last.result.suggestions.length > 0 && (
           <div className="mb-2 flex flex-wrap gap-1.5" aria-label="Suggested questions">
             {last.result.suggestions.map((s) => (
-              <button key={s} type="button" onClick={() => submit(s)} className="rounded-full border-[1.5px] border-line bg-surface px-3 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-accent">{s}</button>
+              <button key={s} type="button" onClick={() => submit(s)} className="rounded-full border border-line bg-surface px-3 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-accent">{s}</button>
             ))}
           </div>
         )}
-        <form onSubmit={(e) => { e.preventDefault(); submit() }} className="flex items-end gap-2 rounded-2xl border-[1.5px] border-line bg-surface p-2 shadow-[2px_2px_0_var(--shadow)] focus-within:ring-4 focus-within:ring-accent">
+        <form onSubmit={(e) => { e.preventDefault(); submit() }} className="flex items-end gap-2 rounded-2xl border border-line bg-surface p-2 focus-within:ring-4 focus-within:ring-accent">
           <label htmlFor="composer" className="sr-only">Ask Hisab Kitab</label>
           <textarea id="composer" ref={box} rows={1} value={text} onChange={(e) => setText(e.target.value)}
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit() } }}
@@ -91,7 +91,7 @@ export default function ChatView({ messages, pending, lang, customerName, select
             className="max-h-40 min-h-10 flex-1 resize-none bg-transparent px-2 py-2 text-[15px] text-ink outline-none placeholder:text-ink-3" />
           <VoiceButton lang={SPEECH_LANG[lang]} onText={setText} onFinal={(t) => submit(t)} />
           <button type="submit" disabled={!text.trim() || pending} aria-label="Send"
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border-[1.5px] border-line bg-accent text-accent-ink transition-opacity disabled:opacity-40">
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line bg-accent text-accent-ink transition-opacity disabled:opacity-40">
             <ArrowUp size={18} />
           </button>
         </form>
@@ -107,7 +107,7 @@ function AssistantMessage({ m, selected, onSelect }: { m: ChatMessage; selected:
   const reduce = useReducedMotion()
   return (
     <div className="flex gap-3">
-      <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border-[1.5px] border-line bg-ground font-display text-[13px] font-bold text-accent" aria-hidden>हि</span>
+      <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-line bg-ground font-display text-[13px] font-bold text-accent" aria-hidden>हि</span>
       <div className="min-w-0 flex-1 space-y-3">
         <div className={clsx('md text-[15px] leading-relaxed', m.error ? 'text-debit' : 'text-ink')}>
           <Markdown remarkPlugins={[remarkGfm]}>{m.content}</Markdown>

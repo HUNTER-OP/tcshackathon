@@ -32,7 +32,7 @@ function Trace({ r }: { r: ChatResult }) {
   return (
     <div className="space-y-6 text-[14px]">
       <Row label="Understood as">
-        <p className="text-[16px] font-semibold text-ink"><span className="hl rounded-sm">{intentLabel(r.intent)}</span></p>
+        <p className="text-[16px] font-semibold text-ink"><span className="rounded-md bg-surface-3 px-2 py-0.5">{intentLabel(r.intent)}</span></p>
         {r.intent === 'sensitive_info' && <p className="mt-1.5 text-[12px] text-ink-2">Requests for Aadhaar, PAN, OTP, CVV or passwords are declined by a fixed rule; no AI model or bank record is used.</p>}
         <div className="mt-2 flex items-center gap-2">
           <span className="relative h-1.5 flex-1 rounded-full bg-surface-3">
@@ -89,7 +89,7 @@ function Trace({ r }: { r: ChatResult }) {
       </Row>
 
       <Row label="Answer written by">
-        <span className={clsx('inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[13px] font-medium', model.local ? 'border-[1.5px] border-line bg-surface-3 text-ink' : 'border-[1.5px] border-line bg-accent text-ink')}>
+        <span className={clsx('inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[13px] font-medium', model.local ? 'border border-line bg-surface-3 text-ink' : 'border border-line bg-surface-2 text-ink')}>
           {model.local ? <HardDrive size={14} /> : <Cloud size={14} />}{model.label}
         </span>
         <p className="mt-1.5 text-[12px] text-ink-3">{r.model_used}</p>

@@ -29,7 +29,7 @@ export default function Dashboard() {
       <div className="mx-auto max-w-[1100px] px-4 py-8 sm:px-8">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h1 className="font-display text-[34px] font-bold leading-tight tracking-[-0.02em]"><span className="hl">Operations dashboard</span></h1>
+            <h1 className="font-display text-[34px] font-bold leading-tight tracking-[-0.02em]">Operations dashboard</h1>
             <p className="text-[15px] text-ink-2">Every question Hisab Kitab has answered since the server started. Refreshes every 5 seconds.</p>
           </div>
           {err && <p className="rounded-md bg-debit/15 px-3 py-1.5 text-[13px] text-debit">Can't reach the server.</p>}

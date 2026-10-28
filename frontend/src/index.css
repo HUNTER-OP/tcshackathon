@@ -9,8 +9,8 @@
   --surface: #ffffff;
   --surface-2: #f2f9ec;
   --surface-3: #d3f0c2;
-  --edge: #d9e8cf;
-  --line: #111111;
+  --edge: #e4ede0;
+  --line: #d3e0cd;
   --ink: #111111;
   --ink-2: #3b3b4f;
   --ink-3: #5f6b66;
@@ -38,8 +38,8 @@
   --surface: #14231a;
   --surface-2: #1a2d21;
   --surface-3: #21402c;
-  --edge: #2b4535;
-  --line: #7fbf8c;
+  --edge: #223a2b;
+  --line: #2f4b3a;
   --ink: #eef6ea;
   --ink-2: #c6d5ca;
   --ink-3: #93a99b;
@@ -113,9 +113,10 @@ h1, h2, h3, .font-display { font-family: var(--font-display); }
 .scroll-quiet { scrollbar-width: thin; scrollbar-color: var(--lime) transparent; }
 
 /* white notebook surface with the deck's thick black outline */
-.nb { background: var(--surface); border: 1.5px solid var(--line); border-radius: 22px; }
+.nb { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; }
 /* small flat card inside a notebook */
-.nb-card { background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px; box-shadow: 2px 2px 0 var(--shadow); }
+.nb-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 1px 2px rgba(17, 40, 25, 0.05), 0 8px 20px -10px rgba(17, 40, 25, 0.18); }
+:root[data-theme="dark"] .nb-card { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 24px -12px rgba(0, 0, 0, 0.7); }
 /* highlighter bar, like "Build Better Money Habits" */
 .hl { background: var(--accent); color: var(--accent-ink); padding: 0.05em 0.45em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 
@@ -152,3 +153,7 @@ input[type="range"] { accent-color: var(--ground); width: 100%; }
 :root[data-theme="dark"] .hover\:bg-accent:hover * { color: #111111; }
 /* dark mode: the logo is a white-background JPEG, so show it on its own paper tile */
 :root[data-theme="dark"] img[src="/logo.jpeg"] { mix-blend-mode: normal; filter: none; background: #fff; border-radius: 10px; padding: 3px 8px; }
+
+/* offer: calm cream card with a thin highlighter edge instead of a full yellow block */
+.offer-card { background: #fffbe6; border-color: #f3dc6b; border-left: 4px solid var(--accent); }
+:root[data-theme="dark"] .offer-card { background: #2a2a17; border-color: #5c5424; border-left-color: var(--accent); }
