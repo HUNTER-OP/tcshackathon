@@ -1,0 +1,7 @@
+.env
+.env.txt
+__pycache__/
+.venv/
+node_modules/
+models/
+*.db
