@@ -45,7 +45,7 @@ export default function SpendingCard({ data }: { data: { days: number; total_deb
 
 function Stat({ label, value, tone }: { label: string; value: string; tone?: 'credit' | 'debit' }) {
   return (
-    <div className="rounded-xl border-2 border-edge bg-surface-2 p-3">
+    <div className="rounded-xl border-[1.5px] border-edge bg-surface-2 p-3">
       <p className="text-[12px] text-ink-3">{label}</p>
       <p className={clsx('font-display tabular mt-1 text-[20px] leading-tight', tone === 'credit' ? 'text-credit' : tone === 'debit' ? 'text-debit' : 'text-ink')}>{value}</p>
     </div>

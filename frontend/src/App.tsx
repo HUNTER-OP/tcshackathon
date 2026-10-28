@@ -115,7 +115,7 @@ export default function App() {
           <div className="nb hidden min-h-0 overflow-hidden lg:block">{sidebar}</div>
 
           <main className="nb relative flex min-h-0 min-w-0 flex-col overflow-hidden">
-            <div className="spiral" aria-hidden>{Array.from({ length: 12 }, (_, i) => <span key={i} />)}</div>
+            
             <div className="flex items-center justify-between px-3 py-2 lg:hidden">
               <button type="button" onClick={() => setNavOpen(true)} className="rounded-md p-2 text-ink-2 hover:bg-surface" aria-label="Open menu"><Menu size={18} /></button>
               <img src="/logo.jpeg" alt="Hisab Kitab" className="mix-blend-multiply brightness-[1.1] contrast-[1.15] h-7 w-auto" />

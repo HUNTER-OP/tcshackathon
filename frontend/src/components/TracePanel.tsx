@@ -89,7 +89,7 @@ function Trace({ r }: { r: ChatResult }) {
       </Row>
 
       <Row label="Answer written by">
-        <span className={clsx('inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[13px] font-medium', model.local ? 'border-2 border-line bg-surface-3 text-ink' : 'border-2 border-line bg-accent text-ink')}>
+        <span className={clsx('inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[13px] font-medium', model.local ? 'border-[1.5px] border-line bg-surface-3 text-ink' : 'border-[1.5px] border-line bg-accent text-ink')}>
           {model.local ? <HardDrive size={14} /> : <Cloud size={14} />}{model.label}
         </span>
         <p className="mt-1.5 text-[12px] text-ink-3">{r.model_used}</p>

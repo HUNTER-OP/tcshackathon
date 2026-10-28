@@ -113,9 +113,9 @@ h1, h2, h3, .font-display { font-family: var(--font-display); }
 .scroll-quiet { scrollbar-width: thin; scrollbar-color: var(--lime) transparent; }
 
 /* white notebook surface with the deck's thick black outline */
-.nb { background: var(--surface); border: 3px solid var(--line); border-radius: 28px; }
+.nb { background: var(--surface); border: 1.5px solid var(--line); border-radius: 22px; }
 /* small flat card inside a notebook */
-.nb-card { background: var(--surface); border: 2px solid var(--line); border-radius: 18px; box-shadow: 4px 4px 0 var(--shadow); }
+.nb-card { background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px; box-shadow: 2px 2px 0 var(--shadow); }
 /* highlighter bar, like "Build Better Money Habits" */
 .hl { background: var(--accent); color: var(--accent-ink); padding: 0.05em 0.45em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 
