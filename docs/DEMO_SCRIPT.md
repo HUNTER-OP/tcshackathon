@@ -114,7 +114,7 @@ Each section below lists **Type** (exact text to enter), **Point at** (what to s
 
 **Point at:** total queries, resolution rate, latency, language mix and cloud vs local split.
 
-**Say:** "On our 200-question test set across four languages we hit <!-- EVAL_RESOLUTION --> resolution with a p95 response time of <!-- EVAL_P95 -->, against targets of 80% and 15 seconds. Hisab Kitab: your bank, in your language." *[Relevance, Team work]*
+**Say:** "On our 200-question test set across four languages we hit 89% resolution with a p95 response time of about 6 seconds, against targets of 80% and 15 seconds. Hisab Kitab: your bank, in your language." *[Relevance, Team work]*
 
 > Fill the two placeholders from `eval/results_hybrid.json` before recording. Never quote numbers you haven't measured.
 

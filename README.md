@@ -14,7 +14,17 @@ Customers wait in call-centre queues for simple answers: balance, recent transac
 
 ## Results
 
-<!-- EVAL_RESULTS -->
+**Measured results** (200 held-out questions, 50 per language, `python eval/run_eval.py --mode hybrid`, 2026-10-28):
+
+| Metric | Result | Target |
+|---|---|---|
+| Query resolution | **89.0%** | ≥ 80% |
+| Intent accuracy | 89.0% (en 88, hi 90, hinglish 92, kn 86) | — |
+| Language detection | 99.5% | — |
+| Latency p50 / p95 / max | 1.3 s / 6.0 s / 12.2 s | p95 < 15 s |
+| Intent model (internal split) | 96.4% accuracy, trained in 36 s on RTX PRO 4000 | — |
+
+<!-- EVAL_RESULTS_LOCAL -->
 _Run `eval/run_eval.py` (below) and paste the summary table here._
 
 | Metric | Hybrid (cloud) | Local (offline) |
