@@ -1,4 +1,4 @@
-import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, PanelRight, WifiOff } from 'lucide-react'
 import type { ChatMessage, Customer, Lang, Mode } from './lib/types'
@@ -14,6 +14,15 @@ const store = {
   set: (k: string, v: string) => { try { localStorage.setItem(k, v) } catch { /* storage unavailable */ } },
 }
 const uid = () => Math.random().toString(36).slice(2, 10)
+
+export type Convo = { id: string; customerId: string; mode: Mode; lang: Lang; createdAt: number; updatedAt: number; messages: ChatMessage[] }
+const CONVO_KEY = 'hk-convos'
+const MAX_CONVOS = 40
+const loadConvos = (): Convo[] => {
+  try { const v = JSON.parse(store.get(CONVO_KEY) || '[]'); return Array.isArray(v) ? v : [] } catch { return [] }
+}
+const newConvo = (customerId: string, mode: Mode, lang: Lang): Convo =>
+  ({ id: uid(), customerId, mode, lang, createdAt: Date.now(), updatedAt: Date.now(), messages: [] })
 const viewFromHash = () => (window.location.hash === '#/dashboard' ? 'dashboard' : 'chat') as 'chat' | 'dashboard'
 
 export default function App() {
@@ -22,8 +31,10 @@ export default function App() {
   const [customerId, setCustomerId] = useState('CUST001')
   const [mode, setMode] = useState<Mode>('hybrid')
   const [lang, setLang] = useState<Lang>('en')
-  const [messages, setMessages] = useState<ChatMessage[]>([])
+  const [convos, setConvos] = useState<Convo[]>(loadConvos)
+  const [activeId, setActiveId] = useState<string | null>(null)
   const [pending, setPending] = useState(false)
+  const sendLock = useRef(false) // state updates are async; this blocks a second send before `pending` re-renders
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [online, setOnline] = useState(true)
   const [navOpen, setNavOpen] = useState(false)
@@ -36,6 +47,14 @@ export default function App() {
   })
   useEffect(() => { document.documentElement.dataset.theme = theme; store.set('hk-theme', theme) }, [theme])
   const toggleTheme = useCallback(() => setTheme((t) => (t === 'dark' ? 'light' : 'dark')), [])
+
+  // conversations: saved in this browser so old chats (cards, trace, agent tickets) can be reopened
+  useEffect(() => { store.set(CONVO_KEY, JSON.stringify(convos.slice(0, MAX_CONVOS))) }, [convos])
+  const active = convos.find((c) => c.id === activeId) ?? null
+  const messages = useMemo(() => active?.messages ?? [], [active])
+  const appendTo = useCallback((id: string, m: ChatMessage) => {
+    setConvos((cs) => cs.map((c) => (c.id === id ? { ...c, messages: [...c.messages, m], updatedAt: Date.now() } : c)))
+  }, [])
   useEffect(() => {
     const on = () => setView(viewFromHash())
     window.addEventListener('hashchange', on)
@@ -58,24 +77,34 @@ export default function App() {
   const go = (v: 'chat' | 'dashboard') => { window.location.hash = v === 'dashboard' ? '#/dashboard' : '#/'; setView(v); setNavOpen(false) }
 
   const send = useCallback(async (text: string) => {
-    if (pending) return
+    if (pending || sendLock.current) return
+    sendLock.current = true
+    // the reply always lands in the conversation it was asked in, even if the user switches chats meanwhile
+    let convoId = activeId
+    if (!convoId || !convos.some((c) => c.id === convoId)) {
+      const c = newConvo(customerId, mode, lang)
+      convoId = c.id
+      setConvos((cs) => [c, ...cs])
+      setActiveId(c.id)
+    }
     const user: ChatMessage = { id: uid(), role: 'user', content: text }
     const history = messages.slice(-8).map((m) => ({ role: m.role, content: m.content }))
-    setMessages((ms) => [...ms, user])
+    appendTo(convoId, user)
     setPending(true)
     try {
       const r = await sendChat({ message: text, customer_id: customerId, mode, history })
       const a: ChatMessage = { id: uid(), role: 'assistant', content: r.reply, result: r }
-      setMessages((ms) => [...ms, a])
+      appendTo(convoId, a)
       setSelectedId(a.id)
       setOnline(true)
     } catch (e) {
-      setMessages((ms) => [...ms, { id: uid(), role: 'assistant', content: `The assistant server didn't answer (${(e as Error).message.slice(0, 80)}). Check that the backend is running on port 8000, then send your question again.`, error: true }])
+      appendTo(convoId, { id: uid(), role: 'assistant', content: `The assistant server didn't answer (${(e as Error).message.slice(0, 80)}). Check that the backend is running, then send your question again.`, error: true })
       setOnline(false)
     } finally {
+      sendLock.current = false
       setPending(false)
     }
-  }, [pending, messages, customerId, mode])
+  }, [pending, messages, customerId, mode, lang, activeId, convos, appendTo])
 
   // demo-only: ?demo=1&script=a|b|c sends prompts one after another (for screenshots / UI checks)
   const script = new URLSearchParams(window.location.search).get('script')
@@ -91,16 +120,41 @@ export default function App() {
     return m?.result ?? null
   }, [messages, selectedId])
 
+  // start a fresh chat; an empty current chat is reused instead of piling up blank entries
+  const startNew = (cid: string, l: Lang) => {
+    const c = newConvo(cid, mode, l)
+    setConvos((cs) => [c, ...cs.filter((x) => x.messages.length > 0)])
+    setActiveId(c.id); setSelectedId(null); setNavOpen(false); go('chat')
+  }
   const pickCustomer = (id: string) => {
     setCustomerId(id)
-    const c = customers.find((x) => x.id === id)
-    if (c) setLang(c.preferred_language)
-    setMessages([]); setSelectedId(null); setNavOpen(false)
+    const l = customers.find((x) => x.id === id)?.preferred_language ?? lang
+    setLang(l)
+    startNew(id, l)
   }
+  const openConvo = (id: string) => {
+    const c = convos.find((x) => x.id === id)
+    if (!c) return
+    setActiveId(c.id); setCustomerId(c.customerId); setMode(c.mode); setLang(c.lang)
+    setSelectedId(null); setNavOpen(false); go('chat')
+  }
+  const deleteConvo = (id: string) => {
+    setConvos((cs) => cs.filter((c) => c.id !== id))
+    if (id === activeId) { setActiveId(null); setSelectedId(null) }
+  }
+  const history = convos.filter((c) => c.messages.length > 0).map((c) => ({
+    id: c.id,
+    title: c.messages.find((m) => m.role === 'user')?.content ?? 'New conversation',
+    customerName: customers.find((x) => x.id === c.customerId)?.name ?? c.customerId,
+    updatedAt: c.updatedAt,
+    agentCalled: c.messages.some((m) => m.result?.handoff),
+    active: c.id === activeId,
+  }))
 
   const sidebar = (
     <Sidebar customers={customers} customerId={customerId} onCustomer={pickCustomer} mode={mode} onMode={setMode} lang={lang} onLang={setLang}
-      view={view} onView={go} onNewChat={() => { setMessages([]); setSelectedId(null); go('chat') }} theme={theme} onToggleTheme={toggleTheme} />
+      view={view} onView={go} onNewChat={() => startNew(customerId, lang)} theme={theme} onToggleTheme={toggleTheme}
+      conversations={history} onOpenConvo={openConvo} onDeleteConvo={deleteConvo} />
   )
 
   return (

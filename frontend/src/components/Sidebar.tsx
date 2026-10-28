@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { BarChart3, Cloud, ExternalLink, HardDrive, Headset, Lock, MessageSquarePlus, MessagesSquare, Moon, Sun } from 'lucide-react'
+import { BarChart3, Cloud, ExternalLink, HardDrive, Headset, Lock, MessageSquarePlus, MessagesSquare, Moon, Sun, Trash2 } from 'lucide-react'
 import type { Customer, Lang, Mode } from '../lib/types'
 import { LANG_LABEL } from '../lib/format'
 import { API } from '../lib/api'
@@ -17,6 +17,19 @@ type Props = {
   onNewChat: () => void
   theme: 'light' | 'dark'
   onToggleTheme: () => void
+  conversations: ConvoItem[]
+  onOpenConvo: (id: string) => void
+  onDeleteConvo: (id: string) => void
+}
+
+export type ConvoItem = { id: string; title: string; customerName: string; updatedAt: number; agentCalled: boolean; active: boolean }
+
+const ago = (t: number) => {
+  const s = Math.round((Date.now() - t) / 1000)
+  if (s < 60) return 'just now'
+  if (s < 3600) return `${Math.floor(s / 60)} min ago`
+  if (s < 86400) return `${Math.floor(s / 3600)} h ago`
+  return new Date(t).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })
 }
 
 const LANGS: Lang[] = ['en', 'hi', 'kn', 'hinglish']
@@ -40,6 +53,33 @@ export default function Sidebar(p: Props) {
         </a>
         <NavBtn on={false} onClick={p.onNewChat} icon={<MessageSquarePlus size={16} />}>New conversation</NavBtn>
       </div>
+
+      <section aria-labelledby="history-h">
+        <h2 id="history-h" className="mb-2 px-1 text-[12px] font-semibold text-ink-3">Recent conversations</h2>
+        {p.conversations.length === 0
+          ? <p className="px-2 text-[13px] text-ink-3">Your chats are saved here so you can reopen them.</p>
+          : (
+            <ul className="flex max-h-56 flex-col gap-0.5 overflow-y-auto scroll-quiet">
+              {p.conversations.map((c) => (
+                <li key={c.id} className="group relative">
+                  <button type="button" onClick={() => p.onOpenConvo(c.id)} aria-current={c.active ? 'true' : undefined}
+                    className={clsx('flex w-full flex-col rounded-xl border px-2.5 py-1.5 pr-8 text-left transition-colors',
+                      c.active ? 'border-ground bg-surface-3' : 'border-transparent hover:bg-surface-2')}>
+                    <span className="truncate text-[13.5px] font-medium text-ink">{c.title}</span>
+                    <span className="flex items-center gap-1.5 text-[11.5px] text-ink-3">
+                      <span className="truncate">{c.customerName} · {ago(c.updatedAt)}</span>
+                      {c.agentCalled && <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-surface-3 px-1.5 text-[11px] font-medium text-ground"><Headset size={11} />Agent</span>}
+                    </span>
+                  </button>
+                  <button type="button" onClick={() => p.onDeleteConvo(c.id)} aria-label={`Delete conversation: ${c.title}`}
+                    className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-md p-1 text-ink-3 opacity-0 transition-opacity hover:bg-surface-2 hover:text-debit focus:opacity-100 group-hover:opacity-100">
+                    <Trash2 size={14} />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+      </section>
 
       <section aria-labelledby="persona-h">
         <h2 id="persona-h" className="mb-2 px-1 text-[12px] font-semibold text-ink-3">Signed in as</h2>
