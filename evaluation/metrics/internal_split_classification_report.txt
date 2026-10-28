@@ -1,0 +1,23 @@
+                     precision    recall  f1-score   support
+
+      check_balance      0.966     0.977     0.971        86
+transaction_history      0.935     0.956     0.945        90
+   spending_summary      0.974     1.000     0.987        38
+   loan_eligibility      0.931     0.931     0.931        29
+    emi_calculation      0.963     0.963     0.963       108
+     interest_rates      1.000     1.000     1.000        30
+      loan_products      0.981     0.962     0.971       105
+         card_block      0.980     0.990     0.985       101
+      card_activate      1.000     0.979     0.989        94
+         card_issue      0.905     0.950     0.927       100
+     transfer_money      0.910     0.965     0.937       115
+       fees_charges      0.920     0.964     0.941        83
+         atm_branch      0.991     0.982     0.987       113
+       password_pin      0.992     0.984     0.988       129
+     dispute_refund      0.967     0.871     0.917       101
+        human_agent      1.000     1.000     1.000        93
+        faq_general      0.931     0.888     0.909       107
+
+           accuracy                          0.961      1522
+          macro avg      0.961     0.962     0.962      1522
+       weighted avg      0.961     0.961     0.961      1522

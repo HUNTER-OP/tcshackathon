@@ -1,0 +1,51 @@
+
+=== Hisab Kitab eval — mode=local  n=200 ===
+intent accuracy   88.5%
+language accuracy 99.5%
+resolution rate   88.5%   (target >= 80%)
+latency ms        p50 2270.0  p95 8151.0  max 13396.0   (target p95 < 15000)
+models            {'ollama:qwen2.5:7b-instruct': 191, 'rules': 9}   errors 0
+
+lang       n   intent  resolved
+en         50    88.0%    88.0%
+hi         50    92.0%    92.0%
+hinglish   50    88.0%    88.0%
+kn         50    86.0%    86.0%
+
+intent                 n   accuracy
+atm_branch              8   100.0%
+card_activate           8    75.0%
+card_block              8   100.0%
+card_issue              8    87.5%
+check_balance          21   100.0%
+dispute_refund          8   100.0%
+emi_calculation        16    87.5%
+faq_general             8    75.0%
+fees_charges            8    87.5%
+human_agent             8    62.5%
+interest_rates         19    94.7%
+loan_eligibility       19    94.7%
+loan_products           8    62.5%
+password_pin            8    87.5%
+spending_summary       19    94.7%
+transaction_history    18    83.3%
+transfer_money          8    75.0%
+
+failures (23, first 15):
+  [en] 'list everything I paid in the past 10 days'  expected=transaction_history got=transfer_money
+  [en] 'which category am I overspending on'  expected=spending_summary got=dispute_refund
+  [en] 'can i borrow ₹75,000 for a bike'  expected=loan_eligibility got=transfer_money
+  [en] 'current home loan ROI please'  expected=interest_rates got=emi_calculation
+  [en] 'got my new debit card in the post, how do i switch it on'  expected=card_activate got=card_block
+  [en] 'good morning'  expected=faq_general got=spending_summary
+  [hi] 'पिछले 10 दिन में कौन से पेमेंट गए'  expected=transaction_history got=card_issue
+  [hi] 'बैंक में किस किस तरह के लोन मिलते हैं'  expected=loan_products got=loan_eligibility
+  [hi] 'नया एटीएम पिन कैसे बनाऊँ'  expected=password_pin got=atm_branch
+  [hi] 'बॉट नहीं, इंसान से शिकायत करनी है'  expected=human_agent got=faq_general
+  [kn] 'ಬ್ಯಾಂಕ್\u200cನಲ್ಲಿ ಯಾವ ಯಾವ ಸಾಲಗಳು ಸಿಗುತ್ತವೆ'  expected=loan_products got=loan_eligibility
+  [kn] 'ಓದಿಗೆ ಸಾಲದ ಅರ್ಜಿ ಶುರು ಮಾಡಬೇಕು'  expected=loan_products got=fees_charges
+  [kn] 'ಅಮ್ಮನ ಖಾತೆಗೆ 5000 ರೂಪಾಯಿ ಕಳಿಸಿ'  expected=transfer_money got=spending_summary
+  [kn] 'ನಿನ್ನೆ ಕಳಿಸಿದ ಹಣ ಸ್ನೇಹಿತನಿಗೆ ತಲುಪಿಲ್ಲ'  expected=transfer_money got=faq_general
+  [kn] 'ಎಟಿಎಂನಲ್ಲಿ ಹಣ ತೆಗೆದಾಗ ಶುಲ್ಕ ಯಾಕೆ ಕಡಿತ ಆಯ್ತು'  expected=fees_charges got=faq_general
+
+wall time 326.2s  ->  D:\Hisab_kitab\eval\results_local.json

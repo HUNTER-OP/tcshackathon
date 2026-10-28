@@ -1,0 +1,392 @@
+{
+  "model": {
+    "accuracy": 0.9606,
+    "macro_f1": 0.9617,
+    "per_language": {
+      "en": 0.9685,
+      "hi": 0.9485,
+      "kn": 0.9481,
+      "hinglish": 0.9214
+    },
+    "n_test": 1522,
+    "base_model": "distilbert-base-multilingual-cased",
+    "train_seconds": 34.2
+  },
+  "internal_split": {
+    "n": 1522,
+    "accuracy": 0.9606,
+    "macro_f1": 0.9617,
+    "weighted_f1": 0.9605,
+    "per_language": {
+      "en": {
+        "n": 1111,
+        "accuracy": 0.9685,
+        "macro_f1": 0.9739
+      },
+      "hi": {
+        "n": 136,
+        "accuracy": 0.9485,
+        "macro_f1": 0.9342
+      },
+      "kn": {
+        "n": 135,
+        "accuracy": 0.9481,
+        "macro_f1": 0.9515
+      },
+      "hinglish": {
+        "n": 140,
+        "accuracy": 0.9214,
+        "macro_f1": 0.9234
+      }
+    },
+    "language_detection_accuracy": null,
+    "ms_per_query": 3.15,
+    "per_intent": {
+      "check_balance": {
+        "precision": 0.9655,
+        "recall": 0.9767,
+        "f1-score": 0.9711,
+        "support": 86.0
+      },
+      "transaction_history": {
+        "precision": 0.9348,
+        "recall": 0.9556,
+        "f1-score": 0.9451,
+        "support": 90.0
+      },
+      "spending_summary": {
+        "precision": 0.9744,
+        "recall": 1.0,
+        "f1-score": 0.987,
+        "support": 38.0
+      },
+      "loan_eligibility": {
+        "precision": 0.931,
+        "recall": 0.931,
+        "f1-score": 0.931,
+        "support": 29.0
+      },
+      "emi_calculation": {
+        "precision": 0.963,
+        "recall": 0.963,
+        "f1-score": 0.963,
+        "support": 108.0
+      },
+      "interest_rates": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 30.0
+      },
+      "loan_products": {
+        "precision": 0.9806,
+        "recall": 0.9619,
+        "f1-score": 0.9712,
+        "support": 105.0
+      },
+      "card_block": {
+        "precision": 0.9804,
+        "recall": 0.9901,
+        "f1-score": 0.9852,
+        "support": 101.0
+      },
+      "card_activate": {
+        "precision": 1.0,
+        "recall": 0.9787,
+        "f1-score": 0.9892,
+        "support": 94.0
+      },
+      "card_issue": {
+        "precision": 0.9048,
+        "recall": 0.95,
+        "f1-score": 0.9268,
+        "support": 100.0
+      },
+      "transfer_money": {
+        "precision": 0.9098,
+        "recall": 0.9652,
+        "f1-score": 0.9367,
+        "support": 115.0
+      },
+      "fees_charges": {
+        "precision": 0.9195,
+        "recall": 0.9639,
+        "f1-score": 0.9412,
+        "support": 83.0
+      },
+      "atm_branch": {
+        "precision": 0.9911,
+        "recall": 0.9823,
+        "f1-score": 0.9867,
+        "support": 113.0
+      },
+      "password_pin": {
+        "precision": 0.9922,
+        "recall": 0.9845,
+        "f1-score": 0.9883,
+        "support": 129.0
+      },
+      "dispute_refund": {
+        "precision": 0.967,
+        "recall": 0.8713,
+        "f1-score": 0.9167,
+        "support": 101.0
+      },
+      "human_agent": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 93.0
+      },
+      "faq_general": {
+        "precision": 0.9314,
+        "recall": 0.8879,
+        "f1-score": 0.9091,
+        "support": 107.0
+      }
+    }
+  },
+  "heldout_200": {
+    "n": 200,
+    "accuracy": 0.855,
+    "macro_f1": 0.8286,
+    "weighted_f1": 0.8569,
+    "per_language": {
+      "en": {
+        "n": 50,
+        "accuracy": 0.8,
+        "macro_f1": 0.7773
+      },
+      "hi": {
+        "n": 50,
+        "accuracy": 0.92,
+        "macro_f1": 0.8848
+      },
+      "kn": {
+        "n": 50,
+        "accuracy": 0.88,
+        "macro_f1": 0.8309
+      },
+      "hinglish": {
+        "n": 50,
+        "accuracy": 0.82,
+        "macro_f1": 0.78
+      }
+    },
+    "language_detection_accuracy": 0.995,
+    "ms_per_query": 2.92,
+    "per_intent": {
+      "check_balance": {
+        "precision": 1.0,
+        "recall": 0.8571,
+        "f1-score": 0.9231,
+        "support": 21.0
+      },
+      "transaction_history": {
+        "precision": 1.0,
+        "recall": 0.8889,
+        "f1-score": 0.9412,
+        "support": 18.0
+      },
+      "spending_summary": {
+        "precision": 0.75,
+        "recall": 0.9474,
+        "f1-score": 0.8372,
+        "support": 19.0
+      },
+      "loan_eligibility": {
+        "precision": 0.8571,
+        "recall": 0.9474,
+        "f1-score": 0.9,
+        "support": 19.0
+      },
+      "emi_calculation": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1-score": 0.9333,
+        "support": 16.0
+      },
+      "interest_rates": {
+        "precision": 1.0,
+        "recall": 0.9474,
+        "f1-score": 0.973,
+        "support": 19.0
+      },
+      "loan_products": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1-score": 0.9333,
+        "support": 8.0
+      },
+      "card_block": {
+        "precision": 0.7778,
+        "recall": 0.875,
+        "f1-score": 0.8235,
+        "support": 8.0
+      },
+      "card_activate": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6667,
+        "support": 8.0
+      },
+      "card_issue": {
+        "precision": 0.7,
+        "recall": 0.875,
+        "f1-score": 0.7778,
+        "support": 8.0
+      },
+      "transfer_money": {
+        "precision": 0.8,
+        "recall": 0.5,
+        "f1-score": 0.6154,
+        "support": 8.0
+      },
+      "fees_charges": {
+        "precision": 0.8889,
+        "recall": 1.0,
+        "f1-score": 0.9412,
+        "support": 8.0
+      },
+      "atm_branch": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "password_pin": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1-score": 0.9333,
+        "support": 8.0
+      },
+      "dispute_refund": {
+        "precision": 0.4706,
+        "recall": 1.0,
+        "f1-score": 0.64,
+        "support": 8.0
+      },
+      "human_agent": {
+        "precision": 0.8333,
+        "recall": 0.625,
+        "f1-score": 0.7143,
+        "support": 8.0
+      },
+      "faq_general": {
+        "precision": 0.5714,
+        "recall": 0.5,
+        "f1-score": 0.5333,
+        "support": 8.0
+      }
+    }
+  },
+  "datasets": {
+    "files": [
+      {
+        "path": "data/raw/banking77_train.csv",
+        "description": "Banking77 (PolyAI), CC-BY-4.0 — github.com/PolyAI-LDN/task-specific-datasets",
+        "rows": 10003
+      },
+      {
+        "path": "data/raw/banking77_test.csv",
+        "description": "Banking77 test split",
+        "rows": 3079
+      },
+      {
+        "path": "data/raw/bitext_banking.csv",
+        "description": "Bitext Retail Banking (Hugging Face), offensive variants removed",
+        "rows": 21895
+      },
+      {
+        "path": "data/processed/llm_paraphrases.jsonl",
+        "description": "LLM paraphrases (Gemini / Groq / Ollama), app/ml/augment_llm.py",
+        "rows": 1400
+      },
+      {
+        "path": "data/processed/intent_train.jsonl",
+        "description": "Final training set (app/ml/build_dataset.py)",
+        "rows": 11164
+      },
+      {
+        "path": "data/processed/intent_test.jsonl",
+        "description": "Internal test split (12%)",
+        "rows": 1522
+      },
+      {
+        "path": "eval/queries.jsonl",
+        "description": "Held-out test set, 50 per language",
+        "rows": 200
+      },
+      {
+        "path": "data/logs/query_logs.txt",
+        "description": "Synthetic customer query logs (text format)",
+        "rows": 5002
+      },
+      {
+        "path": "backend/app/products.json",
+        "description": "Bank products: rates, loans, fees, FAQ",
+        "rows": 1
+      }
+    ],
+    "train_by_language": {
+      "en": 8249,
+      "kn": 940,
+      "hinglish": 1002,
+      "hi": 973
+    },
+    "train_by_intent": {
+      "human_agent": 788,
+      "dispute_refund": 778,
+      "loan_products": 777,
+      "faq_general": 776,
+      "emi_calculation": 773,
+      "atm_branch": 767,
+      "card_block": 760,
+      "password_pin": 751,
+      "fees_charges": 743,
+      "check_balance": 707,
+      "card_issue": 704,
+      "transaction_history": 703,
+      "card_activate": 700,
+      "transfer_money": 690,
+      "interest_rates": 253,
+      "loan_eligibility": 252,
+      "spending_summary": 242
+    },
+    "heldout_by_language": {
+      "en": 50,
+      "hi": 50,
+      "kn": 50,
+      "hinglish": 50
+    },
+    "synthetic_bank_db": {
+      "customers": 50,
+      "accounts": 67,
+      "transactions": 8597,
+      "cards": 94,
+      "loans": 13
+    }
+  },
+  "end_to_end_hybrid": {
+    "n": 200,
+    "intent_accuracy": 0.875,
+    "language_accuracy": 0.995,
+    "resolution_rate": 0.875,
+    "latency_ms": {
+      "p50": 1373.5,
+      "p95": 5841.0,
+      "max": 14427.0
+    }
+  },
+  "end_to_end_local": {
+    "n": 200,
+    "intent_accuracy": 0.885,
+    "language_accuracy": 0.995,
+    "resolution_rate": 0.885,
+    "latency_ms": {
+      "p50": 2270.0,
+      "p95": 8151.0,
+      "max": 13396.0
+    }
+  }
+}

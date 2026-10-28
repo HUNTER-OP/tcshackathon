@@ -1,0 +1,3 @@
+llm paraphrases 1400 kept 1400
+rows 12686 test 1522 [('faq_general', 883), ('loan_products', 882), ('emi_calculation', 881), ('human_agent', 881), ('password_pin', 880), ('atm_branch', 880), ('dispute_refund', 879), ('card_block', 861), ('fees_charges', 826), ('transfer_money', 805), ('card_issue', 804), ('card_activate', 794), ('transaction_history', 793), ('check_balance', 793), ('interest_rates', 283), ('loan_eligibility', 281), ('spending_summary', 280)]
+langs Counter({'en': 9360, 'hinglish': 1142, 'hi': 1109, 'kn': 1075})

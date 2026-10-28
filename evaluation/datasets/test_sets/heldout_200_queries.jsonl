@@ -1,0 +1,200 @@
+{"text": "hey how much cash is sitting in my savings rn", "lang": "en", "intent": "check_balance", "customer_id": "CUST001"}
+{"text": "whats the available balence in my account", "lang": "en", "intent": "check_balance", "customer_id": "CUST001"}
+{"text": "could you check how much I've got in the bank today", "lang": "en", "intent": "check_balance", "customer_id": "CUST001"}
+{"text": "need to know my a/c balance before paying rent", "lang": "en", "intent": "check_balance", "customer_id": "CUST001"}
+{"text": "pull up the last few debits from my account", "lang": "en", "intent": "transaction_history", "customer_id": "CUST001"}
+{"text": "did my salary credit show up? show me recent entries", "lang": "en", "intent": "transaction_history", "customer_id": "CUST001"}
+{"text": "give me a mini statement", "lang": "en", "intent": "transaction_history", "customer_id": "CUST001"}
+{"text": "list everything I paid in the past 10 days", "lang": "en", "intent": "transaction_history", "customer_id": "CUST001"}
+{"text": "break down my expenses for the last 30 days", "lang": "en", "intent": "spending_summary", "customer_id": "CUST001"}
+{"text": "how much went on swiggy and zomato this month", "lang": "en", "intent": "spending_summary", "customer_id": "CUST001"}
+{"text": "which category am I overspending on", "lang": "en", "intent": "spending_summary", "customer_id": "CUST001"}
+{"text": "total money spent on shopping recently?", "lang": "en", "intent": "spending_summary", "customer_id": "CUST001"}
+{"text": "is a 3.5 lakh car loan doable on my salary", "lang": "en", "intent": "loan_eligibility", "customer_id": "CUST001"}
+{"text": "would I qualify for a home loan of 40 lakh", "lang": "en", "intent": "loan_eligibility", "customer_id": "CUST001"}
+{"text": "whats the biggest personal loan you'd sanction me", "lang": "en", "intent": "loan_eligibility", "customer_id": "CUST001"}
+{"text": "can i borrow ₹75,000 for a bike", "lang": "en", "intent": "loan_eligibility", "customer_id": "CUST001"}
+{"text": "monthly payment on 6 lakh over 4 years?", "lang": "en", "intent": "emi_calculation", "customer_id": "CUST001"}
+{"text": "work out the installment for a ₹12,00,000 home loan for 20 years", "lang": "en", "intent": "emi_calculation", "customer_id": "CUST001"}
+{"text": "how much do I still pay each month on my loan", "lang": "en", "intent": "emi_calculation", "customer_id": "CUST001"}
+{"text": "what's the emi if i take 2 lakh for 24 months", "lang": "en", "intent": "emi_calculation", "customer_id": "CUST001"}
+{"text": "whats the rate on a 1 year fixed deposit", "lang": "en", "intent": "interest_rates", "customer_id": "CUST001"}
+{"text": "current home loan ROI please", "lang": "en", "intent": "interest_rates", "customer_id": "CUST001"}
+{"text": "how much interest does my savings account earn", "lang": "en", "intent": "interest_rates", "customer_id": "CUST001"}
+{"text": "fd rates for senior citizens?", "lang": "en", "intent": "interest_rates", "customer_id": "CUST001"}
+{"text": "what kinds of loans can I take from you", "lang": "en", "intent": "loan_products", "customer_id": "CUST001"}
+{"text": "i'd like to start an application for an education loan", "lang": "en", "intent": "loan_products", "customer_id": "CUST001"}
+{"text": "my debit card got stolen at the mall, freeze it now", "lang": "en", "intent": "card_block", "customer_id": "CUST001"}
+{"text": "can't find my credit card anywhere, please disable it", "lang": "en", "intent": "card_block", "customer_id": "CUST001"}
+{"text": "got my new debit card in the post, how do i switch it on", "lang": "en", "intent": "card_activate", "customer_id": "CUST001"}
+{"text": "turn on international transactions for my card, travelling to dubai", "lang": "en", "intent": "card_activate", "customer_id": "CUST001"}
+{"text": "its been 10 days and my replacement card still hasnt come", "lang": "en", "intent": "card_issue", "customer_id": "CUST001"}
+{"text": "tap to pay isn't working on my card at all", "lang": "en", "intent": "card_issue", "customer_id": "CUST001"}
+{"text": "send 5000 to my mom's account", "lang": "en", "intent": "transfer_money", "customer_id": "CUST001"}
+{"text": "money i sent yesterday never reached my friend", "lang": "en", "intent": "transfer_money", "customer_id": "CUST001"}
+{"text": "why did you deduct a fee on my atm withdrawl", "lang": "en", "intent": "fees_charges", "customer_id": "CUST001"}
+{"text": "how much is the yearly charge on the platinum card", "lang": "en", "intent": "fees_charges", "customer_id": "CUST001"}
+{"text": "any ATM close to Koramangala?", "lang": "en", "intent": "atm_branch", "customer_id": "CUST001"}
+{"text": "what time does the branch close on saturdays", "lang": "en", "intent": "atm_branch", "customer_id": "CUST001"}
+{"text": "locked out of netbanking, forgot password", "lang": "en", "intent": "password_pin", "customer_id": "CUST001"}
+{"text": "how do I generate a fresh ATM pin", "lang": "en", "intent": "password_pin", "customer_id": "CUST001"}
+{"text": "there's a payment of 2,999 I never made", "lang": "en", "intent": "dispute_refund", "customer_id": "CUST001"}
+{"text": "merchant refunded me a week ago but nothing in my account", "lang": "en", "intent": "dispute_refund", "customer_id": "CUST001"}
+{"text": "put me through to a real agent please", "lang": "en", "intent": "human_agent", "customer_id": "CUST001"}
+{"text": "i want to file a complaint with a person not a bot", "lang": "en", "intent": "human_agent", "customer_id": "CUST001"}
+{"text": "good morning", "lang": "en", "intent": "faq_general", "customer_id": "CUST001"}
+{"text": "what documents do I need to open a savings account", "lang": "en", "intent": "faq_general", "customer_id": "CUST001"}
+{"text": "मेरे सेविंग खाते में अभी कितना पैसा है", "lang": "hi", "intent": "check_balance", "customer_id": "CUST002"}
+{"text": "बैलेंस कितना बचा है बताइये ज़रा", "lang": "hi", "intent": "check_balance", "customer_id": "CUST002"}
+{"text": "खाते में शेष राशि जाननी है", "lang": "hi", "intent": "check_balance", "customer_id": "CUST002"}
+{"text": "आज मेरा अकाउंट बैलेंस क्या दिख रहा है", "lang": "hi", "intent": "check_balance", "customer_id": "CUST002"}
+{"text": "पिछले हफ्ते के सारे लेन-देन दिखा दो", "lang": "hi", "intent": "transaction_history", "customer_id": "CUST002"}
+{"text": "सैलरी आई या नहीं, हाल की एंट्री दिखाओ", "lang": "hi", "intent": "transaction_history", "customer_id": "CUST002"}
+{"text": "मिनी स्टेटमेंट चाहिए", "lang": "hi", "intent": "transaction_history", "customer_id": "CUST002"}
+{"text": "पिछले 10 दिन में कौन से पेमेंट गए", "lang": "hi", "intent": "transaction_history", "customer_id": "CUST002"}
+{"text": "पिछले महीने मैंने खाने पर कितना खर्च किया", "lang": "hi", "intent": "spending_summary", "customer_id": "CUST002"}
+{"text": "इस महीने शॉपिंग में कितने पैसे उड़ गए", "lang": "hi", "intent": "spending_summary", "customer_id": "CUST002"}
+{"text": "मेरे खर्चे किस चीज़ पर सबसे ज़्यादा हो रहे हैं", "lang": "hi", "intent": "spending_summary", "customer_id": "CUST002"}
+{"text": "कुल खर्च का हिसाब दो", "lang": "hi", "intent": "spending_summary", "customer_id": "CUST002"}
+{"text": "मेरी तनख्वाह पर 8 लाख का कार लोन मिल जाएगा क्या", "lang": "hi", "intent": "loan_eligibility", "customer_id": "CUST002"}
+{"text": "क्या मैं 25 लाख के होम लोन के लायक हूँ", "lang": "hi", "intent": "loan_eligibility", "customer_id": "CUST002"}
+{"text": "मुझे ज़्यादा से ज़्यादा कितना पर्सनल लोन मिलेगा", "lang": "hi", "intent": "loan_eligibility", "customer_id": "CUST002"}
+{"text": "3 लाख का लोन मेरे लिए संभव है?", "lang": "hi", "intent": "loan_eligibility", "customer_id": "CUST002"}
+{"text": "6 लाख पर 4 साल की किस्त कितनी बनेगी", "lang": "hi", "intent": "emi_calculation", "customer_id": "CUST002"}
+{"text": "20 लाख होम लोन की 15 साल की EMI निकालिए", "lang": "hi", "intent": "emi_calculation", "customer_id": "CUST002"}
+{"text": "मेरे चल रहे लोन की महीने की किस्त कितनी है", "lang": "hi", "intent": "emi_calculation", "customer_id": "CUST002"}
+{"text": "2 लाख 24 महीने के लिए लूँ तो EMI कितनी", "lang": "hi", "intent": "emi_calculation", "customer_id": "CUST002"}
+{"text": "एक साल की एफडी पर कितना ब्याज मिलेगा", "lang": "hi", "intent": "interest_rates", "customer_id": "CUST002"}
+{"text": "होम लोन का ब्याज दर अभी क्या चल रहा है", "lang": "hi", "intent": "interest_rates", "customer_id": "CUST002"}
+{"text": "बचत खाते पर ब्याज कितने प्रतिशत है", "lang": "hi", "intent": "interest_rates", "customer_id": "CUST002"}
+{"text": "बुज़ुर्गों के लिए एफडी दर क्या है", "lang": "hi", "intent": "interest_rates", "customer_id": "CUST002"}
+{"text": "बैंक में किस किस तरह के लोन मिलते हैं", "lang": "hi", "intent": "loan_products", "customer_id": "CUST002"}
+{"text": "पढ़ाई के लिए लोन का आवेदन शुरू करना है", "lang": "hi", "intent": "loan_products", "customer_id": "CUST002"}
+{"text": "बाज़ार में मेरा डेबिट कार्ड चोरी हो गया, अभी बंद करो", "lang": "hi", "intent": "card_block", "customer_id": "CUST002"}
+{"text": "क्रेडिट कार्ड नहीं मिल रहा, उसे फ्रीज़ कर दीजिए", "lang": "hi", "intent": "card_block", "customer_id": "CUST002"}
+{"text": "नया डेबिट कार्ड मिल गया है, उसे चालू कैसे करूँ", "lang": "hi", "intent": "card_activate", "customer_id": "CUST002"}
+{"text": "विदेश जा रहा हूँ, कार्ड पर अंतरराष्ट्रीय लेनदेन चालू करो", "lang": "hi", "intent": "card_activate", "customer_id": "CUST002"}
+{"text": "दस दिन हो गए नया कार्ड अब तक नहीं पहुँचा", "lang": "hi", "intent": "card_issue", "customer_id": "CUST002"}
+{"text": "दुकान पर कार्ड टैप करने से पेमेंट नहीं हो रहा", "lang": "hi", "intent": "card_issue", "customer_id": "CUST002"}
+{"text": "माँ के खाते में 5000 रुपये भेज दो", "lang": "hi", "intent": "transfer_money", "customer_id": "CUST002"}
+{"text": "कल जो पैसे भेजे थे वो दोस्त को नहीं मिले", "lang": "hi", "intent": "transfer_money", "customer_id": "CUST002"}
+{"text": "एटीएम से पैसे निकालने पर शुल्क क्यों कटा", "lang": "hi", "intent": "fees_charges", "customer_id": "CUST002"}
+{"text": "प्लैटिनम कार्ड का सालाना चार्ज कितना है", "lang": "hi", "intent": "fees_charges", "customer_id": "CUST002"}
+{"text": "गोमती नगर के पास कोई एटीएम है क्या", "lang": "hi", "intent": "atm_branch", "customer_id": "CUST002"}
+{"text": "शाखा शनिवार को कितने बजे बंद होती है", "lang": "hi", "intent": "atm_branch", "customer_id": "CUST002"}
+{"text": "नेटबैंकिंग का पासवर्ड भूल गई हूँ", "lang": "hi", "intent": "password_pin", "customer_id": "CUST002"}
+{"text": "नया एटीएम पिन कैसे बनाऊँ", "lang": "hi", "intent": "password_pin", "customer_id": "CUST002"}
+{"text": "2999 का एक पेमेंट दिख रहा है जो मैंने किया ही नहीं", "lang": "hi", "intent": "dispute_refund", "customer_id": "CUST002"}
+{"text": "दुकानदार ने रिफंड किया था पर खाते में नहीं आया", "lang": "hi", "intent": "dispute_refund", "customer_id": "CUST002"}
+{"text": "मुझे किसी असली कर्मचारी से बात करनी है", "lang": "hi", "intent": "human_agent", "customer_id": "CUST002"}
+{"text": "बॉट नहीं, इंसान से शिकायत करनी है", "lang": "hi", "intent": "human_agent", "customer_id": "CUST002"}
+{"text": "सुप्रभात", "lang": "hi", "intent": "faq_general", "customer_id": "CUST002"}
+{"text": "बचत खाता खोलने के लिए कौन से कागज़ चाहिए", "lang": "hi", "intent": "faq_general", "customer_id": "CUST002"}
+{"text": "क्या 50 हज़ार का लोन मिलेगा मुझे", "lang": "hi", "intent": "loan_eligibility", "customer_id": "CUST002"}
+{"text": "पिछले 30 दिनों के खर्च का ब्यौरा", "lang": "hi", "intent": "spending_summary", "customer_id": "CUST002"}
+{"text": "मेरा चालू बैलेंस क्या है", "lang": "hi", "intent": "check_balance", "customer_id": "CUST002"}
+{"text": "आरडी पर ब्याज दर बताइए", "lang": "hi", "intent": "interest_rates", "customer_id": "CUST002"}
+{"text": "ನನ್ನ ಉಳಿತಾಯ ಖಾತೆಯಲ್ಲಿ ಈಗ ಎಷ್ಟು ದುಡ್ಡಿದೆ", "lang": "kn", "intent": "check_balance", "customer_id": "CUST003"}
+{"text": "ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು ಉಳಿದಿದೆ ಹೇಳ್ತೀರಾ", "lang": "kn", "intent": "check_balance", "customer_id": "CUST003"}
+{"text": "ಖಾತೆಯ ಶೇಷ ಮೊತ್ತ ತಿಳಿಯಬೇಕು", "lang": "kn", "intent": "check_balance", "customer_id": "CUST003"}
+{"text": "ಇವತ್ತು ನನ್ನ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಏನು", "lang": "kn", "intent": "check_balance", "customer_id": "CUST003"}
+{"text": "ಕಳೆದ ವಾರದ ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು ತೋರಿಸಿ", "lang": "kn", "intent": "transaction_history", "customer_id": "CUST003"}
+{"text": "ಸಂಬಳ ಬಂತಾ, ಇತ್ತೀಚಿನ ಎಂಟ್ರಿಗಳನ್ನು ತೋರಿಸಿ", "lang": "kn", "intent": "transaction_history", "customer_id": "CUST003"}
+{"text": "ಮಿನಿ ಸ್ಟೇಟ್ಮೆಂಟ್ ಕೊಡಿ", "lang": "kn", "intent": "transaction_history", "customer_id": "CUST003"}
+{"text": "ಕಳೆದ 10 ದಿನಗಳಲ್ಲಿ ಯಾವ ಪಾವತಿಗಳು ಹೋಗಿವೆ", "lang": "kn", "intent": "transaction_history", "customer_id": "CUST003"}
+{"text": "ಕಳೆದ ತಿಂಗಳು ಊಟಕ್ಕೆ ಎಷ್ಟು ಖರ್ಚು ಮಾಡಿದೆ", "lang": "kn", "intent": "spending_summary", "customer_id": "CUST003"}
+{"text": "ಈ ತಿಂಗಳು ಶಾಪಿಂಗ್‌ಗೆ ಎಷ್ಟು ಹಣ ಹೋಯಿತು", "lang": "kn", "intent": "spending_summary", "customer_id": "CUST003"}
+{"text": "ನಾನು ಯಾವುದರ ಮೇಲೆ ಹೆಚ್ಚು ಖರ್ಚು ಮಾಡುತ್ತಿದ್ದೇನೆ", "lang": "kn", "intent": "spending_summary", "customer_id": "CUST003"}
+{"text": "ಒಟ್ಟು ಖರ್ಚಿನ ಲೆಕ್ಕ ಕೊಡಿ", "lang": "kn", "intent": "spending_summary", "customer_id": "CUST003"}
+{"text": "ನನ್ನ ಸಂಬಳಕ್ಕೆ 6 ಲಕ್ಷ ಕಾರು ಸಾಲ ಸಿಗುತ್ತಾ", "lang": "kn", "intent": "loan_eligibility", "customer_id": "CUST003"}
+{"text": "30 ಲಕ್ಷ ಗೃಹ ಸಾಲಕ್ಕೆ ನಾನು ಅರ್ಹನಾ", "lang": "kn", "intent": "loan_eligibility", "customer_id": "CUST003"}
+{"text": "ನನಗೆ ಅತಿ ಹೆಚ್ಚು ಎಷ್ಟು ವೈಯಕ್ತಿಕ ಸಾಲ ಕೊಡ್ತೀರಾ", "lang": "kn", "intent": "loan_eligibility", "customer_id": "CUST003"}
+{"text": "3 ಲಕ್ಷ ಸಾಲ ನನಗೆ ಸಾಧ್ಯನಾ", "lang": "kn", "intent": "loan_eligibility", "customer_id": "CUST003"}
+{"text": "6 ಲಕ್ಷಕ್ಕೆ 4 ವರ್ಷದ ಕಂತು ಎಷ್ಟಾಗುತ್ತೆ", "lang": "kn", "intent": "emi_calculation", "customer_id": "CUST003"}
+{"text": "20 ಲಕ್ಷ ಗೃಹ ಸಾಲಕ್ಕೆ 15 ವರ್ಷದ EMI ಲೆಕ್ಕ ಮಾಡಿ", "lang": "kn", "intent": "emi_calculation", "customer_id": "CUST003"}
+{"text": "ನನ್ನ ಈಗಿನ ಸಾಲದ ತಿಂಗಳ ಕಂತು ಎಷ್ಟು", "lang": "kn", "intent": "emi_calculation", "customer_id": "CUST003"}
+{"text": "2 ಲಕ್ಷ 24 ತಿಂಗಳಿಗೆ ತಗೊಂಡ್ರೆ EMI ಎಷ್ಟು", "lang": "kn", "intent": "emi_calculation", "customer_id": "CUST003"}
+{"text": "ಒಂದು ವರ್ಷದ ಎಫ್‌ಡಿಗೆ ಎಷ್ಟು ಬಡ್ಡಿ ಸಿಗುತ್ತದೆ", "lang": "kn", "intent": "interest_rates", "customer_id": "CUST003"}
+{"text": "ಗೃಹ ಸಾಲದ ಬಡ್ಡಿ ದರ ಈಗ ಎಷ್ಟು", "lang": "kn", "intent": "interest_rates", "customer_id": "CUST003"}
+{"text": "ಉಳಿತಾಯ ಖಾತೆಗೆ ಎಷ್ಟು ಶೇಕಡಾ ಬಡ್ಡಿ", "lang": "kn", "intent": "interest_rates", "customer_id": "CUST003"}
+{"text": "ಹಿರಿಯರಿಗೆ ಎಫ್‌ಡಿ ದರ ಎಷ್ಟು", "lang": "kn", "intent": "interest_rates", "customer_id": "CUST003"}
+{"text": "ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಯಾವ ಯಾವ ಸಾಲಗಳು ಸಿಗುತ್ತವೆ", "lang": "kn", "intent": "loan_products", "customer_id": "CUST003"}
+{"text": "ಓದಿಗೆ ಸಾಲದ ಅರ್ಜಿ ಶುರು ಮಾಡಬೇಕು", "lang": "kn", "intent": "loan_products", "customer_id": "CUST003"}
+{"text": "ಮಾರ್ಕೆಟ್‌ನಲ್ಲಿ ನನ್ನ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಕಳುವಾಯಿತು, ಈಗಲೇ ನಿಲ್ಲಿಸಿ", "lang": "kn", "intent": "card_block", "customer_id": "CUST003"}
+{"text": "ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಸಿಗ್ತಿಲ್ಲ, ಅದನ್ನು ಫ್ರೀಜ್ ಮಾಡಿ", "lang": "kn", "intent": "card_block", "customer_id": "CUST003"}
+{"text": "ಹೊಸ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಬಂತು, ಅದನ್ನು ಚಾಲೂ ಮಾಡೋದು ಹೇಗೆ", "lang": "kn", "intent": "card_activate", "customer_id": "CUST003"}
+{"text": "ವಿದೇಶಕ್ಕೆ ಹೋಗ್ತಿದ್ದೀನಿ, ಕಾರ್ಡ್‌ನಲ್ಲಿ ಅಂತರರಾಷ್ಟ್ರೀಯ ವಹಿವಾಟು ಆನ್ ಮಾಡಿ", "lang": "kn", "intent": "card_activate", "customer_id": "CUST003"}
+{"text": "ಹತ್ತು ದಿನ ಆಯ್ತು ಹೊಸ ಕಾರ್ಡ್ ಇನ್ನೂ ತಲುಪಿಲ್ಲ", "lang": "kn", "intent": "card_issue", "customer_id": "CUST003"}
+{"text": "ಅಂಗಡಿಯಲ್ಲಿ ಕಾರ್ಡ್ ಟ್ಯಾಪ್ ಮಾಡಿದರೆ ಪಾವತಿ ಆಗ್ತಿಲ್ಲ", "lang": "kn", "intent": "card_issue", "customer_id": "CUST003"}
+{"text": "ಅಮ್ಮನ ಖಾತೆಗೆ 5000 ರೂಪಾಯಿ ಕಳಿಸಿ", "lang": "kn", "intent": "transfer_money", "customer_id": "CUST003"}
+{"text": "ನಿನ್ನೆ ಕಳಿಸಿದ ಹಣ ಸ್ನೇಹಿತನಿಗೆ ತಲುಪಿಲ್ಲ", "lang": "kn", "intent": "transfer_money", "customer_id": "CUST003"}
+{"text": "ಎಟಿಎಂನಲ್ಲಿ ಹಣ ತೆಗೆದಾಗ ಶುಲ್ಕ ಯಾಕೆ ಕಡಿತ ಆಯ್ತು", "lang": "kn", "intent": "fees_charges", "customer_id": "CUST003"}
+{"text": "ಪ್ಲಾಟಿನಂ ಕಾರ್ಡ್‌ನ ವಾರ್ಷಿಕ ಚಾರ್ಜ್ ಎಷ್ಟು", "lang": "kn", "intent": "fees_charges", "customer_id": "CUST003"}
+{"text": "ಜಯನಗರದ ಹತ್ತಿರ ಯಾವುದಾದರೂ ಎಟಿಎಂ ಇದೆಯಾ", "lang": "kn", "intent": "atm_branch", "customer_id": "CUST003"}
+{"text": "ಶನಿವಾರ ಶಾಖೆ ಎಷ್ಟು ಗಂಟೆಗೆ ಮುಚ್ಚುತ್ತದೆ", "lang": "kn", "intent": "atm_branch", "customer_id": "CUST003"}
+{"text": "ನೆಟ್‌ಬ್ಯಾಂಕಿಂಗ್ ಪಾಸ್‌ವರ್ಡ್ ಮರೆತುಹೋಯಿತು", "lang": "kn", "intent": "password_pin", "customer_id": "CUST003"}
+{"text": "ಹೊಸ ಎಟಿಎಂ ಪಿನ್ ಹೇಗೆ ಮಾಡುವುದು", "lang": "kn", "intent": "password_pin", "customer_id": "CUST003"}
+{"text": "ನಾನು ಮಾಡದ 2999 ರೂಪಾಯಿ ಪಾವತಿ ಕಾಣಿಸುತ್ತಿದೆ", "lang": "kn", "intent": "dispute_refund", "customer_id": "CUST003"}
+{"text": "ಅಂಗಡಿಯವರು ರಿಫಂಡ್ ಮಾಡಿದ್ರು ಆದರೆ ಖಾತೆಗೆ ಬರಲಿಲ್ಲ", "lang": "kn", "intent": "dispute_refund", "customer_id": "CUST003"}
+{"text": "ನನಗೆ ನಿಜವಾದ ಸಿಬ್ಬಂದಿ ಜೊತೆ ಮಾತಾಡಬೇಕು", "lang": "kn", "intent": "human_agent", "customer_id": "CUST003"}
+{"text": "ಬಾಟ್ ಬೇಡ, ಮನುಷ್ಯರ ಹತ್ರ ದೂರು ಕೊಡಬೇಕು", "lang": "kn", "intent": "human_agent", "customer_id": "CUST003"}
+{"text": "ಶುಭೋದಯ", "lang": "kn", "intent": "faq_general", "customer_id": "CUST003"}
+{"text": "ಉಳಿತಾಯ ಖಾತೆ ತೆರೆಯಲು ಯಾವ ದಾಖಲೆಗಳು ಬೇಕು", "lang": "kn", "intent": "faq_general", "customer_id": "CUST003"}
+{"text": "50 ಸಾವಿರ ಸಾಲ ನನಗೆ ಸಿಗುತ್ತಾ", "lang": "kn", "intent": "loan_eligibility", "customer_id": "CUST003"}
+{"text": "ಕಳೆದ 30 ದಿನಗಳ ಖರ್ಚಿನ ವಿವರ", "lang": "kn", "intent": "spending_summary", "customer_id": "CUST003"}
+{"text": "ನನ್ನ ಖಾತೆಯಲ್ಲಿ ಎಷ್ಟು ಹಣ ಇದೆ ನೋಡಿ ಹೇಳಿ", "lang": "kn", "intent": "check_balance", "customer_id": "CUST003"}
+{"text": "ಆರ್‌ಡಿ ಬಡ್ಡಿ ದರ ತಿಳಿಸಿ", "lang": "kn", "intent": "interest_rates", "customer_id": "CUST003"}
+{"text": "savings me abhi kitna paisa pada hai", "lang": "hinglish", "intent": "check_balance", "customer_id": "CUST005"}
+{"text": "bhai mera balence check krdo", "lang": "hinglish", "intent": "check_balance", "customer_id": "CUST005"}
+{"text": "account me kitne rupay bache hai yaar", "lang": "hinglish", "intent": "check_balance", "customer_id": "CUST005"}
+{"text": "aaj mera a/c balance kya dikha raha", "lang": "hinglish", "intent": "check_balance", "customer_id": "CUST005"}
+{"text": "last week ke saare transactions dikha do", "lang": "hinglish", "intent": "transaction_history", "customer_id": "CUST005"}
+{"text": "salary aayi ki nahi, recent entries dikhao", "lang": "hinglish", "intent": "transaction_history", "customer_id": "CUST005"}
+{"text": "mini statement bhejo", "lang": "hinglish", "intent": "transaction_history", "customer_id": "CUST005"}
+{"text": "pichle 10 din me kaunse payments gaye", "lang": "hinglish", "intent": "transaction_history", "customer_id": "CUST005"}
+{"text": "pichle mahine khane pe kitna udaya maine", "lang": "hinglish", "intent": "spending_summary", "customer_id": "CUST005"}
+{"text": "is month shopping me kitna paisa gaya", "lang": "hinglish", "intent": "spending_summary", "customer_id": "CUST005"}
+{"text": "mera sabse zyada kharcha kahan ho raha hai", "lang": "hinglish", "intent": "spending_summary", "customer_id": "CUST005"}
+{"text": "total kharche ka hisaab do", "lang": "hinglish", "intent": "spending_summary", "customer_id": "CUST005"}
+{"text": "kya main 5 lakh ka car loan afford kar paunga", "lang": "hinglish", "intent": "loan_eligibility", "customer_id": "CUST005"}
+{"text": "20 lakh home loan ke liye eligible hu kya", "lang": "hinglish", "intent": "loan_eligibility", "customer_id": "CUST005"}
+{"text": "max kitna personal loan sanction hoga mera", "lang": "hinglish", "intent": "loan_eligibility", "customer_id": "CUST005"}
+{"text": "3 lakh ka loan possible hai mere liye?", "lang": "hinglish", "intent": "loan_eligibility", "customer_id": "CUST005"}
+{"text": "6 lakh pe 4 saal ki kist kitni banegi", "lang": "hinglish", "intent": "emi_calculation", "customer_id": "CUST005"}
+{"text": "15 lakh home loan 20 saal ka EMI nikalo", "lang": "hinglish", "intent": "emi_calculation", "customer_id": "CUST005"}
+{"text": "mere current loan ki monthly kist kitni hai", "lang": "hinglish", "intent": "emi_calculation", "customer_id": "CUST005"}
+{"text": "2 lakh 24 mahine ke liye lu to emi kitna", "lang": "hinglish", "intent": "emi_calculation", "customer_id": "CUST005"}
+{"text": "1 saal ki FD pe kitna byaaj milega", "lang": "hinglish", "intent": "interest_rates", "customer_id": "CUST005"}
+{"text": "home loan ka rate abhi kya chal raha hai", "lang": "hinglish", "intent": "interest_rates", "customer_id": "CUST005"}
+{"text": "savings account pe kitna percent interest hai", "lang": "hinglish", "intent": "interest_rates", "customer_id": "CUST005"}
+{"text": "senior citizen ke liye fd rate kya hai", "lang": "hinglish", "intent": "interest_rates", "customer_id": "CUST005"}
+{"text": "bank me kis kis type ke loan milte hai", "lang": "hinglish", "intent": "loan_products", "customer_id": "CUST005"}
+{"text": "padhai ke liye loan apply karna start karna hai", "lang": "hinglish", "intent": "loan_products", "customer_id": "CUST005"}
+{"text": "market me mera debit card chori ho gaya abhi band karo", "lang": "hinglish", "intent": "card_block", "customer_id": "CUST005"}
+{"text": "credit card mil nahi raha usko freeze kar do", "lang": "hinglish", "intent": "card_block", "customer_id": "CUST005"}
+{"text": "naya debit card aa gaya hai, chalu kaise karu", "lang": "hinglish", "intent": "card_activate", "customer_id": "CUST005"}
+{"text": "bahar ja raha hu card pe international txn on kar do", "lang": "hinglish", "intent": "card_activate", "customer_id": "CUST005"}
+{"text": "10 din ho gaye naya card abhi tak nahi pahucha", "lang": "hinglish", "intent": "card_issue", "customer_id": "CUST005"}
+{"text": "dukaan pe card tap karne se payment nahi ho raha", "lang": "hinglish", "intent": "card_issue", "customer_id": "CUST005"}
+{"text": "mummy ke account me 5000 bhej do", "lang": "hinglish", "intent": "transfer_money", "customer_id": "CUST005"}
+{"text": "kal jo paise bheje the dost ko nahi mile", "lang": "hinglish", "intent": "transfer_money", "customer_id": "CUST005"}
+{"text": "atm se paise nikalne pe charge kyun kata", "lang": "hinglish", "intent": "fees_charges", "customer_id": "CUST005"}
+{"text": "platinum card ka yearly charge kitna hai", "lang": "hinglish", "intent": "fees_charges", "customer_id": "CUST005"}
+{"text": "lajpat nagar ke paas koi ATM hai kya", "lang": "hinglish", "intent": "atm_branch", "customer_id": "CUST005"}
+{"text": "saturday ko branch kitne baje band hoti hai", "lang": "hinglish", "intent": "atm_branch", "customer_id": "CUST005"}
+{"text": "netbanking ka password bhul gayi hu", "lang": "hinglish", "intent": "password_pin", "customer_id": "CUST005"}
+{"text": "naya atm pin kaise banau", "lang": "hinglish", "intent": "password_pin", "customer_id": "CUST005"}
+{"text": "2999 ka ek payment dikh raha hai jo maine kiya hi nahi", "lang": "hinglish", "intent": "dispute_refund", "customer_id": "CUST005"}
+{"text": "dukandaar ne refund kiya tha par account me nahi aaya", "lang": "hinglish", "intent": "dispute_refund", "customer_id": "CUST005"}
+{"text": "mujhe kisi real banday se baat karni hai", "lang": "hinglish", "intent": "human_agent", "customer_id": "CUST005"}
+{"text": "bot nahi, insaan se complaint karni hai", "lang": "hinglish", "intent": "human_agent", "customer_id": "CUST005"}
+{"text": "good morning ji", "lang": "hinglish", "intent": "faq_general", "customer_id": "CUST005"}
+{"text": "savings account kholne ke liye kaunse documents chahiye", "lang": "hinglish", "intent": "faq_general", "customer_id": "CUST005"}
+{"text": "kya mujhe 50 hazaar ka loan milega", "lang": "hinglish", "intent": "loan_eligibility", "customer_id": "CUST005"}
+{"text": "pichle 30 din ke kharche ka breakdown do", "lang": "hinglish", "intent": "spending_summary", "customer_id": "CUST005"}
+{"text": "mera current balance kya hai bhai", "lang": "hinglish", "intent": "check_balance", "customer_id": "CUST005"}
+{"text": "RD pe interest rate kitna hai", "lang": "hinglish", "intent": "interest_rates", "customer_id": "CUST005"}
+{"text": "what's my account balance", "lang": "en", "intent": "check_balance", "customer_id": "CUST004", "expect_contains": "consent"}
+{"text": "how much money do i have right now", "lang": "en", "intent": "check_balance", "customer_id": "CUST004", "expect_contains": "consent"}
+{"text": "show me my last transactions", "lang": "en", "intent": "transaction_history", "customer_id": "CUST004", "expect_contains": "consent"}
+{"text": "list my recent payments", "lang": "en", "intent": "transaction_history", "customer_id": "CUST004", "expect_contains": "consent"}

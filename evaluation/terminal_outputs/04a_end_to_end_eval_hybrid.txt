@@ -1,0 +1,51 @@
+
+=== Hisab Kitab eval — mode=hybrid  n=200 ===
+intent accuracy   87.5%
+language accuracy 99.5%
+resolution rate   87.5%   (target >= 80%)
+latency ms        p50 1373.5  p95 5841.0  max 14427.0   (target p95 < 15000)
+models            {'groq:openai/gpt-oss-120b': 40, 'gemini:gemini-3.5-flash-lite': 55, 'ollama:qwen2.5:7b-instruct': 96, 'rules': 9}   errors 0
+
+lang       n   intent  resolved
+en         50    80.0%    80.0%
+hi         50    94.0%    94.0%
+hinglish   50    84.0%    84.0%
+kn         50    92.0%    92.0%
+
+intent                 n   accuracy
+atm_branch              8   100.0%
+card_activate           8    62.5%
+card_block              8    87.5%
+card_issue              8    87.5%
+check_balance          21    95.2%
+dispute_refund          8   100.0%
+emi_calculation        16    87.5%
+faq_general             8    62.5%
+fees_charges            8   100.0%
+human_agent             8    62.5%
+interest_rates         19    94.7%
+loan_eligibility       19    94.7%
+loan_products           8    87.5%
+password_pin            8    87.5%
+spending_summary       19    94.7%
+transaction_history    18    88.9%
+transfer_money          8    50.0%
+
+failures (25, first 15):
+  [en] 'whats the available balence in my account'  expected=check_balance got=dispute_refund
+  [en] 'list everything I paid in the past 10 days'  expected=transaction_history got=fees_charges
+  [en] 'which category am I overspending on'  expected=spending_summary got=dispute_refund
+  [en] 'can i borrow ₹75,000 for a bike'  expected=loan_eligibility got=faq_general
+  [en] 'current home loan ROI please'  expected=interest_rates got=loan_eligibility
+  [en] "can't find my credit card anywhere, please disable it"  expected=card_block got=card_issue
+  [en] 'got my new debit card in the post, how do i switch it on'  expected=card_activate got=card_block
+  [en] 'how do I generate a fresh ATM pin'  expected=password_pin got=card_issue
+  [en] 'i want to file a complaint with a person not a bot'  expected=human_agent got=dispute_refund
+  [en] 'good morning'  expected=faq_general got=spending_summary
+  [hi] 'बैंक में किस किस तरह के लोन मिलते हैं'  expected=loan_products got=loan_eligibility
+  [hi] 'कल जो पैसे भेजे थे वो दोस्त को नहीं मिले'  expected=transfer_money got=dispute_refund
+  [hi] 'बॉट नहीं, इंसान से शिकायत करनी है'  expected=human_agent got=transfer_money
+  [kn] 'ಹೊಸ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಬಂತು, ಅದನ್ನು ಚಾಲೂ ಮಾಡೋದು ಹೇಗೆ'  expected=card_activate got=card_issue
+  [kn] 'ಅಮ್ಮನ ಖಾತೆಗೆ 5000 ರೂಪಾಯಿ ಕಳಿಸಿ'  expected=transfer_money got=spending_summary
+
+wall time 204.1s  ->  D:\Hisab_kitab\eval\results_hybrid.json

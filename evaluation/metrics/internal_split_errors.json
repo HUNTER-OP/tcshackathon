@@ -1,0 +1,362 @@
+[
+ {
+  "text": "What do I do if I think someone managed to get my card information?",
+  "lang": "en",
+  "true": "card_block",
+  "pred": "card_issue"
+ },
+ {
+  "text": "मैंने जो 5000 का ट्रांसफर किया था वो लिस्ट में है क्या?",
+  "lang": "hi",
+  "true": "transaction_history",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "I was checking my statement and my top-up has been reverted",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "please next emi kab hai na",
+  "lang": "hinglish",
+  "true": "emi_calculation",
+  "pred": "card_issue"
+ },
+ {
+  "text": "I'm out of money, can I add money with my bank?",
+  "lang": "en",
+  "true": "transfer_money",
+  "pred": "faq_general"
+ },
+ {
+  "text": "FD ka amount check karna hai",
+  "lang": "hi",
+  "true": "check_balance",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "ಬ್ಯಾಂಕ್ ಅಕೌಂಟ್ ಇಂದ ಹಣ ಮಿಸ್ ಆಗಿದೆ ಅನ್ ನೋನ್ ಟ್ರಾನ್ಸಾಕ್ಷನ್ ತೋರಿಸ್ತಾ ಇದೆ",
+  "lang": "kn",
+  "true": "dispute_refund",
+  "pred": "transaction_history"
+ },
+ {
+  "text": "There is a withdrawal waiting.",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "Where can I do a cash withdrawal?",
+  "lang": "en",
+  "true": "atm_branch",
+  "pred": "faq_general"
+ },
+ {
+  "text": "Hello, I was contacted by a seller who let me know my money didn't come through on their side. It most certainly came out of my account so I need this looked at immediately because now it has been returned to me!",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "How can I make my card ready to use?",
+  "lang": "en",
+  "true": "card_activate",
+  "pred": "card_issue"
+ },
+ {
+  "text": "What fees do you charge for the standard card?",
+  "lang": "en",
+  "true": "card_issue",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "How long does a UK transfer take?",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "Can I use my American Express to add money to my account?",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "Are the delivery days flexible?  My schedule only allows me to be a available on specific dates.",
+  "lang": "en",
+  "true": "card_issue",
+  "pred": "faq_general"
+ },
+ {
+  "text": "ಎಟಿಎಂ ಲೊಕೇಶನ್ ಕಳುಸಿ",
+  "lang": "kn",
+  "true": "atm_branch",
+  "pred": "transaction_history"
+ },
+ {
+  "text": "मैं अपने चेकबुक का स्टेटमेंट चाहता हूँ, कृपया भेजें।",
+  "lang": "hi",
+  "true": "faq_general",
+  "pred": "transaction_history"
+ },
+ {
+  "text": "Kya aapke paas flexible EMI options hain?",
+  "lang": "hinglish",
+  "true": "loan_products",
+  "pred": "emi_calculation"
+ },
+ {
+  "text": "जरा अकाउंट बैलेंस और पिछला लेन-देन बताना",
+  "lang": "hi",
+  "true": "transaction_history",
+  "pred": "check_balance"
+ },
+ {
+  "text": "What is the longest that a payment will show pending?  There is one showing that has been sitting there a few days.",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "Where is my card accepted?",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "card_issue"
+ },
+ {
+  "text": "Do you have a return policy?",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "faq_general"
+ },
+ {
+  "text": "mera account se 500 rs kyu kata hai",
+  "lang": "hinglish",
+  "true": "fees_charges",
+  "pred": "transaction_history"
+ },
+ {
+  "text": "Next emi kab hai?",
+  "lang": "hinglish",
+  "true": "emi_calculation",
+  "pred": "card_issue"
+ },
+ {
+  "text": "Why am I still waiting for a transfer?",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "bhai mera card chori nahi hua phir bhi unknown charge kyu cuta",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "Can you see my new balance yet?",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "check_balance"
+ },
+ {
+  "text": "ಹೇಗೆ ಇದ್ದೀರಿ? ನನ್ನ ಪಾಸ್ವರ್ಡ್ ಮರೆತಿದ್ದೇನೆ, ರಿಸೆಟ್ ಮಾಡಿಸಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡು.",
+  "lang": "kn",
+  "true": "faq_general",
+  "pred": "password_pin"
+ },
+ {
+  "text": "What happened to the transfer I did?",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "Hey, is there a charge for changing my PIN?",
+  "lang": "en",
+  "true": "fees_charges",
+  "pred": "card_issue"
+ },
+ {
+  "text": "Mujhe 15 lakh ka loan chahiye, EMI calculator kahaan mil sakta hai?",
+  "lang": "hinglish",
+  "true": "loan_products",
+  "pred": "emi_calculation"
+ },
+ {
+  "text": "mujhe ek unrecognised payment mila hai history mein, 5000 ka",
+  "lang": "hinglish",
+  "true": "dispute_refund",
+  "pred": "transaction_history"
+ },
+ {
+  "text": "Can my job deposit my wages directly into the account.",
+  "lang": "en",
+  "true": "transfer_money",
+  "pred": "faq_general"
+ },
+ {
+  "text": "i have to avtivate a credit card online where could i do it",
+  "lang": "en",
+  "true": "card_activate",
+  "pred": "card_block"
+ },
+ {
+  "text": "Is there any limit on the amount I can transfer?",
+  "lang": "hinglish",
+  "true": "transfer_money",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "How long until my transfer will be available to me",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "Can I use my virtual card to complete transactions for memberships?",
+  "lang": "en",
+  "true": "card_issue",
+  "pred": "faq_general"
+ },
+ {
+  "text": "I goofed up and used the wrong account.  Please help.",
+  "lang": "en",
+  "true": "transfer_money",
+  "pred": "card_block"
+ },
+ {
+  "text": "Where is my money that I transfered?!",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "May I receive a different card pin",
+  "lang": "en",
+  "true": "password_pin",
+  "pred": "card_issue"
+ },
+ {
+  "text": "My transfer is pending too long.",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "Hello, aapke branch timings kya hain?",
+  "lang": "hinglish",
+  "true": "faq_general",
+  "pred": "atm_branch"
+ },
+ {
+  "text": "Why am I being charged more on exchange with things I bought abroad?",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "Yaar next emi kab hai na",
+  "lang": "hinglish",
+  "true": "emi_calculation",
+  "pred": "card_issue"
+ },
+ {
+  "text": "ಲಾಸ್ಟ್ ಟ್ರಾನ್ಸಾಕ್ಷನ್ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು",
+  "lang": "kn",
+  "true": "transaction_history",
+  "pred": "check_balance"
+ },
+ {
+  "text": "ನಾನು ಲೋನ್ ಗೆ ಅಪ್ಲೈ ಮಾಡಬಹುದಾ ಅಥವಾ ರಿಜೆಕ್ಟ್ ಆಗುತ್ತಾ",
+  "lang": "kn",
+  "true": "loan_eligibility",
+  "pred": "loan_products"
+ },
+ {
+  "text": "Do physical cards cost money?",
+  "lang": "en",
+  "true": "card_issue",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "कृपया मेरे लोन की शर्तें और डॉक्यूमेंट्स की लिस्ट भेजें।",
+  "lang": "hi",
+  "true": "faq_general",
+  "pred": "emi_calculation"
+ },
+ {
+  "text": "kitna paisa kata hai aur kahan gaya, details do",
+  "lang": "hinglish",
+  "true": "transaction_history",
+  "pred": "spending_summary"
+ },
+ {
+  "text": "क्या मैं बिजनेस लोन के लिए अप्लाई कर सकता हूँ? नया बिजनेस है",
+  "lang": "hi",
+  "true": "loan_eligibility",
+  "pred": "loan_products"
+ },
+ {
+  "text": "Where can I view my PIN?",
+  "lang": "en",
+  "true": "password_pin",
+  "pred": "card_issue"
+ },
+ {
+  "text": "Will I receive all the money sent to my account by SEPA transfer?",
+  "lang": "en",
+  "true": "fees_charges",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "how long and how much does it cost for new card",
+  "lang": "en",
+  "true": "card_issue",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "अगर मैं सैलरी स्लिप नहीं दे पाऊँ तो क्या लोन मिल सकता है?",
+  "lang": "hi",
+  "true": "loan_products",
+  "pred": "loan_eligibility"
+ },
+ {
+  "text": "ನನ್ನ ಖಾತೆ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಅನ್ನು ಇಮೇಲ್ ಮೂಲಕ ಕಳುಹಿಸಬಹುದೇ?",
+  "lang": "kn",
+  "true": "faq_general",
+  "pred": "transaction_history"
+ },
+ {
+  "text": "what's the max loan amount for a salaried employee?",
+  "lang": "en",
+  "true": "loan_products",
+  "pred": "emi_calculation"
+ },
+ {
+  "text": "pls tell me the process to claim a lost debit card.",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "card_issue"
+ },
+ {
+  "text": "I am waiting patiently for a week now for the seller to get back to me and there has been no response, could you please help me further with getting my money back.  Thank you.",
+  "lang": "en",
+  "true": "dispute_refund",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "ನನ್ನ ಪರ್ಸನಲ್ ಲೋನ್‌ ಉಳಿದ 3 ತಿಂಗಳು, ಉಳಿದ ಪೇಮೆಂಟ್‌ ಮೊತ್ತ ಮತ್ತು ದಿನಾಂಕ ತಿಳಿಸಿ.",
+  "lang": "kn",
+  "true": "emi_calculation",
+  "pred": "loan_eligibility"
+ },
+ {
+  "text": "FD me kitna jama hai abhi tak?",
+  "lang": "hinglish",
+  "true": "check_balance",
+  "pred": "faq_general"
+ }
+]

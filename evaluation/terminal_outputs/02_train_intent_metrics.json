@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.9606,
+  "macro_f1": 0.9617,
+  "per_language": {
+    "en": 0.9685,
+    "hi": 0.9485,
+    "kn": 0.9481,
+    "hinglish": 0.9214
+  },
+  "n_test": 1522,
+  "base_model": "distilbert-base-multilingual-cased",
+  "train_seconds": 34.2
+}

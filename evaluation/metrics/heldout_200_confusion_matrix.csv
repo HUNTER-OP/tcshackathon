@@ -1,0 +1,18 @@
+true \ predicted,check_balance,transaction_history,spending_summary,loan_eligibility,emi_calculation,interest_rates,loan_products,card_block,card_activate,card_issue,transfer_money,fees_charges,atm_branch,password_pin,dispute_refund,human_agent,faq_general
+check_balance,18,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+transaction_history,0,16,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+spending_summary,0,0,18,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+loan_eligibility,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,1
+emi_calculation,0,0,1,1,14,0,0,0,0,0,0,0,0,0,0,0,0
+interest_rates,0,0,0,1,0,18,0,0,0,0,0,0,0,0,0,0,0
+loan_products,0,0,0,1,0,0,7,0,0,0,0,0,0,0,0,0,0
+card_block,0,0,0,0,0,0,0,7,0,1,0,0,0,0,0,0,0
+card_activate,0,0,0,0,0,0,0,2,4,1,0,0,0,0,1,0,0
+card_issue,0,0,0,0,0,0,0,0,0,7,0,0,0,0,1,0,0
+transfer_money,0,0,1,0,0,0,0,0,0,0,4,0,0,0,2,0,1
+fees_charges,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0
+atm_branch,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0
+password_pin,0,0,0,0,0,0,0,0,0,1,0,0,0,7,0,0,0
+dispute_refund,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0
+human_agent,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,5,0
+faq_general,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,1,4

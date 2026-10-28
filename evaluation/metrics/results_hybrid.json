@@ -1,0 +1,339 @@
+{
+  "mode": "hybrid",
+  "n": 200,
+  "intent_accuracy": 0.875,
+  "language_accuracy": 0.995,
+  "resolution_rate": 0.875,
+  "latency_ms": {
+    "p50": 1373.5,
+    "p95": 5841.0,
+    "max": 14427.0
+  },
+  "per_language": {
+    "en": {
+      "n": 50,
+      "intent_accuracy": 0.8,
+      "resolution_rate": 0.8
+    },
+    "hi": {
+      "n": 50,
+      "intent_accuracy": 0.94,
+      "resolution_rate": 0.94
+    },
+    "hinglish": {
+      "n": 50,
+      "intent_accuracy": 0.84,
+      "resolution_rate": 0.84
+    },
+    "kn": {
+      "n": 50,
+      "intent_accuracy": 0.92,
+      "resolution_rate": 0.92
+    }
+  },
+  "per_intent": {
+    "atm_branch": {
+      "n": 8,
+      "intent_accuracy": 1.0
+    },
+    "card_activate": {
+      "n": 8,
+      "intent_accuracy": 0.625
+    },
+    "card_block": {
+      "n": 8,
+      "intent_accuracy": 0.875
+    },
+    "card_issue": {
+      "n": 8,
+      "intent_accuracy": 0.875
+    },
+    "check_balance": {
+      "n": 21,
+      "intent_accuracy": 0.9524
+    },
+    "dispute_refund": {
+      "n": 8,
+      "intent_accuracy": 1.0
+    },
+    "emi_calculation": {
+      "n": 16,
+      "intent_accuracy": 0.875
+    },
+    "faq_general": {
+      "n": 8,
+      "intent_accuracy": 0.625
+    },
+    "fees_charges": {
+      "n": 8,
+      "intent_accuracy": 1.0
+    },
+    "human_agent": {
+      "n": 8,
+      "intent_accuracy": 0.625
+    },
+    "interest_rates": {
+      "n": 19,
+      "intent_accuracy": 0.9474
+    },
+    "loan_eligibility": {
+      "n": 19,
+      "intent_accuracy": 0.9474
+    },
+    "loan_products": {
+      "n": 8,
+      "intent_accuracy": 0.875
+    },
+    "password_pin": {
+      "n": 8,
+      "intent_accuracy": 0.875
+    },
+    "spending_summary": {
+      "n": 19,
+      "intent_accuracy": 0.9474
+    },
+    "transaction_history": {
+      "n": 18,
+      "intent_accuracy": 0.8889
+    },
+    "transfer_money": {
+      "n": 8,
+      "intent_accuracy": 0.5
+    }
+  },
+  "model_used": {
+    "groq:openai/gpt-oss-120b": 40,
+    "gemini:gemini-3.5-flash-lite": 55,
+    "ollama:qwen2.5:7b-instruct": 96,
+    "rules": 9
+  },
+  "errors": 0,
+  "failures": [
+    {
+      "text": "whats the available balence in my account",
+      "lang": "en",
+      "expected": "check_balance",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "I can certainly help you check your account balance! To give you the exact amount, could you please provide your account number or log in to the app dashboard where your current balance is displayed?"
+    },
+    {
+      "text": "list everything I paid in the past 10 days",
+      "lang": "en",
+      "expected": "transaction_history",
+      "got": "fees_charges",
+      "resolved": false,
+      "error": null,
+      "reply": "I'm not quite sure about your recent payments based on the available details. Please reach out to our support team through the app for assistance with your transaction history. \n\nTip: You can easily check your passbook in the app anytime!"
+    },
+    {
+      "text": "which category am I overspending on",
+      "lang": "en",
+      "expected": "spending_summary",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "I'm sorry, but I don't have access to your spending category details in my current records to tell you where you might be overspending. Could you please check your latest account statement or use the spending analyzer in the app for a breakdown?"
+    },
+    {
+      "text": "can i borrow ₹75,000 for a bike",
+      "lang": "en",
+      "expected": "loan_eligibility",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "Yes, of course! I'm here to help you find the right loan for your bike. To get started, could you please tell me your employment status and estimated credit score so I can narrow down your options?"
+    },
+    {
+      "text": "current home loan ROI please",
+      "lang": "en",
+      "expected": "interest_rates",
+      "got": "loan_eligibility",
+      "resolved": false,
+      "error": null,
+      "reply": "The current home loan interest rate starts at **8.5%** per annum. You are eligible to borrow up to **₹55,27,000**. \n\nCould you please tell me the exact loan amount you are looking for? \n\n*Tip: You can use our app's loan calculator to check your estimated monthly EMI.*"
+    },
+    {
+      "text": "can't find my credit card anywhere, please disable it",
+      "lang": "en",
+      "expected": "card_block",
+      "got": "card_issue",
+      "resolved": false,
+      "error": null,
+      "reply": "I am so sorry to hear that you lost your credit card! You can lock it immediately by logging into our online banking app, going to the **\"Manage Cards\"** section, and selecting **\"Block\"** or **\"Report Lost/Stolen\"**. Alternatively, you can call our 24/7 customer support right away. \n\nTip: Please mo"
+    },
+    {
+      "text": "got my new debit card in the post, how do i switch it on",
+      "lang": "en",
+      "expected": "card_activate",
+      "got": "card_block",
+      "resolved": false,
+      "error": null,
+      "reply": "I can block your new debit card right away. Please confirm if you’d like to proceed.  \n\n**[Yes, block it]** **[No, keep it active]**"
+    },
+    {
+      "text": "how do I generate a fresh ATM pin",
+      "lang": "en",
+      "expected": "password_pin",
+      "got": "card_issue",
+      "resolved": false,
+      "error": null,
+      "reply": "To generate a fresh ATM PIN, contact our customer support team. They can guide you through the process or help you reset your PIN securely. Make sure to have your account details handy for faster assistance."
+    },
+    {
+      "text": "i want to file a complaint with a person not a bot",
+      "lang": "en",
+      "expected": "human_agent",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "I understand you'd like to file a complaint with a person. You can reach out to our customer service team through our support hotline at 1800 123 4567 or via live chat on our website. A representative will assist you with your complaint.\n\nIf you need any more help, feel free to ask!"
+    },
+    {
+      "text": "good morning",
+      "lang": "en",
+      "expected": "faq_general",
+      "got": "spending_summary",
+      "resolved": false,
+      "error": null,
+      "reply": "Good morning! Over the last 30 days, you spent ₹79,728 on various categories. Your main expenses were rent at ₹21,200 and shopping at ₹17,593.\n\nTip: Tracking your spending can help you manage your finances better."
+    },
+    {
+      "text": "बैंक में किस किस तरह के लोन मिलते हैं",
+      "lang": "hi",
+      "expected": "loan_products",
+      "got": "loan_eligibility",
+      "resolved": false,
+      "error": null,
+      "reply": "हमारे बैंक में पर्सनल, होम, कार, एजुकेशन और बिज़नेस लोन उपलब्ध हैं।  \nआप अधिकतम **₹10,89,000** तक का पर्सनल लोन ले सकते हैं।  \n\nकृपया आप कितना लोन राशि चाहते हैं, बताइए?"
+    },
+    {
+      "text": "कल जो पैसे भेजे थे वो दोस्त को नहीं मिले",
+      "lang": "hi",
+      "expected": "transfer_money",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "कल के पैसे भेजने की ट्रांसक्यूशन को जांचने के लिए आपकी लोन खाता संख्या या अन्य संबंधित जानकारी की आवश्यकता है। कृपया इन विवरणों को दें ताकि मैं आपकी ट्रांसक्यूशन की जांच कर सकूं।\n\nएक उपलब्ध टिप: याद रखें कि आपकी ट्रांसक्यूशन को जांचने के लिए ठीक वह जानकारी जिसकी आवश्यकता है, उसको सही तरीके से दें।"
+    },
+    {
+      "text": "बॉट नहीं, इंसान से शिकायत करनी है",
+      "lang": "hi",
+      "expected": "human_agent",
+      "got": "transfer_money",
+      "resolved": false,
+      "error": null,
+      "reply": "नमस्ते! मैं हिसब किताब, आपका बैंकिंग सहायक हूँ। मैं आपकी सहायता करने के लिए पूरी तरह तैयार हूँ। \n\nपैसे ट्रांसफर करने के लिए कृपया मुझे प्राप्तकर्ता का खाता विवरण और राशि बताएं।"
+    },
+    {
+      "text": "ಹೊಸ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಬಂತು, ಅದನ್ನು ಚಾಲೂ ಮಾಡೋದು ಹೇಗೆ",
+      "lang": "kn",
+      "expected": "card_activate",
+      "got": "card_issue",
+      "resolved": false,
+      "error": null,
+      "reply": "নমস্কার! ಹೊಸ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಸಕ್ರಿಯಗೊಳಿಸಲು ನಮ್ಮ ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಿ ಅಥವಾ ಹತ್ತಿರದ ಎಟಿಎಂಗೆ ಭೇಟಿ ನೀಡಿ ಪಿನ್ ಬದಲಾಯಿಸಿ.\n\n**ಸಲಹೆ:** ಸುರಕ್ಷತೆಗಾಗಿ ನಿಮ್ಮ ಕಾರ್ಡ್ ಪಿನ್ ಅನ್ನು ಯಾರಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ."
+    },
+    {
+      "text": "ಅಮ್ಮನ ಖಾತೆಗೆ 5000 ರೂಪಾಯಿ ಕಳಿಸಿ",
+      "lang": "kn",
+      "expected": "transfer_money",
+      "got": "spending_summary",
+      "resolved": false,
+      "error": null,
+      "reply": "ಕ್ಷಮಿಸಿ, ಹಣ ವರ್ಗಾವಣೆ ಮಾಡುವ ಸೌಲಭ್ಯ ಸದ್ಯಕ್ಕೆ ಲಭ್ಯವಿಲ್ಲ. \n\nಕಳೆದ 30 ದಿನಗಳಲ್ಲಿ ನಿಮ್ಮ ಒಟ್ಟು ಖರ್ಚು ₹37,627 ಆಗಿದೆ. ಇದರಲ್ಲಿ ಬಾಡಿಗೆಗಾಗಿ ₹13,500 ಹೆಚ್ಚು ಖರ್ಚಾಗಿದೆ. ಭದ್ರತೆಗಾಗಿ ನಿಮ್ಮ ಒಟಿಪಿ ಅಥವಾ ಪಿನ್ ಸಂಖ್ಯೆಯನ್ನು ಯಾರಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ."
+    },
+    {
+      "text": "ಬಾಟ್ ಬೇಡ, ಮನುಷ್ಯರ ಹತ್ರ ದೂರು ಕೊಡಬೇಕು",
+      "lang": "kn",
+      "expected": "human_agent",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "**ಮಾನವ ಪ್ರತಿನಿಧಿಯನ್ನು ಸಂಪರ್ಕಿಸಲು:**  \n\n1. **ಫೋನ್:** ನಮ್ಮ ಗ್ರಾಹಕ ಸಹಾಯ ಹಾಟ್‌ಲೈನ್‌ಗೆ ಕರೆ ಮಾಡಿ.  \n2. **ಲೈವ್ ಚಾಟ್:** ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಕೆಳಭಾಗದ ಚಾಟ್ ಐಕಾನ್‌ನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ.  \n3. **ಇಮೇಲ್:** support@ourbank.in ಗೆ ನಿಮ್ಮ ಪ್ರಶ್ನೆ ಕಳುಹಿಸಿ.  \n\n**ಸಲಹೆ:** ಕರೆ ಮಾಡುವಾಗ ನಿಮ್ಮ ಖಾತೆ ಸಂಖ್ಯೆ ಮತ್ತು ಗುರುತಿನ ವಿವರಗಳನ್ನು ಹತ್ತಿರ"
+    },
+    {
+      "text": "ಶುಭೋದಯ",
+      "lang": "kn",
+      "expected": "faq_general",
+      "got": "spending_summary",
+      "resolved": false,
+      "error": null,
+      "reply": "ಶುಭೋದಯ! ಕಳೆದ 30 ದಿನಗಳಲ್ಲಿ ನಿಮ್ಮ ಖರ್ಚು ₹37,627 ಮತ್ತು ನಿಮ್ಮ ಆದಾಯ ₹54,000. ಮುಖ್ಯವಾಗಿ ₹13,500 ಬಾಡಿಗೆ, ₹5,152 ಶಾಪಿಂಗ್, ಮತ್ತು ₹4,841 ಪ್ರಯಾಣಕ್ಕೆ ಖರ್ಚು ಮಾಡಲಾಗಿದೆ.  \n\n**ಟಿಪ್:** ನಿಮ್ಮ ಖರ್ಚುಗಳನ್ನು ನಿಯಂತ್ರಿಸಲು, ಪ್ರತಿ ವರ್ಗಕ್ಕೆ ಬಜೆಟ್ ನಿಗದಿಪಡಿಸಿ ಮತ್ತು ಅದನ್ನು ಮೀರದಂತೆ ಗಮನಿಸಿ."
+    },
+    {
+      "text": "pichle 10 din me kaunse payments gaye",
+      "lang": "hinglish",
+      "expected": "transaction_history",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "Sorry, but the information you're asking for isn't available in the data. Could you please tell me your loan account number or any other relevant details? Once I have that, I can check the payments for the last 10 days for you."
+    },
+    {
+      "text": "6 lakh pe 4 saal ki kist kitni banegi",
+      "lang": "hinglish",
+      "expected": "emi_calculation",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "Kist ki raah mein, 6 lakh rupaye ke 4 saal ki kist aapki chinta se milti hai. Is case mein, kist aapki 12,500 rupaye hoti hai. Tip: Aise hi tenure mein kis ke samay kist badal sakta hai, toh apne chaksh se check karein."
+    },
+    {
+      "text": "mere current loan ki monthly kist kitni hai",
+      "lang": "hinglish",
+      "expected": "emi_calculation",
+      "got": "loan_eligibility",
+      "resolved": false,
+      "error": null,
+      "reply": "Aapki current loan ki EMI missing hai, please amount dite hai to calculate kar sakta hoon. Generally, EMI depends on loan amount, tenure and rate."
+    },
+    {
+      "text": "naya debit card aa gaya hai, chalu kaise karu",
+      "lang": "hinglish",
+      "expected": "card_activate",
+      "got": "card_block",
+      "resolved": false,
+      "error": null,
+      "reply": "Aapka debit card block hai, toh kisi aur card ko block nahi kar sakte. Harari 7 din ke baad aapka naya card aayega. Dekho, aapka nayi card aa gaya hai, abhi toh chalta hai."
+    },
+    {
+      "text": "dukaan pe card tap karne se payment nahi ho raha",
+      "lang": "hinglish",
+      "expected": "card_issue",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "Dukaan se payment nahi ho rahi, check karo aapka internet connection aur card validity. Agar hi nahi ho rahi, contact karein customer support team ke through."
+    },
+    {
+      "text": "mummy ke account me 5000 bhej do",
+      "lang": "hinglish",
+      "expected": "transfer_money",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "Mujhe pata nahi ki aapki mummy ka account number kya hai. Kaafi ho agar aap mummy ka account number dene se pehle, kisi aur account-related details de sakte hain. Yeh help karenge ki hum aapki transaction ko shi account mein karenge."
+    },
+    {
+      "text": "kal jo paise bheje the dost ko nahi mile",
+      "lang": "hinglish",
+      "expected": "transfer_money",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "Dost, aapne kis tarah se paise bheche the? Kya aap loan payment ke liye kuch problem de rahi hain? Agar loan account number ya kisi bhi related information provide karte ho, main aapki payment status check kar sakta hoon."
+    },
+    {
+      "text": "good morning ji",
+      "lang": "hinglish",
+      "expected": "faq_general",
+      "got": "spending_summary",
+      "resolved": false,
+      "error": null,
+      "reply": "Good morning! Over the last 30 days, you spent ₹45,773. Most of your expenses went towards rent (₹12,000) and shopping (₹6,348). \n\nTip: Tracking your spending can help you manage your finances better."
+    }
+  ],
+  "wall_seconds": 204.1
+}

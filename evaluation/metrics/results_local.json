@@ -1,0 +1,319 @@
+{
+  "mode": "local",
+  "n": 200,
+  "intent_accuracy": 0.885,
+  "language_accuracy": 0.995,
+  "resolution_rate": 0.885,
+  "latency_ms": {
+    "p50": 2270.0,
+    "p95": 8151.0,
+    "max": 13396.0
+  },
+  "per_language": {
+    "en": {
+      "n": 50,
+      "intent_accuracy": 0.88,
+      "resolution_rate": 0.88
+    },
+    "hi": {
+      "n": 50,
+      "intent_accuracy": 0.92,
+      "resolution_rate": 0.92
+    },
+    "hinglish": {
+      "n": 50,
+      "intent_accuracy": 0.88,
+      "resolution_rate": 0.88
+    },
+    "kn": {
+      "n": 50,
+      "intent_accuracy": 0.86,
+      "resolution_rate": 0.86
+    }
+  },
+  "per_intent": {
+    "atm_branch": {
+      "n": 8,
+      "intent_accuracy": 1.0
+    },
+    "card_activate": {
+      "n": 8,
+      "intent_accuracy": 0.75
+    },
+    "card_block": {
+      "n": 8,
+      "intent_accuracy": 1.0
+    },
+    "card_issue": {
+      "n": 8,
+      "intent_accuracy": 0.875
+    },
+    "check_balance": {
+      "n": 21,
+      "intent_accuracy": 1.0
+    },
+    "dispute_refund": {
+      "n": 8,
+      "intent_accuracy": 1.0
+    },
+    "emi_calculation": {
+      "n": 16,
+      "intent_accuracy": 0.875
+    },
+    "faq_general": {
+      "n": 8,
+      "intent_accuracy": 0.75
+    },
+    "fees_charges": {
+      "n": 8,
+      "intent_accuracy": 0.875
+    },
+    "human_agent": {
+      "n": 8,
+      "intent_accuracy": 0.625
+    },
+    "interest_rates": {
+      "n": 19,
+      "intent_accuracy": 0.9474
+    },
+    "loan_eligibility": {
+      "n": 19,
+      "intent_accuracy": 0.9474
+    },
+    "loan_products": {
+      "n": 8,
+      "intent_accuracy": 0.625
+    },
+    "password_pin": {
+      "n": 8,
+      "intent_accuracy": 0.875
+    },
+    "spending_summary": {
+      "n": 19,
+      "intent_accuracy": 0.9474
+    },
+    "transaction_history": {
+      "n": 18,
+      "intent_accuracy": 0.8333
+    },
+    "transfer_money": {
+      "n": 8,
+      "intent_accuracy": 0.75
+    }
+  },
+  "model_used": {
+    "ollama:qwen2.5:7b-instruct": 191,
+    "rules": 9
+  },
+  "errors": 0,
+  "failures": [
+    {
+      "text": "list everything I paid in the past 10 days",
+      "lang": "en",
+      "expected": "transaction_history",
+      "got": "transfer_money",
+      "resolved": false,
+      "error": null,
+      "reply": "I understand you're looking for details of your recent payments. Could you please specify the dates or any details of the transactions you're interested in? This will help me provide you with the correct information."
+    },
+    {
+      "text": "which category am I overspending on",
+      "lang": "en",
+      "expected": "spending_summary",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "It seems you're looking for insights on where you might be overspending. To help, I need to know your spending categories for the last month. Can you share your recent transaction details or the categories you're interested in? This will allow me to provide a more accurate analysis."
+    },
+    {
+      "text": "can i borrow ₹75,000 for a bike",
+      "lang": "en",
+      "expected": "loan_eligibility",
+      "got": "transfer_money",
+      "resolved": false,
+      "error": null,
+      "reply": "To check if you're eligible for a loan, we need to know more about your financial situation. Could you please share your monthly income or salary details? This will help us determine if you're eligible for a ₹75,000 loan and the EMI you might pay."
+    },
+    {
+      "text": "current home loan ROI please",
+      "lang": "en",
+      "expected": "interest_rates",
+      "got": "emi_calculation",
+      "resolved": false,
+      "error": null,
+      "reply": "The current ROI for a home loan is 8.5%. For a home loan, you can potentially get up to ₹5,527,000. How much would you like to borrow?"
+    },
+    {
+      "text": "got my new debit card in the post, how do i switch it on",
+      "lang": "en",
+      "expected": "card_activate",
+      "got": "card_block",
+      "resolved": false,
+      "error": null,
+      "reply": "Your new debit card has been issued but is currently blocked. To activate it, you need to unblock it at a branch or via online banking. If you need assistance, visit any of our branches or contact our customer service."
+    },
+    {
+      "text": "good morning",
+      "lang": "en",
+      "expected": "faq_general",
+      "got": "spending_summary",
+      "resolved": false,
+      "error": null,
+      "reply": "Good morning! Over the last 30 days, you've spent ₹89,728 with the majority going to UPI transfers (₹26,365) and rent (₹21,200). \n\nTo help you manage, try categorizing your expenses to find savings opportunities."
+    },
+    {
+      "text": "पिछले 10 दिन में कौन से पेमेंट गए",
+      "lang": "hi",
+      "expected": "transaction_history",
+      "got": "card_issue",
+      "resolved": false,
+      "error": null,
+      "reply": "पिछले 10 दिन में आपके ट्रैक्सनेशन डिटेल्स नहीं मौजूद हैं। कृपया अपनी ट्रैक्सनेशन डिटेल्स की जांच करने के लिए अपने ऑनलाइन बैंकिंग या मोबाइल बैंकिंग एप्लिकेशन का उपयोग करें। यदि किसी भी कठिनाई हो या आप एक लाइव ओपरेटर से मिलना चाहते हैं, तो हमारी सहायता के लिए संपर्क कर सकते हैं।"
+    },
+    {
+      "text": "बैंक में किस किस तरह के लोन मिलते हैं",
+      "lang": "hi",
+      "expected": "loan_products",
+      "got": "loan_eligibility",
+      "resolved": false,
+      "error": null,
+      "reply": "बैंक में आपको विशेष लोन मिल सकते हैं और इसकी रेट 11.5% है। यदि आपका लाभ राशि ज्ञात हो, तो हम आपकी योग्यता और EMI की गणना कर सकते हैं।\n\nएक उपाय: अपनी वर्तमान लोन की राशि कितनी है, यह जानकर हम आपकी योग्यता निर्धारित कर सकते हैं।"
+    },
+    {
+      "text": "नया एटीएम पिन कैसे बनाऊँ",
+      "lang": "hi",
+      "expected": "password_pin",
+      "got": "atm_branch",
+      "resolved": false,
+      "error": null,
+      "reply": "आपके लिए नया ATM पिन बदलने के लिए आपको निम्न करना होगा:\n1. अपने ऑनलाइन बैंकिंग या मोबाइल बैंकिंग एप्लिकेशन में लॉग इन करें।\n2. \"सेक्युरिटी प्रोफाइल\" या \"पिन सेटअप\" वर्कशीट पर जाएं।\n3. अपना वापसी पिन और नया पिन दर्ज करें।\n4. दोबारा नया पिन दर्ज करें और सेवा करें।\n\nयदि किसी कठिनाई होती है, हमारी सहायत"
+    },
+    {
+      "text": "बॉट नहीं, इंसान से शिकायत करनी है",
+      "lang": "hi",
+      "expected": "human_agent",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "आपका बचाव करने का अनुरोध स्पष्ट है। आपकी खाते का वर्तमान बॅलेंस देखने के लिए आपको क्या मदद करनी चाहिए? लॉग इन करके अपने ऑनलाइन बैंकिंग प्लाटफार्म या मोबाइल बैंकिंग एप्प में जाकर अपने खाते का बॅलेंस देख सकते हैं। यदि किसी कठिनाई का अनुभव होता है, तो हमारी कार्यालय समर्थन टीम से संपर्क कर सकते हैं।"
+    },
+    {
+      "text": "ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಯಾವ ಯಾವ ಸಾಲಗಳು ಸಿಗುತ್ತವೆ",
+      "lang": "kn",
+      "expected": "loan_products",
+      "got": "loan_eligibility",
+      "resolved": false,
+      "error": null,
+      "reply": "ಬ್ಯಾಂಕ್‌ಲ್ಲಿ ಪ್ರಾರಂಭಿಕ ಸಾಲಾಗಳು ಸಿಗುತ್ತವೆ. ಆದರ್ಶವಾಗಿ, ಆನ್ವಲಿಯ ವಾರಗಳಲ್ಲಿ 12,28,000 ರೂಪಾಯೊಗಿನ ಯಾವ ಯಾವ ಸಾಲ ಸಿಗುತ್ತದೆ. ಮುಖ್ಯ ಕಳೆಯಲ್ಲಿ, ನೀವು ಎಲ್ಲಾ ಕಳೆಗಳನ್ನು ಪ್ರತಿ 11.5% ಹೆಚ್ಚಿನ ವಿರೋಧ ವಾಲು ಹೇಳಬಹುದು.\n\nದೇಶದಲ್ಲಿ ಹೆಚ್ಚಿನ ಕಳೆಯಲ್ಲಿ ಸಾಲ ಕೆಲ್ಲದೆ, ಮುಖ್ಯ ಕಳೆಯಲ್ಲಿ ಎಲ್ಲಾ ಕಳೆಗಳನ್ನು ಕೆಲ್ಲ ಮತ್ತು ನೀವು ಎಲ್ಲಾ ಕಳೆಗಳನ್ನು ಕೆಲ್"
+    },
+    {
+      "text": "ಓದಿಗೆ ಸಾಲದ ಅರ್ಜಿ ಶುರು ಮಾಡಬೇಕು",
+      "lang": "kn",
+      "expected": "loan_products",
+      "got": "fees_charges",
+      "resolved": false,
+      "error": null,
+      "reply": "ಸಾಲದ ಅರ್ಜಿಯನ್ನು ಶುರು ಮಾಡಲು ಹೇಗೆ ಹೇಳಿ:\n\n1. ಆರ್ಜಿಯನ್ನು ಶುರು ಮಾಡಲು ತುಂಬಾ ಸಾಲ ಅಥವಾ ಇನ್ನೇ ಸಾಲ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದು ಹೇಗೆ ಹೇಳಿ.\n2. ಸಾಲದ ಅರ್ಜಿಯನ್ನು ಶುರು ಮಾಡಲು ತುಂಬಾ ಸಾಲ ಅಥವಾ ಇನ್ನೇ ಸಾಲ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದು ಹೇಗೆ ಹೇಳಿ.\n\nಅದರ ಪ್ರತಿಕ್ರಿಯೆಯಲ್ಲಿ ತುಂಬಾ ಸಾಲ ಅಥವಾ ಇನ್ನೇ ಸಾಲ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದು ಹೇಗೆ ಹೇಳಿ."
+    },
+    {
+      "text": "ಅಮ್ಮನ ಖಾತೆಗೆ 5000 ರೂಪಾಯಿ ಕಳಿಸಿ",
+      "lang": "kn",
+      "expected": "transfer_money",
+      "got": "spending_summary",
+      "resolved": false,
+      "error": null,
+      "reply": "ಅಮ್ಮನ ಖಾತೆಗೆ 5000 ರೂಪಾಯಿ ಕಳಿಸಿದೆ. ಸುಲಭ ವಿಭಾಗಗಳಲ್ಲಿ ವಿವರಗಾಗಿ ಬಯಸಲು ಕ್ರಮವಾಗಿ ಸ್ಥಾನ ನೀಡಿದ್ದೇ ಹೇಗೆ.\n\nಹೇಳಿಕೊಂಡ ವಿಭಾಗಗಳಲ್ಲಿ ವಿಶೇಷವಾಗಿ ವಾಸದ ವಾಸಾರ್ಥಕ ವಾಸ, ಸಂಪರ್ಕಗಳ ವಾಸ, ಪರಿವಹ ವಾಸ, ವಾಸಾರ್ಥಕ ವಾಸ, ಕುರಿತು ವಾಸ, ಪಾತ್ರ ವಾಸ, ಕಾರ್ಡ್ ಟ್ರಾನ್ಸ್ಫರ ವಾಸ ಮತ್ತು ವಾಸ ವಾಸ ಅವರೆಗೆ ವಿಶೇಷವಾಗಿ ಕೆಲವು ವಾಸ ಕಳಿಸಿದವು."
+    },
+    {
+      "text": "ನಿನ್ನೆ ಕಳಿಸಿದ ಹಣ ಸ್ನೇಹಿತನಿಗೆ ತಲುಪಿಲ್ಲ",
+      "lang": "kn",
+      "expected": "transfer_money",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "ನಿನ್ನ ಹಣ ಸ್ನೇಹಿತನಿಗೆ ತಲುಪಿಯಿದ ಹಣ ಕಳಿಸಲಾಗಿದೆ. ಕ್ರಮಂಗಳಿಗೆ ನಾನು ತಿಳಿಸುತ್ತೇನೆ. ಕೇಳು ಮತ್ತು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಹೇಗೆ ಹೇಳಿಕೊಂಡು ಹಣ ಸ್ನೇಹಿತನ ನಂತರ ತಲುಪಿಸಿಕೊಂಡ ಹಣದ ಕ್ರಿಂಚಿಯ ವಿವರಗಳನ್ನು ಕೆಲವು ದಿನಗಳ ಕ್ಷೇತ್ರದಲ್ಲಿ ಕಳಿಸಲಾಗಿದೆ. ಅಥವಾ ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಹೇಗೆ ಹೇಳಿಕೊಂಡು ಹಣ ಸ್ನೇಹಿತನ ನಂತರ ತಲುಪಿಸಿಕೊಂಡ ಹಣದ ಕ್ರಿಂಚಿಯ ವಿವರಗಳನ್ನು ಕಾ"
+    },
+    {
+      "text": "ಎಟಿಎಂನಲ್ಲಿ ಹಣ ತೆಗೆದಾಗ ಶುಲ್ಕ ಯಾಕೆ ಕಡಿತ ಆಯ್ತು",
+      "lang": "kn",
+      "expected": "fees_charges",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "ನಿನ್ನ ಹಣ ತೆಗೆದ ಶುಲ್ಕ ಯಾಕೆಯನ್ನು ತೆಗೆದಾಗ ನಾನು ಹೇಳುತ್ತುದು. ನಿನ್ನ ಕಾರ್ಡ್ ಅಥವಾ ಗೆಸ್ಟರ್ ಅಂಕದ ಸಂಖ್ಯೆಯನ್ನು ಕಾಣಿಸಲು ನೇವ್ ಹೆಸರಾಗಿ ಅಥವಾ ಸೆಲ್‌ ಅಪ್ ಹೆಸರಾಗಿ ಲೋಗ್‌ಇನ್ ಮಾಡಿಕೊಂಡಿದ್ದೇನೆ? ಅಥವಾ ಹಣ ತೆಗೆದ ಶುಲ್ಕ ಯಾಕೆಯನ್ನು ಕಾಣಿಸಲು ಕೇವಲ ಅಂಕದ ಸಂಖ್ಯೆಯನ್ನು ಕಾಣಿಸಲು ಕಾಣಿಸಲು ಕಾಣಿಸಲು ಕಾಣಿಸಲು ಕಾಣಿಸಲು ಕಾಣಿಸಲು ಕಾಣಿಸಲು ಕಾಣಿಸಲು ಕಾಣಿಸಲು"
+    },
+    {
+      "text": "ಬಾಟ್ ಬೇಡ, ಮನುಷ್ಯರ ಹತ್ರ ದೂರು ಕೊಡಬೇಕು",
+      "lang": "kn",
+      "expected": "human_agent",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "ನೇಮಿಲ್ಲ, ಮುಂದಿನ ಕೇಳಲಾಗಿದೆ. ನುನ ಹೆಚ್ಚಾಗಿ ವಿವರಗಳನ್ನು ಕೇಳಿ. ನೇನು ನೀವು ಎಂದರೆ ಎಂಬ ಹೆಸರಾದರೆ, ಎಂಬ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದರ ಕೆಲವು ವಿವರಗಳನ್ನು ಕೇಳಿ. ನೀವು ಎಂಬ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದರ ಕೆಲವು ವಿವರಗಳನ್ನು ಕೇಳಿ, ಅಥವಾ ನೀವು ಎಂದರೆ ಎಂಬ ಹೆಸರಾದರೆ ನೀವು ಎಂದರೆ ಎಂಬ ಕಾರ್ಡ್ ಹೊಂದಿರುವುದರ ಕೆಲವು ವಿವರಗಳನ್ನು ಕೇಳಿ."
+    },
+    {
+      "text": "ಶುಭೋದಯ",
+      "lang": "kn",
+      "expected": "faq_general",
+      "got": "fees_charges",
+      "resolved": false,
+      "error": null,
+      "reply": "ಶುಭೋದಯ! ನೇನು ತುಂದರೆ ತೆಲಿಸಲಾಗುವ ವಿಧಾನಗಳ ವಿವರಗಳನ್ನು ಸಹಾಯಿಸುತ್ತೇನೆ. ನೇನು ತುಂದರೆ ನೋಟ್‌ಗಳ ವಿಧಾನಗಳ ಶೇರ್‌ಕ್‌ಟ್‌ಗಳನ್ನು ಕೆಲಸಿಸಿ ಕೊಡುತ್ತುದೇ. ನೇನು ತುಂದರೆ ನೋಟ್‌ಗಳ ಶೇರ್‌ಕ್‌ಟ್‌ಗಳನ್ನು ಕೆಲಸಿಸಿ ಕೊಡುತ್ತುದೇ. ನೇನು ತುಂದರೆ ನೋಟ್‌ಗಳ ಶೇರ್‌ಕ್‌ಟ್‌ಗಳನ್ನು ಕೆಲಸಿಸಿ ಕೊಡುತ್ತುದೇ.\n\nಕೃದ್ವಿಧ, ನೇನು ತುಂದರೆ ನೋಟ್‌ಗಳ ಶೇರ್‌ಕ್‌ಟ್‌ಗಳನ್ನು ಕೆಲಸಿ"
+    },
+    {
+      "text": "pichle 10 din me kaunse payments gaye",
+      "lang": "hinglish",
+      "expected": "transaction_history",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "Last 10 din mein aapki payments 10 din pichle se honge. Kya aap loan account number ya kisi bhi related information de sakte ho? Isse help karne mein mera kuch bhi hoga."
+    },
+    {
+      "text": "6 lakh pe 4 saal ki kist kitni banegi",
+      "lang": "hinglish",
+      "expected": "emi_calculation",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "4 वर्ष की किस्तें में लगभग ₹30,000 बनेंगी. यह संख्या चक्रवृद्धि ब्याज पर निर्भर करती है. अगर और जानकारी चाहते हैं, फार्मूला या ब्याज दर के बारे में पूछ सकते हैं."
+    },
+    {
+      "text": "2 lakh 24 mahine ke liye lu to emi kitna",
+      "lang": "hinglish",
+      "expected": "emi_calculation",
+      "got": "transfer_money",
+      "resolved": false,
+      "error": null,
+      "reply": "Loan eligibility for 2 lakh for 24 months is not clear here. Can you please tell me your monthly income? This will help me check if you're eligible and give you the EMI amount."
+    },
+    {
+      "text": "naya debit card aa gaya hai, chalu kaise karu",
+      "lang": "hinglish",
+      "expected": "card_activate",
+      "got": "card_block",
+      "resolved": false,
+      "error": null,
+      "reply": "dekho, aapki debit card blocked hai. Naya card aa chuka hai, lekin kuch din lagenge. Agar aapko un din kisi kaam karna hai, to aap kisi aur card se transact kar sakte hain. Kya aap kitni rupaye transact karna chahte hain?"
+    },
+    {
+      "text": "dukaan pe card tap karne se payment nahi ho raha",
+      "lang": "hinglish",
+      "expected": "card_issue",
+      "got": "dispute_refund",
+      "resolved": false,
+      "error": null,
+      "reply": "dekho, card tap karne se payment nahi ho rahi hai, kya aapka card blocked hai ya kuch technical problem hai? Kuch din ka support team se contact karna bhi acha hai."
+    },
+    {
+      "text": "bot nahi, insaan se complaint karni hai",
+      "lang": "hinglish",
+      "expected": "human_agent",
+      "got": "faq_general",
+      "resolved": false,
+      "error": null,
+      "reply": "Sorry to hear you're upset. I can help with that. Do you want to close your account? If yes, can you give me your account number? We can proceed from there."
+    }
+  ],
+  "wall_seconds": 326.2
+}

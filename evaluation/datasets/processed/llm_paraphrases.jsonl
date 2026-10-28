@@ -1,0 +1,1400 @@
+{"text": "What is my sb a/c bal rn", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls tel my current savings balance", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "a/c balance kya hai", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "want to know my curr a/c balance pls", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "wat is my fd amount currently", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "hey check my savings a/c bal", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "fd ka kitna paisa hai abhi", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "savings a/c bal pls", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe apna a/c balance check karna hai", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much money is in my fd maturing next month", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls send savings balance", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bal batao a/c ka", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "hey whats my balance rn", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "wat is my account bal", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "current a/c bal kitna h bhai", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can u tell my savings balance pls", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe balance janna hai pls", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "my a/c bal pls", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "what is my balance in 1 yr fd", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bal bata do savings ka", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "chk my a/c balance", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much in my savings a/c right now", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "fd ki value kya hai abhi", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls check current a/c balance", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bal kitna hai a/c me", "label": "check_balance", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा अकाउंट बैलेंस कितना है बताना जरा", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "सेविंग्स अकाउंट का बैलेंस चेक करना है", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "खाते में कितना पैसा बचा है देख के बता दो", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Current account balance kya hai?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD ka balance kitna hai check karna tha", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे फिक्सड डिपोजिट में कुल कितना अमाउंट है?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "भैया सेविंग्स का बैलेंस बताना", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अकाउंट बैलेंस भेजना जरा", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अरे यार, अकाउंट में पैसे बचे हैं या नहीं, बैलेंस बता दो", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mujhe mere savings account ka balance janna hai", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD account ka balance kaise pata chalega?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे खाते में अभी कितना पैसा है?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "बैलेंस चेक करके बता दो भाई", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Current account mein kitna balance hai batao na", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अकाउंट का बैलेंस बता दीजिए प्लीज़", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरी एफडी का बैलेंस कितना हुआ है?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Savings account ka balance bata sakte hain kya?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "खाते की राशि देखनी है, बैलेंस बताओ", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अकाउंट बैलेंस क्या है भाई?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD ka amount check karna hai", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "बैलेंस बता दो यार जल्दी से", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Savings account balance kitna hai?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे करंट अकाउंट का बैलेंस जानना था", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "खाते में कुल कितनी रकम है अभी?", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD balance bata do please", "label": "check_balance", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಸೇವಿಂಗ್ಸ್ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಚೆಕ್ ಮಾಡಬೇಕು", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅಕೌಂಟ್ ಅಲ್ಲಿ ಎಷ್ಟು ದುಡ್ಡಿದೆ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಕರೆಂಟ್ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಹೇಳಿ", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಫ್ ಡಿ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟಿದೆ ಅಂತ ನೋಡಬಹುದಾ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಬ್ಯಾಲೆನ್ಸ್ ತಿಳ್ಕೊಬೇಕು", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಹೇಗಾ ಚೆಕ್ ಮಾಡೋದು?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಖಾತೆಯಲ್ಲಿ ಈಗ ಎಷ್ಟು ಅಮೌಂಟ್ ಇದೆ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಐದು ಲಕ್ಷ ಎಫ್ ಡಿ ಇಟ್ಟಿದ್ನಲ್ಲ, ಅದರ ಬ್ಯಾಲೆನ್ಸ್ ಹೇಳಿ", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಸೇವಿಂಗ್ಸ್ ಅಕೌಂಟ್ ಅಲ್ಲಿ ಎಷ್ಟು ಬ್ಯಾಲೆನ್ಸ್ ಉಳಿದಿದೆ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹಾಯ್, ನನ್ನ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು ಅಂತ ಸ್ವಲ್ಪ ಹೇಳ್ತೀರಾ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಲಾಸ್ಟ್ ಒನ್ ಇಯರ್ ಇಂದ ಎಫ್ ಡಿ ಇಟ್ಟಿದ್ದೀನಿ, ಈಗ ಅದರ ವ್ಯಾಲ್ಯೂ ಎಷ್ಟು?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟಿದೆ ಅಂತ ನೋಡಿ ಹೇಳಿ ಪ್ಲೀಸ್", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಸೇವಿಂಗ್ಸ್ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಇವಾಗ್ಲೇ ಬೇಕು", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಫ್ ಡಿ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಚೆಕ್ ಮಾಡೋಕೆ ಹೆಲ್ಪ್ ಮಾಡಿ", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅಕೌಂಟ್ ಅಲ್ಲಿ ಇರುವ ಟೋಟಲ್ ಅಮೌಂಟ್ ಎಷ್ಟಿದೆ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕರೆಂಟ್ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟಿದೆ ಸ್ವಾಮಿ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮೂರು ತಿಂಗಳ ಎಫ್ ಡಿ ದುಡ್ಡು ಸೇರಿ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಅಕೌಂಟ್ ಸ್ಟೇಟಸ್ ಮತ್ತು ಬ್ಯಾಲೆನ್ಸ್ ತಿಳಿಸಿ", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟಿದೆ ಅಂತ ಮೆಸೇಜ್ ಮಾಡಿ", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ತಿಳ್ಕೊಳ್ಳೋದು ಹೇಗೆ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಹತ್ರ ಇರೋ ಸೇವಿಂಗ್ಸ್ ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಕೊಡಿ", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಫ್ ಡಿ ಮೇಲೆ ಎಷ್ಟು ಅಮೌಂಟ್ ಬಂದಿದೆ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಒಮ್ಮೆ ಚೆಕ್ ಮಾಡ್ತೀರಾ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಟೋಟಲ್ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು ಅಂತ ಹೇಳ್ತೀರಾ?", "label": "check_balance", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera balance check karna hai", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "savings account me kitna paisa hai bhai?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD ka balance batao na", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "aaj ka account balance kya hai?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "account me kitna balance bacha hai zara dekh ke batao", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera current account balance kitna hai?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "balance pata karna hai urgent", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD ka amount show nahi ho raha, balance batao", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "saving acc ka balance batao", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera account balance check kar do please", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai balance bata de jaldi", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD maturity par kitna balance ho gaya hai?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "account me kitne paise hain check karna hai", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kya aap mera balance bata sakte hain?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera FD ka kitna balance hai total?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "batao na account me kitna balance hai abhi", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "balance check karna bhul gaya, abhi bata do", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "saving account balance kitna hai sir?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera current account ka paisa check karna hai", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD me kitna jama hai abhi tak?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "account balance bata do please", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kuch din pehle FD kiya tha, uska balance kya hai?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "balance inquiry karni hai", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera savings account ka balance kitna hai ji?", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "jaldi se balance batao account ka", "label": "check_balance", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show my last 5 trans pls", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "hey need mini stmt rn", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "wanna check my a/c balance and recent spending", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls show my passbook", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "txn history nikalo na", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last transactions dekhna hai", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "statement bhej do last month ka", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai a/c ka statement chahiye", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can u pls send my mini stmt", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kitna kharcha hua is month me dekhna h", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show me payments made yestarday", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last kuch transactions dikha do pls", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "statement download krna h kaise kru", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "transacations btao jo abhi kiye", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "txn history pls", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can i get my account statement for last week", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show my last 5 payments made", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mini statement kaise milega", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe mera a/c statement chahiye", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls show my recent trans", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "txn details chahiye pls", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last kitna amount kata hai a/c se dekhna hai", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "statement pls", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show last transactions", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bta do kitna payment kiya kal", "label": "transaction_history", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले महीने का स्टेटमेंट भेजो", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे अकाउंट का मिनी स्टेटमेंट दिखाओ", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "आखिरी पाँच ट्रांजैक्शन देखनी हैं", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैंने कल जो UPI पेमेंट किया था वो दिखाइए", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले हफ्ते का खाता विवरण चाहिए", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "जरा अकाउंट बैलेंस और पिछला लेन-देन बताना", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पार्टी पेमेंट की लिस्ट दिखाओ", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अभी तक के सारे ट्रांजैक्शन चेक करने हैं", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैंने जो 5000 का ट्रांसफर किया था वो लिस्ट में है क्या?", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले तीन महीने का बैंक स्टेटमेंट कैसे मिलेगा?", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अकाउंट की पासबुक अपडेट करनी है, लास्ट ट्रांजैक्शन क्या है?", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा अकाउंट स्टेटमेंट डाउनलोड करना है", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कल जोमैटो पर पेमेंट किया था, वो ट्रांजैक्शन देखना है", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "EMI कटने के बाद का बैलेंस और ट्रांजैक्शन दिखाओ", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले हफ्ते कितने पैसे आए और गए?", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मर्चेंट पेमेंट का इतिहास देखना है", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे मेरा अकाउंट समरी चाहिए", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "आखिरी दस लेन-देन दिखाओ ना यार", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "FD टूटने के बाद का ट्रांजैक्शन देखना है", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "जून महीने का पूरा स्टेटमेंट चाहिए", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अभी जो ₹500 भेजे उसका स्टेटस क्या है?", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पेंडिंग ट्रांजैक्शन की लिस्ट दिखाओ", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे डेबिट कार्ड से जो शॉपिंग की थी वो ट्रांजैक्शन कहाँ है?", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले 10 दिन का बैंक स्टेटमेंट भेज दो", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "लस्ट ट्रांजैक्शन क्या था मेरा?", "label": "transaction_history", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕನ್ನಡದಲ್ಲಿ ಲಾಸ್ಟ್ ಟ್ರಾನ್ಸಾಕ್ಷನ್ಸ್ ತೋರಿಸಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಕೊನೆಯ ಐದು ಡೆಬಿಟ್ಸ್ ನೋಡಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ವಾರದ ಸ್ಟೇಟ್ಮೆಂಟ್ ಕೊಡಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮಿನಿ ಸ್ಟೇಟ್ಮೆಂಟ್ ಕಳುಹಿಸಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಲಾಸ್ಟ್ ಮಂತ್ ಪೇಮೆಂಟ್ಸ್ ಚೆಕ್ ಮಾಡ್ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಿನ್ನೆ ಮಾಡಿದ ಯುಪಿಐ ಪೇಮೆಂಟ್ ಹಿಸ್ಟರಿ ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಸ್ವಲ್ಪ ಅಕೌಂಟ್ ಹಿಸ್ಟರಿ ತೋರಿಸ್ತೀರಾ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕೊನೆದಾಗಿ ಖಾತೆಯಿಂದ ಹಣ ಹೋದದ್ದು ಎಲ್ಲಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ಮೂರು ತಿಂಗಳ ಸ್ಟೇಟ್ಮೆಂಟ್ ಡೌನ್ಲೋಡ್ ಮಾಡ್ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಲ್ಯಾಸ್ಟ್ ಟ್ರಾನ್ಸಾಕ್ಷನ್ ಯಾವುದು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ರಿಸೆಂಟ್ 5,000 ರೂಪಾಯಿ ಪೇಮೆಂಟ್ ಆಗಿದೆ, ಅದರ ಡೀಟೇಲ್ಸ್ ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಈ ವಾರ ಏನೆಲ್ಲಾ ಟ್ರಾನ್ಸಾಕ್ಷನ್ಸ್ ಆಗಿದೆ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ಎರಡು ದಿನದ ಅಕೌಂಟ್ ಸ್ಟೇಟ್ಮೆಂಟ್ ಕೊಡಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಿನ್ನೆ ಮಾಡಿದ ಗೂಗಲ್ ಪೇ ಟ್ರಾನ್ಸಾಕ್ಷನ್ ನಂಬರ್ ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಲಾಸ್ಟ್ ಟ್ರಾನ್ಸಾಕ್ಷನ್ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ತಿಂಗಳು ಮಾಡಿದ ಎಲ್ಲಾ ಬಿಲ್ ಪೇಮೆಂಟ್ಸ್ ಲಿಸ್ಟ್ ಕಳುಹಿಸಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಖಾತೆಯ ಇತ್ತೀಚಿನ ವಹಿವಾಟುಗಳ ವಿವರ ಕೊಡಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಇವತ್ತು ಮಾಡಿದ ಪೇಮೆಂಟ್ಸ್ ತೋರಿಸಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ಹತ್ತು ದಿನದ ಲೆಕ್ಕ ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಲಾಸ್ಟ್ ಮಿನಿ ಸ್ಟೇಟ್ಮೆಂಟ್ ಹೇಗೇ ತೆಗಿಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅಕೌಂಟಿಗೆ ಲಾಸ್ಟ್ ಯಾರು ಹಣ ಹಾಕಿದ್ದು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ಐದು ದಿನದ ಟ್ರಾನ್ಸಾಕ್ಷನ್ ತೋರಿಸಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಫೋನ್ಪೇ ನಲ್ಲಿ ಮಾಡಿದ ಲಾಸ್ಟ್ ಪೇಮೆಂಟ್ ಹಿಸ್ಟರಿ ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ತಿಂಗಳ ಖರ್ಚಿನ ಸ್ಟೇಟ್ಮೆಂಟ್ ಕಳುಹಿಸಿ", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಲಾಸ್ಟ್ ಟ್ರಾನ್ಸಾಕ್ಷನ್ಸ್ ಒಂದು ಸರಿ ನೋಡ್ಬೇಕು", "label": "transaction_history", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pichhle mahine ka statement bhej do", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last 5 transactions dikhao", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mera account ka balance aur last transactions bata", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "statement chahiye mujhe", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last kuch payments ka status kya hai", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "meri mini statement nikal do yaar", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kaun kaun se payments kiye hain pichhle hafte, list do", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhaiya statement kaise milega last month ka?", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe pichhle das din ka hisaab chahiye", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "txn history check karni hai", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "account statement download karni hai", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last 3 months ka statement milega kya?", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kitna paisa kata hai aur kahan gaya, details do", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "sir last transaction kya tha mera?", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last 2000 ka jo payment kiya tha uska status batao", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pichhle 24 ghante mein kya transactions hue hain?", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera mini statement bhej do jaldi", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last week ka kharcha dekhna hai", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "statement pdf format mein mil sakta hai kya?", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai last payment jo kiya uska record dikha", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "account activity check karni hai", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kaun sa payment successful hua hai aur kaun sa fail, batao", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last month ka bank statement chahiye email pe", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "txn log dikhao zara", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pichhle paanch transactions ki list do na", "label": "transaction_history", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much did i spend dis month rn", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show me my total spends for dis week pls", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai kitna kharcha ho gaya total a/c se?", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "where did my money go in the last 3 days", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "category wise expense batao pls", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera kharcha kaha gaya check karke batao na", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much did i spend on food lately", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show me shopping spends this month", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last week kitna ud gaya mera?", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "stmt me dekh ke batao total spend kitna hai", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bc bohot kharcha ho gaya, summary do pls", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much money left after all expenses rn", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show my monthly bill payments and expenses", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "batao na yaar kaha spend kiya sabse zyada", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "fuel pe kitna gaya is month?", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "total debit kitna hua hai is hafte me?", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "expense analysis do na pichle mahine ka", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "where did i use my debit card most dis month", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kharcha kahan hua hai mera find karke do", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe category wise spending dekhni hai pls", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kitna paisa nikla a/c se today?", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "show food and online shopping expenses rn", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yaar saara paisa kahan chala gaya pata nahi chal raha", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last month ka expense breakdown do na pls", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much did I spend on groceries this week", "label": "spending_summary", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैंने इस महीने कुल कितना खर्च किया?", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले हफ्ते का खर्चा बताओ", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "देखना इस महीने UPI से कितना गया", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा खर्चा कहाँ-कहाँ हुआ है जरा बताना", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "₹5000 से ऊपर के खर्च दिखाओ", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "इस हफ्ते कितना उड़ा दिया मैंने?", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "지난 month का expense analysis भेज दो", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "खाते से पैसा किधर जा रहा है सब बताओ", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "इस महीने शॉपिंग पर कितना खर्च हुआ?", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पैसे कहाँ खर्च हो रहे हैं कुछ समझ नहीं आ रहा", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "यार इस महीने का टोटल खर्च बताना जरा", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "फूड और ग्रॉसरी पर कितना खर्चा हुआ इस बार?", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा spending breakdown दिखाओ", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले 30 दिन का हिसाब दो", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "देखना जरा कल कितना पैसा कटा खाते से", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "इस महीने EMI और बिल मिलाकर कितना गया?", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "टोटल expense report भेजो", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा इस महीने का खर्चा चेक करना", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "देखना इस हफ्ते सबसे ज्यादा पैसा कहाँ खर्च हुआ", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले महीने के मुकाबले इस महीने ज्यादा खर्च हुआ क्या?", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैंने इस महीने डाइनिंग पर कितना खर्च किया?", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा इस महीने का खर्च का हिसाब दो", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "जरा बताना इस महीने फ्यूल में कितना गया", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अकाउंट से पैसे कहाँ-कहाँ कटे हैं लिस्ट दिखाओ", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "इस महीने का मेरा खर्च निकालने में मदद करो", "label": "spending_summary", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಅಕೌಂಟ್ ಇಂದ ಎಷ್ಟು ಖರ್ಚಾಗಿದೆ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಈ ತಿಂಗಳು ಟೋಟಲ್ ಎಷ್ಟೋ ಖರ್ಚು ಮಾಡಿದ್ದೀನಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ವಾರ ಎಷ್ಟು ಖರ್ಚು ಆಯ್ತು ನೋಡಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ last month expenses ಎಷ್ಟು ಅಂತ ಹೇಳಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಟೋಟಲ್ ಖರ್ಚು ಎಷ್ಟಾಗಿದೆ ಹೇಳಿ ಬಾಸ್", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಇವತ್ತು ನಾನು ಎಷ್ಟು ಖರ್ಚು ಮಾಡಿದ್ದೀನಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಈ ತಿಂಗಳು ಏನೇನು ಖರ್ಚು ಬಂದಿದೆ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ spending details ಕೊಡಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಷ್ಟು ಹಣ ಖರ್ಚಾಗಿದೆ ರೀ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last 1 week ನಲ್ಲಿ ಎಲ್ಲಿ ಎಲ್ಲಿ ಖರ್ಚು ಮಾಡಿದ್ದೀನಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಖರ್ಚಿನ ಹಿಸಾಬು ಕೊಡಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಫುಡ್ ಮೇಲೆ ಎಷ್ಟು ಖರ್ಚಾಗಿದೆ ಈ ತಿಂಗಳು", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Shopping ಗೆ ಎಷ್ಟು ಹಣ ಹೋಯ್ತು", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ monthly expense summary ಬೇಕು", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಸ್ವಲ್ಪ expense analysis ಮಾಡಿ ಕೊಡಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಿನ್ನೆ ಎಷ್ಟು ಖರ್ಚು ಮಾಡಿದೆ ನಾನು", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಯಾವುದ್ಯಾವುದಕ್ಕೆ ಎಷ್ಟು ಹಣ ಖರ್ಚಾಗಿದೆ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ account ಇಂದ ಎಲ್ಲೆಲ್ಲಿ ದುಡ್ಡು ಹೋಗಿದೆ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಈ ವಾರ ನನ್ನ spending ಹೇಗಿದೆ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Bills ಗೆ ಎಷ್ಟು ಖರ್ಚು ಮಾಡಿದ್ದೀನಿ ಈ ತಿಂಗಳು", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಒಟ್ಟು ಎಷ್ಟು ಖರ್ಚು ಮಾಡಿದ್ದೀನಿ ಅಂತ ಹೇಳ್ತೀರಾ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ spending categories ತೋರಿಸಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Entertainment ಗೆ ಎಷ್ಟು ಖರ್ಚಾಗಿದೆ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ತಿಂಗಳು ಎಷ್ಟೆಷ್ಟು ಖರ್ಚು ಮಾಡಿದೆ ಒಟ್ಟು", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಟೋಟಲ್ ಖರ್ಚಿನ ವಿವರ ಕೊಡಿ", "label": "spending_summary", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "is mahine kitna kharcha ho gaya yaar", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mera last week ka expense bata de", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "total spend kitna hai mera abhi tak", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pichle hafte kahan kahan paise udaye check karke batao na", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "dekhna जरा is month kitna kharcha hua", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bada kharcha ho gaya, total amount batao", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera kharcha kitna hua hai is hafte", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last month ka expense report bhejo", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "khana peene pe kitna paisa gaya is mahine", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "shopping pe kitna kharcha hua total", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mere transactions ki category wise list dena", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "dekh to sahi is mahine kahan kahan paise kate hain", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera expense breakdown batao please", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kahan kahan paise gaye hain mere is mahine zara dekhna", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "traveling pe kitna kharcha kiya maine", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bills waghera pe kitna paisa gaya total", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "zara check karke batao na last month kitna spend kiya", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "food delivery pe kitna kharcha hua hai ab tak", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe apna spending pattern dekhna hai", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kaunsi category mein sabse zyada paise kharch huye hain", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera total debit kitna hua hai is mahine", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai zara kharche ka hisaab dena", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pichle 30 din mein kitna paisa gaya account se", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "grocery pe kitna kharcha ho gaya is mahine", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera expense analysis nikal ke do na", "label": "spending_summary", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can i get a loan rn?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "whats the max personal loan i can get from hdfc?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can u check if i can afford a 5lakh car loan pls", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much loan can I get on 40k salary", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe 2 lakh ka loan mil skta hai kya?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "max loan amount i am eligible for?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "chk my loan eligibility pls", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can i get 15L home loan with my current a/c balance?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much money can u guys lend me rn", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "is 50k loan possible on my savings a/c?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "want to know max loan i can get on 50k per month", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "loan kitna milega mujhko?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can i afford a 10lakh loan with my salary?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "am i eligible for a 3 lakh personal loan?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls tell max loan limit for my a/c", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kya mai 50000 ka loan le skta hu?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much loan amount approved for me?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "chk loan limit pls", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can i get 20 lakh loan rn?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "what is the maximum loan amount i qualify for", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can i get a loan of 1 lakh for 1 yr?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe 5 lakh cahiye, milga kya?", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how much loan can i get on my current income", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls check if i can get 3lakh loan", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "max loan i can get on 30k salary pls", "label": "loan_eligibility", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे दस लाख का लोन मिल सकता है क्या", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरी सैलरी तीस हजार है, क्या मुझे पर्सनल लोन मिलेगा", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैं पांच लाख तक का कार लोन लेना चाहता हूँ, एलिजिबिलिटी चेक करो", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे डेढ़ लाख का लोन चाहिए, कितना ईएमआई बनेगा", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या मैं पचास हजार का लोन ले सकता हूँ?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरी सैलरी पर मैक्सिमम कितना लोन मिल सकता है?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "भाई मुझे पर्सनल लोन चाहिए, कैसे पता चलेगा कि मिलेगा या नहीं", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या बैंक मुझे होम लोन दे देगा? मेरी सैलरी पचास हजार है", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैं दो लाख का लोन लेना चाहता हूँ, मेरी सैलरी बीस हजार है, क्या मैं एलिजिबल हूँ?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा सिविल स्कोर अच्छा है, क्या मुझे इंसटेंट लोन मिल सकता है?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या मैं अपने एफडी पर लोन ले सकता हूँ?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे तीन लाख का लोन चाहिए, मेरी मंथली इनकम पंद्रह हजार है", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरी कंपनी छोटी है, क्या मुझे पर्सनल लोन मिल सकता है?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैनेजर से बात कराओ या बताओ मुझे कितना लोन मिल सकता है", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या मैं बिजनेस लोन के लिए अप्लाई कर सकता हूँ? नया बिजनेस है", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे दस लाख का होम लोन चाहिए, मिनिमम सैलरी कितनी चाहिए?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा अकाउंट इसी बैंक में है, क्या मुझे बिना डॉक्यूमेंट के लोन मिल जाएगा?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझको पांच लाख का पर्सनल लोन चाहिए, क्या मेरा लोन पास हो जाएगा?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कितनी सैलरी होनी चाहिए पांच लाख के लोन के लिए?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अरे मुझे इमरजेंसी में दो लाख का लोन चाहिए, मिल सकता है क्या तुरंत?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या मैं कार लोन के लिए एलिजिबल हूँ? मेरी जॉब को छह महीने हुए हैं", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे बीस लाख का होम लोन चाहिए, मेरी और मेरी पत्नी की सैलरी मिलाकर एक लाख है", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा सिबिल स्कोर खराब है, क्या मुझे फिर भी लोन मिल सकता है?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मैं पर्सनल लोन के लिए कितना अमाउंट मैक्सिमम मांग सकता हूँ?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा यूपीआई ट्रांजेक्शन अच्छा है, क्या इसके बेसिस पर लोन मिलेगा?", "label": "loan_eligibility", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನಗೆ ಲೋನ್ ಸಿಗುತ್ತಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನಗೆ ಒಂದು ಲಕ್ಷ ಲೋನ್ ಬೇಕು, ಸಿಗುತ್ತಾ ಸರ್", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮನೆ ಕಟ್ಟೋದಕ್ಕೆ ಎಷ್ಟು ಲೋನ್ ಸಿಗುತ್ತೆ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಸ್ಯಾಲರಿಗೆ ಎಷ್ಟರವರೆಗೆ ಲೋನ್ ಸಿಗಬಹುದು", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾನು ಟು ವೀಲರ್ ತಗೋಬೇಕು, ಲೋನ್ ಸಿಗುತ್ತಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಪರ್ಸನಲ್ ಲೋನ್ ಅಪ್ರೂವ್ ಆಗೋಕೆ ಎಷ್ಟು ಸ್ಯಾಲರಿ ಇರಬೇಕು", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾನು ಐವತ್ತು ಸಾವಿರ ಲೋನ್ ತಗೋಬಹುದಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹಲೋ, ನನಗೆ ಕಾರ್ ಲೋನ್ ಬೇಕು, ಎಲಿಜಿಬಿಲಿಟಿ ಚೆಕ್ ಮಾಡಿ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಸ್ಯಾಲರಿ ಇಷ್ಟು ಇದೆ, ನನಗೆ ಎಷ್ಟು ಲೋನ್ ಸಿಗುತ್ತೆ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬಿಸಿನೆಸ್ ಲೋನ್ ಸಿಗೋದಕ್ಕೆ ಏನೇನು ಬೇಕು", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನಗೆ ಅರ್ಜೆಂಟ್ ಆಗಿ ಐದು ಲಕ್ಷ ಲೋನ್ ಬೇಕು, ಏನ್ ಮಾಡ್ಬೇಕು", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಜುಕೇಶನ್ ಲೋನ್ ಸಿಗುತ್ತಾ ಇಲ್ಲವಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮೂರು ಲಕ್ಷ ಲೋನ್ ಅಪ್ಲೈ ಮಾಡ್ತೀನಿ, ಸಿಗುತ್ತಾ ಹೇಳಿ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾನು ಲೋನ್ ಗೆ ಎಲಿಜಿಬಲ್ ಹೌದಾ ಅಲ್ವಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಅಕೌಂಟ್ ಮೇಲೆ ಎಷ್ಟು ಲೋನ್ ಸಿಗಬಹುದು", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹಲೋ ಸರ್, ಪರ್ಸನಲ್ ಲೋನ್ ಗರಿಷ್ಠ ಎಷ್ಟು ಸಿಗುತ್ತೆ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಗೋಲ್ಡ್ ಲೋನ್ ತಗೋಬೇಕು, ಮ್ಯಾಕ್ಸಿಮಮ್ ಎಷ್ಟು ಅಮೌಂಟ್ ಸಿಗುತ್ತೆ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಸೈಟ್ ತಗೋಳೋಕೆ ಲೋನ್ ಸಿಗುತ್ತಾ, ಸ್ವಲ್ಪ ಹೇಳಿ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನಗೆ ಮನೆ ರಿಪೇರಿ ಮಾಡಿಸೋಕೆ ಲೋನ್ ಬೇಕಿತ್ತು", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾನು ಹೊಸ ಬಿಸಿನೆಸ್ ಸ್ಟಾರ್ಟ್ ಮಾಡ್ತಿದೀನಿ, ಲೋನ್ ಸಿಗುತ್ತಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕನಿಷ್ಠ ಎಷ್ಟು ಸ್ಯಾಲರಿ ಇದ್ರೆ ಲೋನ್ ಸಿಗುತ್ತೆ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹತ್ತು ಲಕ್ಷ ಲೋನ್ ಬೇಕು, ನನ್ನ ಸ್ಯಾಲರಿಗೆ ಸಿಗುತ್ತಾ ನೋಡಿ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನಗೆ ಲೋನ್ ಸಿಗೋ ಚಾನ್ಸ್ ಇದೆನಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಇಂದ ನನಗೆ ಎಷ್ಟು ಲೋನ್ ಸಿಗಬಹುದು ಅಂತ ತಿಳಿದುಕೊಳ್ಳಬೇಕು", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾನು ಲೋನ್ ಗೆ ಅಪ್ಲೈ ಮಾಡಬಹುದಾ ಅಥವಾ ರಿಜೆಕ್ಟ್ ಆಗುತ್ತಾ", "label": "loan_eligibility", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mujhe pata karna tha ki main 5 lakh ka personal loan le sakta/ sakti hoon kya?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aap bata sakte hain ki mere account se maximum loan limit kitni ho sakti hai?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 2.5 lakh ka loan chahiye, kya main qualify karunga?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Agar main 10 saal tak repay karun, toh kitna loan mil sakta hai?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere credit score achha hai, kya mujhe 7 lakh tak ka loan mil sakta hai?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe ek quick loan chahiye, 1 lakh tak ka, kitna mil sakta hai?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aap bata sakte hain ki meri salary ke hisaab se max loan kitna ho sakta hai?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 15 lakh ka home loan chahiye, kya main eligible hoon?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere paas 3 lakh ki savings hai, toh loan limit kitni ho sakti hai?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aap mujhe bata sakte hain ki 8 lakh ka loan kitne months mein clear ho jayega?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 6 months ke liye short term loan chahiye, kitna mil sakta hai?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere account me 50k hai, kya main 2 lakh ka loan le sakta hoon?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे पता है कि मैं 12% interest पर loan ले सकता हूँ, पर max amount kitna है?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Agar main 30% down payment karun, toh loan amount kitna reduce ho jayega?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 3.5 lakh ka loan chahiye, kya aap eligibility check kar sakte हैं?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mेरा business expand karna है, 10 lakh ka loan possible hai kya?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 20% EMI afford kar sakta हूँ, तो max loan kitna हो सकता है?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 4 lakh ka loan chahiye, क्या मैं तुरंत approval पा सकता हूँ?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 9 lakh ka loan chahiye, क्या मेरे credit score se qualify hota है?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 2 साल ke liye loan chahiye, kitna amount mil sakta है?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 6 lakh ka loan chahiye, क्या मैं online apply कर सकता हूँ?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 1.2 lakh ka loan chahiye, क्या आप immediate disbursal दे सकते हैं?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 7.5 lakh ka loan chahiye, क्या मैं पहले से ही pre-approved हूँ?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 3 साल ke liye loan chahiye, maximum amount kitna हो सकता है?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 5000 per month ki EMI afford kar sakta हूँ, तो loan limit kya होगी?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mुझे 12 lakh ka loan chahiye, क्या मेरे existing loans ko consider karte हुए भी possible है?", "label": "loan_eligibility", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Hey, can u tell me the monthly EMI for a Rs 5 lakh personal loan for 5 years?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "What's my current loan EMI due tomorrow?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Pls give me the instalment amount for a home loan of Rs 30L over 20 yrs.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "I need the EMI breakdown for my car loan, loan a/c no 123456.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Can u calculate the monthly payment if I take Rs 2.5L for 3 yrs?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Yo, what's the due amount on my loan today?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Hey bot, how much will I pay each month for a Rs 10L loan for 7 years?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Need the EMI schedule for my education loan, Rs 8 lakh, 10 yrs.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "What's my EMI for the personal loan I took last month?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Pls tell me the next EMI amount and due date for my home loan.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "How much is the monthly instalment if I borrow Rs 1.2L for 2 years?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Hey, can you check my loan a/c and tell me the EMI due next week?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Give me the EMI amount for a Rs 15 lakh loan over 15 years.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "What's the payment due on my car loan this month?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "I want to know the EMI for a Rs 3 lakh personal loan for 4 years.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Can u show me the EMI breakdown for my existing home loan?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Pls calculate the monthly payment for Rs 6L loan for 6 yrs.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "What's my next loan EMI amount?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Hey, how much do I need to pay monthly for a Rs 20L loan for 10 years?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Tell me the EMI for a Rs 9 lakh loan over 12 years.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "What's the due amount on my education loan for this month?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Can u give me the EMI for a Rs 4.5L loan for 5 yrs?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Pls let me know the next instalment due on my personal loan.", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "How much will I pay each month if I take Rs 7 lakh for 8 years?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "What's the EMI for my home loan a/c ending 7890?", "label": "emi_calculation", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरा ईएमआई कितना है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "होम लोन का ईएमआई चेक करना है", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे अपने लोन का मंथली इन्सटॉलमेंट जानना है", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "5 लाख के पर्सनल लोन पर ईएमआई कितना बनेगा?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "लोन की अगली किस्त कब कटनी है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कार लोन की ईएमआई कितनी आ रही है इस महीने?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा एजुकेशन लोन चल रहा है, उसका ईएमआई अमाउंट बता दो", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "यह चेक करना था कि इस महीने का ईएमआई कितना है", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "लोन का बैलेंस अमाउंट और ईएमआई दिखाओ", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "भैया, मेरे पर्सनल लोन का ईएमआई कितना है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पिछले महीने मेरा ईएमआई बाउंस हो गया था, इस बार का टोटल अमाउंट कितना है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "3 लाख के लोन पर 2 साल के लिए ईएमआई क्या होगा?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरी लोन की किस्त का ड्यू डेट क्या है और कितना देना है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "जल्दी से बताओ मेरा होम लोन का ईएमआई कितना है", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "लोन अकाउंट की डिटेल्स देखनी है, ईएमआई कितना बचा है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा लोन का ईएमआई कटने वाला है, अकाउंट में कितना पैसा होना चाहिए?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "सर, गोल्ड लोन की मंथली इन्सटॉलमेंट पता करनी थी", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "10 लाख के लोन पर 5 साल का ईएमआई कैलकुलेट करके दो", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या आप मुझे बता सकते हैं कि मेरा लोन रीपेमेंट शेड्यूल क्या है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "अगली किस्त कितनी जाएगी?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा करंट लोन का ईएमआई अमाउंट क्या है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मोबाइल लोन की ईएमआई कितनी बाकी है अभी?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मंथली इन्सटॉलमेंट पे करने के लिए कितना अमाउंट चाहिए?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पर्सनल लोन का इस महीने का किस्त कितना है?", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे लोन की ईएमआई जाननी है, प्लीज हेल्प करो", "label": "emi_calculation", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ 5 ಲಕ್ಷ ರೂ. ಲೋನ್‌ಗಾಗಿ 12 ತಿಂಗಳ EMI ಎಷ್ಟು ಆಗುತ್ತದೆ?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಈ ತಿಂಗಳು ನನ್ನ ಹೋಮ್ ಲೋನ್‌ ಪೇಮೆಂಟ್‌ ಡ್ಯೂ ಆಗಿದೆ, ದಯವಿಟ್ಟು ಮೊತ್ತ ತಿಳಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಕಾರ್ ಲೋನ್‌ 3% ಇಂಟರಸ್ಟ್‌ ಜೊತೆ 24 ಮಾಸಗಳ EMI ಹೇಗಿರುತ್ತದೆ?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಾನು 10 ಲಕ್ಷ ರೂ. ಪರ್ಸನಲ್ ಲೋನ್ ತೆಗೆದುಕೊಳ್ಳಬೇಕೆಂದು ಯೋಚಿಸುತ್ತಿದ್ದೇನೆ, 6 ತಿಂಗಳ EMI ಏನು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಈ ವಾರದ ಲೋನ್‌ ಪೇಮೆಂಟ್‌ ಡ್ಯೂ ಆಗಿದೆ, ಇನ್ನೂ ಪಾವತಿಸಿಲ್ಲ, ದಯವಿಟ್ಟು ರಿಮೈಂಡರ್ ಕಳುಹಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಪ್ರಸ್ತುತ ಹೋಮ್ ಲೋನ್‌ ಉಳಿದ ಬ್ಯಾಲೆನ್ಸ್ ಮತ್ತು ಮುಂದಿನ EMI ಮೊತ್ತ ತಿಳಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "5 ಲಕ್ಷ ರೂ. ಲೋನ್‌ 18 ತಿಂಗಳ ಪ್ಲಾನ್‌ನಲ್ಲಿ EMI ಎಷ್ಟು ಆಗುತ್ತದೆ?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಕಾರ್ ಲೋನ್‌ 48 ಮಾಸಗಳ ಪೇಮೆಂಟ್‌ ಟೈಮ್‌ ಟೇಬಲ್‌ ಕಳುಹಿಸಬಹುದು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಪರ್ಸನಲ್ ಲೋನ್‌ 2 ಲಕ್ಷ ರೂ. 12 ತಿಂಗಳು, EMI ಎಷ್ಟು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಈ ತಿಂಗಳ ಲೋನ್‌ EMI ಪಾವತಿಸಲು ಹೇಗೆ ಮಾಡಬಹುದು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಹೋಮ್ ಲೋನ್‌ 15% ಇಂಟರಸ್ಟ್‌ ಜೊತೆ 30 ವರ್ಷ, ಪ್ರತಿ ತಿಂಗಳು EMI ಎಷ್ಟು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ EMI ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ವಿವರಗಳು ಬೇಕು, ದಯವಿಟ್ಟು ಕಳುಹಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಕಾರ್ ಲೋನ್‌ ಉಳಿದ 6 ತಿಂಗಳು, ಉಳಿದ EMI ಮೊತ್ತ ಮತ್ತು ದಿನಾಂಕ ತಿಳಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "10 ಲಕ್ಷ ರೂ. ಲೋನ್‌ 5 ವರ್ಷ, EMI ಎಷ್ಟು ಆಗುತ್ತದೆ?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಪರ್ಸನಲ್ ಲೋನ್‌ 3% ಇಂಟರಸ್ಟ್‌ ಜೊತೆ 9 ತಿಂಗಳ EMI ಹೇಗಿದೆ?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಈ ತಿಂಗಳ ಪೇಮೆಂಟ್‌ ಡ್ಯೂ ಆಗಿದೆ, ಆದರೆ ಖಾತೆ ಬ್ಯಾಲೆನ್ಸ್ ಕಡಿಮೆ, ಏನು ಮಾಡಬೇಕು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಹೋಮ್ ಲೋನ್‌ 20 ಲಕ್ಷ ರೂ., 20 ವರ್ಷ, EMI ಎಷ್ಟು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ EMI ಕ್ವೋಟೇಶನ್‌ಗಾಗಿ 7 ಲಕ್ಷ ರೂ. 10 ವರ್ಷ ಪ್ಲಾನ್‌ ಬೇಕು.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಕಾರ್ ಲೋನ್‌ 12 ತಿಂಗಳ ಪೇಮೆಂಟ್‌ ಟೈಮ್‌ ಟೇಬಲ್‌ ಕಳುಹಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "5 ಲಕ್ಷ ರೂ. ಲೋನ್‌ 24 ಮಾಸ, EMI ಎಷ್ಟು ಆಗುತ್ತದೆ?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಪರ್ಸನಲ್ ಲೋನ್‌ ಉಳಿದ 3 ತಿಂಗಳು, ಉಳಿದ ಪೇಮೆಂಟ್‌ ಮೊತ್ತ ಮತ್ತು ದಿನಾಂಕ ತಿಳಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಈ ತಿಂಗಳು EMI ಪಾವತಿಸಲು ಯಾವ ಚಾನೆಲ್‌ ಬಳಸಬಹುದು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಹೋಮ್ ಲೋನ್‌ 30% ಇಂಟರಸ್ಟ್‌ ಜೊತೆ 15 ವರ್ಷ, EMI ಎಷ್ಟು?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ EMI ಬಗ್ಗೆ ಕ್ವೋಟೇಶನ್‌ ಬೇಕು, 8 ಲಕ್ಷ ರೂ. 12 ತಿಂಗಳು.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಕಾರ್ ಲೋನ್‌ 4 ವರ್ಷ, EMI ಎಷ್ಟು ಆಗುತ್ತದೆ?", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಈ ತಿಂಗಳ ಪೇಮೆಂಟ್‌ ಡ್ಯೂ ಆಗಿದೆ, ನಾನು ಇನ್ನೂ ಪಾವತಿಸಿಲ್ಲ, ದಯವಿಟ್ಟು ರಿಮೈಂಡರ್ ಕಳುಹಿಸಿ.", "label": "emi_calculation", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 5 lakh loan ke liye monthly EMI batao, kitna hoga?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Ek saal ke liye 2.5 lakh ka loan le raha hoon, EMI kitni aayegi?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere existing home loan ka next EMI due kab hai?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Bhai, 10 lakh loan ke liye 7 saal ka tenure, monthly payment kitna padega?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne personal loan ka pending EMI amount batao.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Agar main 3 lakh ka loan 5 saal tak leun, to har mahine kitna dena padega?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere car loan ka aaj ka EMI kitna due hai?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "30,000 rupees ka loan 2 saal ke liye, EMI calculate karke bhej do.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere loan ka next due date aur amount confirm kar do.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 7 lakh loan ke liye 10 saal ka EMI schedule chahiye.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aap bata sakte ho ki mere loan ka balance kitna hai aur next EMI kab?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "5 lakh loan, 3 saal ka tenure, monthly installment kitna hoga?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere personal loan ka aaj ka EMI kitna hai?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 12 lakh loan ke liye 15 saal ka EMI breakdown de do.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere loan ka pending EMI kitna hai, please check.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Ek mahine ke liye 1.5 lakh loan ka EMI calculate karo.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere home loan ka next payment due date aur amount batao.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 8 lakh loan ke liye 6 saal ka EMI figure kar ke bhej do.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere loan ka aaj ka due amount aur due date confirm karo.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 4 lakh loan ke liye 4 saal ka monthly instalment batao.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere car loan ka next EMI kitna due hai?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 6 lakh loan ke liye 8 saal ka EMI schedule chahiye.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere loan ka balance aur next EMI date bata sakte ho?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "10 lakh loan, 20 saal ka tenure, monthly EMI kitni hogi?", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere personal loan ka aaj ka due amount aur due date confirm karo.", "label": "emi_calculation", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the current FD rate for 6 months pls", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey can u tell me savings interest rate right now?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i need the RD rate for 1 yr, any promos?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "loan interest for home loan 30 yr, quick info pls", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "got any special FD rates for 10 lakh deposit?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the interest on my a/c if I keep 5k for 3 months?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "pls share personal loan rate for 2 lakh amount", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey bot, what's the current savings interest?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "fd rate for 1 year, any extra bonus?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i wanna know loan rate for car loan 5 lakh, urgent", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the interest on recurring deposit for 6 months?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "can u give me the latest FD rates for 3 months?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "savings a/c interest rate, is it same as last month?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "need loan interest for education loan 10 lakh, details pls", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the current rate for fixed deposit 2 years?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey, what's the interest on my savings a/c if I add 20k?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "any special FD rates for senior citizens for 5 years?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "loan interest for personal loan 1 lakh, quick answer?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the RD rate for 9 months, any offers?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "fd interest for 15 lakh, 1 yr, tell me pls", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "savings interest rate today, any change?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "can u tell me loan rate for home loan 50 lakh, 20 yr term?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the interest on a 3 month FD for 50k?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey, need RD rate for 2 yr, any bonus?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "loan interest for business loan 25 lakh, what’s the rate?", "label": "interest_rates", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "FD पर 6 महीने की ब्याज दर क्या है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "सहेजने वाले अकाउंट की सॉल्ड पर मिलने वाला इंटरेस्ट रेट बताइए।", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं 10 लाख रुपये का FD खोलना चाहता हूँ, 1 साल के लिए रेट क्या है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप मेरे लिए 3 साल के FD की ब्याज दर बता सकते हैं?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD में 5,000 रुपये महीने जमा करूँ तो कितना इंटरेस्ट मिलेगा?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "EMI के हिसाब से होम लोन की ब्याज दर क्या है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "UPI से ट्रांसफर करने पर कोई छूट वाली FD रेट है क्या?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "सिंगल फॉर्म में 2 साल के FD की रेट बताइए।", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मेरे सैलरी अकाउंट पर बेसिक इंटरेस्ट रेट अलग है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं 25,000 रुपये का RD शुरू करना चाहता हूँ, 6 महीने की रेट क्या है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "पर्सनल लोन के लिए EMI कैल्कुलेटर में कौन सी ब्याज दर लगती है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप मेरे लिए 5 साल के टर्म डिपॉज़िट की रेट बता सकते हैं?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "सभी लोन (होम, पर्सनल, कार) की मौजूदा इंटरेस्ट रेट की लिस्ट चाहिए।", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं 1 लाख रुपये का FD 9 महीने के लिए खोलना चाहता हूँ, रेट क्या है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "स्मार्ट सेविंग्स अकाउंट पर मिलने वाला इंटरेस्ट रेट कितना है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मेरे पास पहले से चल रहे FD पर रेट बदल सकता है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "किसी भी लोन के लिए प्रीपेमेंट पर कोई डिस्काउंट रेट है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं 15,000 रुपये का RD 1 साल के लिए खोलना चाहता हूँ, रेट बताइए।", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप मेरे लिए 3 महीने के FD की रेट और न्यूनतम डिपॉज़िट बतायेंगे?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "सभी लोन के लिए फ्लोटिंग रेट और फिक्स्ड रेट में क्या अंतर है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे पास 20 लाख रुपये का FD है, उसका इंटरेस्ट रेट क्या है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "सिंगल फॉर्म में 6 महीने के FD की रेट और टैक्स डिडक्शन कैसे होता है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं UPI पेमेंट से FD खोल सकता हूँ और रेट में कोई फ़ायदा है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "पर्सनल लोन के लिए 12 महीने की EMI रेट क्या है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "स्मार्ट FD में 2 साल के लिए रेट और बोनस इंटरेस्ट बताइए।", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मेरे बचत खाते पर इंटरेस्ट रेट हर महीने बदलता है?", "label": "interest_rates", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "FD ಮೇಲೆ 5 ವರ್ಷಗಳ ಇಂಟರೆಸ್ಟ್ ರೇಟ್ ಎಷ್ಟು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಸೇವಿಂಗ್ ಅಕೌಂಟ್‌ದ ಪ್ರಸ್ತುತ ಬಡ್ಡಿ ದರವನ್ನು ತಿಳಿಸಿ.", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಾನು 10 ಲಕ್ಷ ರೂ. FD ತೆಗೆಯುವೆ, 3 ತಿಂಗಳ ರೇಟ್ ಏನು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD ಗೆ 6 ತಿಂಗಳ ಪೀರಿಯಡ್‌ನಲ್ಲಿ ಯಾವ ರೇಟ್ ಇದೆ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹೋಮ್ ಲೋನ್‌ಗಾಗಿ 15 ಲಕ್ಷಕ್ಕೆ ಇಂಟರೆಸ್ಟ್ ರೇಟ್ ಏನು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಮಾರ್ಚ್ ತಿಂಗಳಲ್ಲಿ ಹೊಸ FD ಪ್ರೊಮೋಶನ್ ಇದೆಯಾ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಸೇವಿಂಗ್ ಅಕೌಂಟ್‌ನಲ್ಲಿ 0.5% ಹೆಚ್ಚುವರಿ ಬೋನಸ್ ಇದೆಯಾ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ 2 ಲಕ್ಷ FDಗೆ 1 ವರ್ಷ ರೇಟ್ ಎಷ್ಟು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಪರ್ಸನಲ್ ಲೋನ್ 5 ಲಕ್ಷಕ್ಕೆ ಇಂಟರೆಸ್ಟ್ ಮತ್ತು ಟರ್ಮ್ ತಿಳಿಸಿ.", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಆಟೋ ಲೋನ್‌ಗಾಗಿ 12 ತಿಂಗಳ ರೇಟ್ ಮತ್ತು EMI ಹೇಗೆ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಸೇವಿಂಗ್ ಅಕೌಂಟ್‌ನಲ್ಲಿ 0.25% ಹೆಚ್ಚುವರಿ ಬಡ್ಡಿ ಇದೆಯಾ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "FD ನಲ್ಲಿ 6 ತಿಂಗಳಿಗಿಂತ ಕಡಿಮೆ ಟರ್ಮ್‌ಗಳ ರೇಟ್ ಏನು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD ನಲ್ಲಿ 12 ತಿಂಗಳ ಪೀರಿಯಡ್‌ನಲ್ಲಿ ಯಾವ ರೇಟ್ ಇದೆ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಾನು 20 ಲಕ್ಷ FD ತೆಗೆಯುವೆ, 2 ವರ್ಷಕ್ಕೆ ರೇಟ್ ಎಷ್ಟು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಹೊಸ ಹೌಸ್ ಲೋನ್ ಪ್ರೊಮೋಶನ್ ಇದೆಯಾ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಸೇವಿಂಗ್ ಅಕೌಂಟ್‌ನಲ್ಲಿ 0.75% ಬಡ್ಡಿ ಇದೆ ಎಂದು ಕೇಳಿದೆ, ಸರಿ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "FD 3 ವರ್ಷಕ್ಕೆ 7% ರೇಟ್ ಇದೆಯಾ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ 5 ಲಕ್ಷ FDಗೆ 9 ತಿಂಗಳ ರೇಟ್ ತಿಳಿಸಿ.", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಪರ್ಸನಲ್ ಲೋನ್ 3 ಲಕ್ಷಕ್ಕೆ ಇಂಟರೆಸ್ಟ್ ಮತ್ತು ಪ್ರಕ್ರಿಯೆ ಹೇಗೆ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಆಟೋ ಲೋನ್ 8 ಲಕ್ಷಕ್ಕೆ 18 ತಿಂಗಳ ರೇಟ್ ಏನು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD 9 ತಿಂಗಳ ಪೀರಿಯಡ್‌ನಲ್ಲಿ ಯಾವ ರೇಟ್ ಇದೆ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಸೇವಿಂಗ್ ಅಕೌಂಟ್‌ನಲ್ಲಿ ಪ್ರತಿ ತಿಂಗಳು ಬಡ್ಡಿ ಹೇಗೆ ಕಣ್ಕುಣು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "FD 1 ವರ್ಷಕ್ಕೆ 6.5% ರೇಟ್ ಇದೆಯಾ?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಾನು 15 ಲಕ್ಷ FD ತೆಗೆಯುವೆ, 4 ವರ್ಷಕ್ಕೆ ರೇಟ್ ಏನು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹೋಮ್ ಲೋನ್ 10 ಲಕ್ಷಕ್ಕೆ 20 ವರ್ಷ ಟರ್ಮ್‌ನಲ್ಲಿ ಇಂಟರೆಸ್ಟ್ ಎಷ್ಟು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಹೊಸ FD ಪ್ರೊಮೋಶನ್‌ಗಳು ಯಾವುವು?", "label": "interest_rates", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 6 mahine ke FD ka interest rate batao, kitna mil sakta hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Savings account pe current interest rate kya hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD ke liye 1 saal ka rate kya mil raha hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Home loan ke liye 20 lakh ka interest rate check karna hai.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Bhai, 10 lakh FD ke liye 1 saal ka rate bata de.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Personal loan ke liye 5% se kam interest mil sakta hai kya?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 3 mahine ke FD ka rate aur minimum deposit amount batao.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Savings account me agar 50k deposit karun to interest kitna aayega?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Car loan ke liye 12 lakh ka rate aur tenure options kya hain?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD me 2 saal ke liye 30k per month deposit karna hai, rate kya hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 15 saal ke home loan ka interest rate aur EMI estimate chahiye.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "FD 2 saal ke liye 1.5 lakh deposit karna hai, rate kya mil raha hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Savings account me 1 lakh se zyada balance pe extra interest milta hai kya?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Education loan ke liye 8 lakh ka rate aur processing fee kitni hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 6 mahine ke FD ka rate aur tax deduction details do.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Business loan ke liye 25 lakh ka interest rate aur collateral requirement batao.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD me 6 mahine ke liye 10k per month deposit karna hai, rate kya hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Savings account me monthly interest kitna milta hai, koi calculator hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Home loan ke liye 30 saal ka tenure aur rate kya mil raha hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "FD 5 saal ke liye 2 lakh deposit karna hai, rate aur premature withdrawal penalty kya hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Personal loan ke liye 3 lakh ka rate aur prepayment charges kitne hain?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 1 saal ke FD ka rate aur online application ka process batao.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Savings account me senior citizen ke liye extra interest kitna milta hai?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "RD me 3 saal ke liye 20k per month deposit karna hai, rate aur tax implications kya hain?", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Car loan ke liye 7 lakh ka rate aur EMI calculator link do.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 9 mahine ke FD ka rate aur minimum balance requirement batao.", "label": "interest_rates", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what loans do u have atm?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i wanna know the home loan options pls", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "can u tell me the docs needed for a personal loan?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "how to apply for a car loan rn?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "which loan amounts can i get for 5 lakh?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "pls list all loan types you offer", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i need a loan for 2 years, what are the options?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the process for a education loan?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i want to apply for a loan, where do i start?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "do you have any quick personal loans?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what docs are required for a home loan application?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "how long does it take to get a business loan approved?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i need a loan of 10 lakh, what are the interest rates?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "can i apply for a loan through the app?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "pls give me the steps to get a loan for a bike", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what are the eligibility criteria for a loan?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i want a loan for 3 months, any short term options?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "how many documents i need for a loan?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "can u send me the loan application form?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i need a loan for my wedding, what do i need to submit?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the max loan amount for a salaried employee?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "how to check loan status after applying?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i want a loan for 7 lakh, what are the tenure options?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "do you need salary slips for a personal loan?", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "pls tell me the difference between secured and unsecured loans.", "label": "loan_products", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं जानना चाहता हूँ कि आपके पास कौन‑कौन से पर्सनल लोन उपलब्ध हैं?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप बता सकते हैं कि होम लोन के लिए कौन‑सी डॉक्यूमेंट्स चाहिए?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "EMI कैसे कैलकुलेट करूँ, और लोन के लिए ऑनलाइन अप्लाई करने का प्रोसेस क्या है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "अगर मैं 5 लाख रुपये का लोन लेना चाहूँ तो कौन‑से फॉर्मेट में अप्लाई करूँ?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कृपया बताइए, सॉलर लोन के लिए न्यूनतम स्कोर क्या चाहिए?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं अपने FD को कोलेटरल बना कर लोन लेना चाहता हूँ, प्रक्रिया क्या है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं UPI के ज़रिए लोन एप्लिकेशन फॉर्म भेज सकता हूँ?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "पर्सनल लोन के लिए आय प्रमाण पत्र के अलावा और कौन‑से दस्तावेज़ चाहिए?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप मुझे लोन के टाइप्स (जैसे टर्म लोन, रिवॉल्विंग) की लिस्ट दे सकते हैं?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं 10 साल की टर्म पर 15 लाख का लोन लेना चाहता हूँ, क्या आप रेट्स बता सकते हैं?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "लोन के लिए प्री‑ऑथराइज़ेशन कैसे काम करता है, समझाइए।", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं मोबाइल ऐप से तुरंत लोन अप्लाई कर सकता हूँ?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "किसी भी लोन के लिए न्यूनतम उम्र सीमा क्या है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "अगर मैं सैलरी स्लिप नहीं दे पाऊँ तो क्या लोन मिल सकता है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "लोन के लिए पैन कार्ड के अलावा कौन‑से आईडेंटिटी प्रूफ स्वीकार्य हैं?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप बता सकते हैं कि लोन की प्रोसेसिंग फीस कब लगती है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं 3 महीने में लोन की डिस्बर्समेंट चाहता हूँ, क्या तेज़ प्रोसेस है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या लोन एप्लिकेशन में मेरे क्रेडिट स्कोर को देखना ज़रूरी है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "किसी भी लोन के लिए डिफ़ॉल्ट इंटरेस्ट रेट क्या है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं अपने सैलरी अकाउंट को कोलेटरल बनाकर लोन लेना चाहता हूँ, कैसे शुरू करूँ?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या लोन के लिए गारंटीशिप की जरूरत होती है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "अगर मैं लोन रीफ़ाइनेंस करना चाहूँ तो क्या प्रक्रिया है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कृपया बताइए, लोन एप्लिकेशन में कौन‑से फॉर्मेट (PDF, JPG) स्वीकार्य हैं?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं लोन के लिए अपने बायोमैट्रिक डेटा का उपयोग कर सकता हूँ?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "लोन की मंजूरी मिलने में औसत कितना समय लगता है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं 2 साल में लोन रिफंड करना चाहता हूँ, क्या कोई प्री‑पेमेंट पेनाल्टी है?", "label": "loan_products", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಾನು ಯಾವ ಯಾವ ಲೋನ್‌ಗಳು ಲಭ್ಯವಿವೆ ಎಂದು ತಿಳಿಸಬಹುದೇ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನಗೆ ಹೌಸ್ ಲೋನ್ ಬಗ್ಗೆ ಮಾಹಿತಿ ಬೇಕು, ಪ್ರಕ್ರಿಯೆ ಹೇಗೆ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಪರ್ಸನಲ್ ಲೋನ್ ತೆಗೆದುಕೊಳ್ಳಲು ಯಾವ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳು ಬೇಕು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಕಾರ್ ಲೋನ್‌ಗೆ ಅರ್ಜಿ ಹಾಕುವ ವಿಧಾನ ಮತ್ತು ಅವಶ್ಯಕತೆಗಳು ಏನು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "5 ಲಕ್ಷ ರೂ. ಸಾಲಕ್ಕಾಗಿ ಯಾವ ಆಯ್ಕೆಗಳು ಇವೆ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಇಂಡಿವಿಡುಯಲ್ ಲೋನ್‌ಗಳ ಇಂಟ್ರೆಸ್ಟ್ ರೇಟ್‌ಗಳು ಯಾವುವು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್ ಅಪ್ಲೈ ಮಾಡಲು ಆನ್‌ಲೈನ್ ಫಾರ್ಮ್ ಎಲ್ಲಿ ಇದೆ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಬಿಸಿನೆಸ್ ಲೋನ್‌ಗೆ ಬೇಕಾಗುವ ಪ್ರೂಫ್ಸ್ ಮತ್ತು ಟೈಮ್‌ಲೈನ್ ಏನು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನಿಗೆ ಎಮರ್ಜೆನ್ಸಿ ಲೋನ್ ಬೇಕು, ಪ್ರಕ್ರಿಯೆ ಹೇಗೆ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಪೇಸ್‌ಲಿಪ್ ಮತ್ತು ಐಡೀ ಪ್ರೂಫ್ ಬೇಕಾ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹೌಸ್ ಲೋನ್‌ಗಾಗಿ ಪ್ರಾಪರ್ಟಿ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳು ಯಾವುವು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಕ್ರೆಡಿಟ್ ಸ್ಕೋರ್ ಎಷ್ಟು ಮುಖ್ಯ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಾನು 10 ಲಕ್ಷ ರೂ. ಪರ್ಸನಲ್ ಲೋನ್ ತೆಗೆದುಕೊಳ್ಳಲು ಯಾವ ದಾಖಲೆಗಳು ಬೇಕು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್ ಅಪ್ಲಿಕೇಶನ್ ಫಾರ್ಮ್ ಅನ್ನು ಮೊಬೈಲ್‌ನಲ್ಲಿ ಹೇಗೆ ಭರ್ತಿ ಮಾಡುವುದು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಲೋನ್‌ಗಾಗಿ ಕ್ಯೂಆರ್ ಕೋಡ್‌ಸ್ಕ್ಯಾನ್ ಮಾಡಬೇಕಾ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಪ್ರಾಥಮಿಕ ಮತ್ತು ದ್ವಿತೀಯ ದಾಖಲೆಗಳ ಪಟ್ಟಿ ಕೊಡಿ.", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಮಾರ್ಚ್ ತಿಂಗಳಲ್ಲಿ ಲೋನ್‌ ಪ್ರೊಮೋಶನ್ ಇದೆ ಎಂದು ಕೇಳಿದೆ, ವಿವರಿಸಿ.", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಇ-ಸೈನ್‌ ಮಾಡಬಹುದೇ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಬ್ಯಾಂಕ್‌ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಲೋನ್‌ ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಎಲ್ಲಿ ಇದೆ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಉದ್ಯೋಗ ಪ್ರಮಾಣ ಪತ್ರ ಮತ್ತು ರೆಫರನ್ಸ್ ಲೆಟರ್ ಬೇಕಾ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನಿಗೆ 2 ವರ್ಷಗಳ ಟರ್ಮ್‌ನಲ್ಲಿ ಕಾರ್ ಲೋನ್ ಬೇಕು, ಪ್ರಕ್ರಿಯೆ ಹೇಗೆ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಪೇಸ್‌ಲಿಪ್‌ಗಳು ಮತ್ತು ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್‌ಗಳು ಯಾವ ಫಾರ್ಮಾಟ್‌ನಲ್ಲಿ ಇರಬೇಕು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಅಪ್ರೂವಲ್ ಟೈಮ್‌ಲೈನ್ ಎಷ್ಟು?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಕೊಲ್ಯಾಟರಲ್ ಇಲ್ಲದ ಆಯ್ಕೆಗಳು ಇದೆಯೇ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಬಹುದೇ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಲೋನ್‌ಗಾಗಿ ಇ-ಮೇಲ್ ಮೂಲಕ ಕ್ವೇರಿ ಮಾಡಬಹುದೇ?", "label": "loan_products", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe batao, aapke paas kaun kaun se personal loan options hain?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Home loan ke liye apply kaise karte hain, steps batao na.", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Car loan ke liye kya documents chahiye hotey hain?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya 5 lakh tak ka loan mil sakta hai bina guarantor ke?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Education loan ke liye eligibility criteria kya hai?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Loan ke liye online application form kahaan mil jayega?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 10 lakh ka home loan chahiye, interest rate kitna hai?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Personal loan ke liye salary slip aur bank statement kaise upload karun?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Business loan ke liye kya-kya paperwork chahiye?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Loan approval kitna time leta hai, 2-3 din mein mil jata hai kya?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aapke paas flexible EMI options hain?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Loan ke liye credit score minimum kitna hona chahiye?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 2 saal ke liye personal loan chahiye, tenure options kya hain?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Home loan ke liye property documents kaun kaun se chahiye?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Car loan ke liye down payment kitna dena padega?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Loan ke liye PAN card aur Aadhaar ka verification kaise hota hai?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aapke paas zero processing fee wala loan hai?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Loan ke liye pre-approved offer mil raha hai kya?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Education loan ke liye admission letter aur fee structure kaise attach karun?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 15 lakh ka loan chahiye, EMI calculator kahaan mil sakta hai?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Personal loan ke liye co-applicant ka kya role hota hai?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Loan ke liye income proof ke alawa koi extra document chahiye?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aapke paas senior citizens ke liye special loan schemes hain?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Loan ke liye online verification ke baad physical document submission zaroori hai kya?", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe loan ki repayment schedule email se bhej do.", "label": "loan_products", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "my debit card got stolen last night, pls block it asap", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i think someone used my card for a 5k txn, can you freeze it now?", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "lost my credit card, need it blocked rn", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey, my a/c card disappeared, freeze it please", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "someone swiped my card for 2,300 rupees, block it", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i left my card at the cafe, can you lock it till i get it back?", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "card missing, dont want any more charges, block it", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "my card was taken by a thief, need it frozen immediately", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i see a txn of 1,200 that i didn't do, freeze my card pls", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "lost my debit, can you stop all transactions?", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "card stolen, block it and send a new one", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i think my card got cloned, there’s a 3k charge I never made, freeze it", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "please block my card, it’s gone missing since morning", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "my card vanished, dont let anyone use it, block now", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i was mugged, card taken, need it blocked asap", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "got a weird charge of 750, i never used my card, freeze it", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "my card fell in the toilet, can you lock it till i get a replacement?", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i’m seeing unauthorized txn of 4,500, block my card now", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "lost my credit card, pls freeze all txn", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "my card was stolen at the market, block it and issue new", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i see a payment of 2,999 i didn’t do, freeze my card", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "card missing since yesterday, block it please", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "someone used my card for a petrol purchase, i didn’t, freeze it", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "my card got swiped at a shop i never visited, block it now", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i need my card blocked, i think it’s been misused, urgent", "label": "card_block", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कार्ड खो गया है, कृपया तुरंत ब्लॉक कर दें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी डेबिट कार्ड चोरी हो गई है, आज ही फ्रीज़ कर दें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "भाई, मेरा कार्ड कहीं गिर गया, अब इस्तेमाल नहीं हो रहा, ब्लॉक कर दो।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी क्रेडिट कार्ड रात में गुम हो गई, तुरंत ब्लॉक करें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कॉल करके बताओ, मेरा UPI कार्ड फ्रीज़ करना है, अभी।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "पिछले दो घंटे में मेरे कार्ड से ₹5,000 का लेनदेन हुआ, शंकित है, ब्लॉक करें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड पर अनजान ट्रांजैक्शन दिख रहा है, कृपया फ्रीज़ कर दें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "आज सुबह से मेरा कार्ड काम नहीं कर रहा, शायद चोरी हो गया, ब्लॉक कर दो।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी सैविंग्स कार्ड खो गई है, तुरंत ब्लॉक करवाना है।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कृपया मेरे कार्ड को ब्लॉक कर दें, मैं अभी बाहर हूँ और नहीं मिल रहा।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड पर दो बार डेबिट हुआ, मैं नहीं किया, फ्रीज़ कर दो।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड को फ्रीज़ कर दो, मैं अभी यात्रा पर हूँ और कार्ड नहीं मिला।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी EMI कार्ड गुम हो गई, अब तक कोई पेमेंट नहीं हुआ, ब्लॉक कर दो।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड से आज रात 2 बजे ₹2,500 का लेनदेन हुआ, मैं नहीं किया, ब्लॉक करें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड को तुरंत ब्लॉक करें, मैं इसे कहीं गिरा दिया।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी कार्ड चोरी हो गई, अब तक कोई ट्रांजैक्शन नहीं हुआ, फ्रीज़ कर दो।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड पर अनधिकृत UPI पेमेंट आया, कृपया ब्लॉक करें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड को फ्रीज़ कर दो, मैं अभी बैंक में नहीं हूँ।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड से आज सुबह ₹1,200 का डेबिट हुआ, मैं नहीं किया, ब्लॉक करें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी कार्ड गुम हो गई, कृपया तुरंत ब्लॉक कर दें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड को फ्रीज़ कर दो, मैं अभी बाहर हूँ और नहीं मिल रहा।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड पर दो बार अनजान लेनदेन दिख रहा है, ब्लॉक कर दो।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी कार्ड चोरी हो गई, तुरंत ब्लॉक और नया कार्ड जारी करें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड से आज 3 बजे ₹3,000 का लेनदेन हुआ, मैं नहीं किया, फ्रीज़ कर दो।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरी कार्ड खो गई है, कृपया तुरंत ब्लॉक कर दें और नया कार्ड भेजें।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे कार्ड को फ्रीज़ कर दो, मैं अभी यात्रा में हूँ और नहीं मिल रहा।", "label": "card_block", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಕ್ಯಾರೆಡ್ ಮನೆಯಲ್ಲಿ ಕೊಡಲಿದ್ದೇ, ಹೇಗೆ ಬೆಳ್ಬೆಸುವುದು?", "label": "card_block", "lang": "kn", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "ನಮಗಿರಿ ಕ್ಯಾರೆಡ್ ಹೊಸ ಕೊಡಲಿದ್ದೇ, ಸುದ್ದಿಯಲ್ಲಿ ಬೆಳ್ಬೆಸುವುದು.", "label": "card_block", "lang": "kn", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "ಕ್ಯಾರೆಡ್ ಮನೆಯಲ್ಲಿ ಕೊಡಲಿದ್ದೇ, ಕೊಡಲಿನ ಸ್ಥಾನದ ವಿಷಯದ ಸ್ಪರ್ಧಾತ್ಮಕ ವಿಷಯಗಳನ್ನು ಬೆಳ್ಬೆಸುವುದು.", "label": "card_block", "lang": "kn", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "ನಮಗಿರಿ ಕ್ಯಾರೆಡ್ ಹೊಸ ಕೊಡಲಿದ್ದೇ, ಹೇಗೆ ಬೆಳ್ಬೆಸುವುದು ಹೆಚ್ಚು ಹೆಚ್ಚು ಸ್ಪಷ್ಟವಾಗಿ.", "label": "card_block", "lang": "kn", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "ಕ್ಯಾರೆಡ್ ಹೊಸ ಕೊಡಲಿದ್ದೇ, ಸುದ್ದಿಯಲ್ಲಿ ಬೆಳ್ಬೆಸುವುದು ಹೆಚ್ಚು ಹೆಚ್ಚು ಸ್ಪಷ್ಟವಾಗಿ.", "label": "card_block", "lang": "kn", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "ನಮಗಿರಿ ಕ್ಯಾರೆಡ", "label": "card_block", "lang": "kn", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card got stolen, can you block it fast?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you freeze my card, please? It's been missing for a while now.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my debit card is missing. Can you block it ASAP?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "My card was stolen, can you block it right away?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, I can't find my card. Can you block it for me?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for over 2 hours.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is missing. Can you freeze it for me?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is gone. Can you block it quickly?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a while.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is missing. Can you block it now?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is gone. Can you block it for me?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a few hours.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is missing. Can you block it fast?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a while.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is gone. Can you block it for me?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a bit.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is missing. Can you block it quickly?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a while now.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is gone. Can you block it for me?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a while.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is missing. Can you block it fast?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a while.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, my card is gone. Can you block it for me?", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you block my card, please? It's been missing for a while.", "label": "card_block", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "नया कार्ड चालू करना चाहिए", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "कैर्ड की ऑनलाइन और अंतर्राष्ट्रीय उपयोग विकृत करें", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "नया कार्ड को चालू करें", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "कार्ड की ऑनलाइन और अंतर्राष्ट्रीय उपयोग क्यों नहीं करें?", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "नया कार्ड को चालू करना चाहिए", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "कार्ड की ऑनलाइन और अंतर्राष्ट्रीय उपयोग क्यों नहीं करें?", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "नया कार्ड को चालू करना चाहिए", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "कार्ड की ऑनलाइन और अंतर्राष्ट्रीय उपयोग क्यों नहीं करें?", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "नया कार्ड को चालू करना चाहिए", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "कार्ड की ऑनलाइन और अंतर्राष्ट्रीय उपयोग क्यों नहीं करें?", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "नया कार्ड को चालू करना चाहिए", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "कार्ड की ऑनलाइन और अंतर्राष्ट्रीय उपयोग क्यों नहीं करें?", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "नया कार्ड को चालू करना चाहिए", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "कार्ड की ऑनलाइन", "label": "card_activate", "lang": "hi", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived yet, when will it reach? pls hurry", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "my card got swallowed by an ATM, what do I do?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, can I get a replacement rn?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived, been waiting for 2 days", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card got stuck in ATM, what should I do?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, can I get a new one?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived, when will it come?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card got swallowed, what now?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, need a replacement", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived, where is it?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card got stuck in ATM, how do I get it?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, when can I get a new one?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived, when will it reach me?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card got swallowed, can I get a replacement?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, need a new one urgently", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived, been waiting for 3 days", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card got stuck in ATM, can I get a new one?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, when can I get a replacement?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived, when will it come?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card got swallowed, what should I do now?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, need a new one", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not arrived, been waiting for 2 days", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card got stuck in ATM, how can I get it?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "card not working, can I get a replacement soon?", "label": "card_issue", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to my friend's account?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, can I transfer Rs 5000 to someone?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to my mom's account?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Is there any limit on the amount I can transfer?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "How much can I transfer at one time?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account in another bank?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "How long does it take for a transfer to get through?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to a mobile number?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "When will my Rs 10,000 transfer get completed?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I check the status of my transfer?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "When will my Rs 20,000 transfer get done?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account in another state?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "How do I check the status of my transfer?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account with a different bank?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "When will my Rs 5000 transfer get completed?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account in another city?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "How long does it take for a transfer to get through?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account with a different bank?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "When will my Rs 15,000 transfer get completed?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account in another state?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "How do I check the status of my transfer?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account in another city?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "When will my Rs 7500 transfer get completed?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can I send money to an account with a different bank?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "How long does it take for a transfer to get through?", "label": "transfer_money", "lang": "hinglish", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, what's the charge for maintaining my savings a/c?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you tell me about the penalty for withdrawing money after hours?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, I heard there's a fee for using ATMs out of network. Is that true?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "What's the annual card fee for my credit card? Is it due rn?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Pls let me know if there's a fee for changing my address on file.", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, how much is the fee for closing my fixed deposit a/c?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Can you explain the charges for using my debit card overseas?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, is there a penalty for paying my loan EMI late?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "What's the fee for using a different bank's ATM?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, is there a charge for changing my PIN?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, I'm confused about the fees for using my credit card. Can you explain?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "What's the penalty for exceeding my credit limit?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, is there a fee for using my debit card at ATMs?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, can you tell me about the charges for transferring money to another bank?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, is there a fee for redeeming my credit card points?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, what's the annual fee for my savings a/c?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, is there a penalty for not using my credit card enough?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "What's the fee for changing my credit card's billing address?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, can you explain the charges for using my debit card at ATMs?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, is there a penalty for canceling my loan account early?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "Hey, what's the fee for using my credit card at a foreign ATM?", "label": "fees_charges", "lang": "en", "src": "ollama:qwen2.5:7b-instruct"}
+{"text": "mera account se 500 rs kyu kata hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "annual charges kitna lagta hai savings account me", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "charges ke bare me batao yaar", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "debit card ka yearly fee kitna hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "minimum balance maintain nahi kiya to kitna fine lagega", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "credit card ka annual fee kaise wave off hoga", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mera account me extra charge kyu laga hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "charges check karne ka kya tarika hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe debit card fee ke bare me janna hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "hidden charges kya kya hote hain account me", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "sir mere account se koi charge kata hai please check", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "sms alert ka kitna paisa kat ta hai har mahine", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "hdfc credit card joining fees kitna hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "zero balance account me bhi charge lagta hai kya", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "statement nikalne ka koi charge hai kya", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm use karne ka kitna charge lagta hai mahine me", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "minimum balance kitna rakhna padega fine se bachne ke liye", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "credit card ka late payment penalty kitna hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera 1000rs penalty kyu laga hai batao na", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "cheque book ke liye kitna charge dena padega", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "fund transfer karne par koi charge lagta hai kya", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yearly maintenance charge kitna hai mera account ka", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "international transaction par kitna fee lagta hai", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "account close karne par koi charge dena padega kya", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "credit card ka annual fee kitna hai mere card par", "label": "fees_charges", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "nearest atm kidhar hai bhai rn", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "branch timings kya hai saturday ko pls btao", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe a/c branch ka address chahiye pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "hdfc atm near me pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kanpur me sbi branch kaha hai uska address do", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "nearest axis bank branch timings pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera saving a/c ka branch ka kya address hai ji", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "sunday ko bank khula rehta h kya branch timings bata do pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "nearest atm with cash dispenser batao na yaar", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "branch address batao na urgently a/c transfer karna hai", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "icici atm kidhar hai abhi pata karo", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kanpur nagar branch timing kya hai lunch break ka", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "branch ka addrs pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai near me atm bata do jaldi se", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm kaha hai idhar pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "sbi branch ka address aur timing dono btao na", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls tell me nearest atm working rn", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe branch address chahiye pls jaldi", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm machine near me kaha hai", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "hdfc branch timing kya hai evening me", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "nearest atm me cash hai kya batao pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "can u give me branch address pls", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "near me atm location send karo na", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bank branch working hours kya hai aaj", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "sbi ka nearest atm kidhar hai bhai batao", "label": "atm_branch", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "आसपास कोई एटीएम है क्या", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे घर के पास कौन सी ब्रांच है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "बैंक की टाइमिंग क्या है आज", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे सबसे पास वाली शाखा का पता चाहिए", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "एसबीआई का एटीएम किधर है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "संडे को बैंक खुला रहता है क्या", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "आज बैंक कितने बजे बंद होगा", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "नजदीकी बैंक ब्रांच का एड्रेस दो यार", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मंडे को बैंक की क्या टाइमिंग्स हैं", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या दोपहर के लंच टाइम में बैंक खुला रहता है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे अपने एरिया में एटीएम लोकेट करना है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे ऑफिस के पास बैंक की कौन सी ब्रांच है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "बैंक की कोई ब्रांच खुली है क्या अभी", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "शाखा का खुलने और बंद होने का समय बताओ", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पास में आईसीआईसीआई का एटीएम है क्या", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझसे सबसे नजदीक बैंक की शाखा कौन सी है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "बैंक के वर्किंग आर्स क्या होते हैं सुबह से शाम तक", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या आज बैंक हॉलिडे है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे ब्रांच का पूरा पता और पिनकोड चाहिए", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरे फ्लैट के पास कौन सा एटीएम काम कर रहा है", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या एटीएम 24 घंटे खुले रहते हैं", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "बैंक काउंटर कितने बजे तक कैश लेते हैं", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "एटीएम का एड्रेस भेज दो व्हाट्सएप पर", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "संडे को एटीएम बंद होते हैं क्या", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "पास वाली बैंक ब्रांच का फोन नंबर और एड्रेस मिलेगा क्या", "label": "atm_branch", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹತ್ತಿರದ ಎಟಿಎಂ ಎಲ್ಲಿದೆ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ರಾಂಚ್ ಟೈಮಿಂಗ್ಸ್ ಏನು?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಹತ್ರ ಇರೋ ಎಟಿಎಂ ಅಡ್ರೆಸ್ ಕಳುಸಿ", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮಲ್ಲೇಶ್ವರಂ ಬ್ರಾಂಚ್ ಯಾವ ಟೈಮ್ ಇಂದ ಯಾವ ಟೈಮ್ ತನಕ ಇರುತ್ತೆ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹತ್ತಿರದ ಬ್ಯಾಂಕ್ ಬ್ರಾಂಚ್ ಯಾವುದು?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಇವತ್ತು ಬ್ಯಾಂಕ್ ಓಪನ್ ಇರುತ್ತಾ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಮ್ಮ ಹತ್ತಿರದ ಎಟಿಎಂ ಯಾವುದು ಅಂತ ಹೇಳ್ತೀರಾ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ರಾಂಚ್ ಅಡ್ರೆಸ್ ಬೇಕಿತ್ತು", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಭಾನುವಾರ ಬ್ಯಾಂಕ್ ಓಪನ್ ಇರುತ್ತಾ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಸಂಡೇ ಬ್ರಾಂಚ್ ಓಪನ್ ಇರ್°ದಾ ಪ್ಲೀಸ್ ಹೇಳಿ", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾಳೆ ಬ್ಯಾಂಕ್ ಬ್ರಾಂಚ್ ಇರುತ್ತಾ, ಟೈಮಿಂಗ್ಸ್ ಏನು?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಟಿಎಂ ಲೊಕೇಶನ್ ಕಳುಸಿ", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹತ್ತಿರದ ಎಟಿಎಂ ಅಡ್ರೆಸ್ ಪ್ಲೀಸ್", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಜಯನಗರ ಬ್ರಾಂಚ್ ಎಲ್ಲಿ ಬರೋದು?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಟೈಮ್ಸ್ ಎಷ್ಟು ಗಂಟೆಯಿಂದ ಎಷ್ಟು ಗಂಟೆವರೆಗೆ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮಧ್ಯಾಹ್ನ ಲಂಚ್ ಟೈಮ್ ಅಲ್ಲಿ ಬ್ಯಾಂಕ್ ಇರ್°ದಾ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹತ್ತಿರದ ಬ್ಯಾಂಕ್ ಅಡ್ರೆಸ್ ಮತ್ತು ಟೈಮಿಂಗ್ಸ್ ಕಳುಸಿ", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಏರಿಯಾದಲ್ಲಿರೋ ಎಟಿಎಂ ಅಡ್ರೆಸ್ ಬೇಕು", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ರಾಂಚ್ ಎಷ್ಟು ಗಂಟೆಗೆ ಕ್ಲೋಸ್ ಆಗುತ್ತೆ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಓಪನಿಂಗ್ ಟೈಮ್ ಎಷ್ಟು?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಇವತ್ತು ಸೆಕೆಂಡ್ ಸಾಟರ್ಡೆನಾ, ಬ್ಯಾಂಕ್ ಇರುತ್ತಾ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹತ್ತಿರದ ಎಟಿಎಂ ಕೆಲಸ ಮಾಡ್ತಿದೆಯಾ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬೆಂಗಳೂರು ಮೈನ್ ಬ್ರಾಂಚ್ ಅಡ್ರೆಸ್ ಕೊಡಿ", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ರಾಂಚ್ ಗೆ ಹೋಗೋಕೆ ಟೈಮ್ ಎಷ್ಟು?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಶನಿವಾರ ಬ್ರಾಂಚ್ ಹಾಫ್ ಡೇ ಇರುತ್ತಾ?", "label": "atm_branch", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Nearest atm kaha hai batao yaar", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Branch kitne baje khulta hai subah", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mere paas 5000 cash hai, deposit karne ke liye paas wala branch batao", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Branch ka address send karo na please", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Bhai bank ki timing kya hai aaj ki?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mujhe 10000 nikalna hai, ATM kidhar hai aas paas?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Nearest branch ka location bhejo urgent hai", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Bank kab band hota hai sham ko?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Branch Sunday ko open rehta hai kya?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM ka pata do jaldi se", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mujhe 20000 ka cash transfer karna hai, branch address do", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mere area me konsa ATM paas me hai?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Bank kitne baje khulta hai Saturday ko?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Branch ki timing kya hai lunch break ki?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Nearest ATM me cash nahi hai, doosra batao", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Address do branch ka, mujhe account khulwana hai", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Bank ka working hours kya hai abhi?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Paas wala ATM ka rasta batao", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Branch kitne baje close hota hai?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mujhe 50000 withdraw karna hai, branch address do", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Nearest branch kahan hai GPS pe nahi mil raha", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Bank ki timings me kuch change hua hai kya?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Branch ka exact address share kar do please", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Kaun sa ATM sabse paas padega yahan se?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Bank subah kitne baje se start hota hai?", "label": "atm_branch", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot my upi pin rn pls help reset it", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how to change net banking password urgently", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot my debit card pin, can I do it via app?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "txn blocked bcoz wrong upi pin entered 3 times today morning", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "need 2 reset my atm pin asap", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bro forgotten my mbanking pass, pls send otp", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot a/c login password wht to do?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how to gen new pin for my rupay card?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "meri upi pin bhool gaya, pls reset", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot netbanking pwd,locked out of a/c", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "need to change my credit card pin right now", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot my 4 digit atm pin, pls help", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how to set new upi pin using debit card details?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "wrong pin entered for upi, how to unblock?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot my tpin for fund transfer", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "cant remember my mobile banking password pls help", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how to change atm pin at pos machine?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot netbanking login pass, need reset link pls", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai forgot my upi pin, how to make payment of 500rs rn?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot debit card pin, travelling rn what to do?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "how to reset transaction password in netbanking?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot password for netbanking app pls help", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "need to change upi pin immediately", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot my atm pin, can i do it through net banking?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "locked my netbanking due to wrong pwd, how to unlock?", "label": "password_pin", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking password bhul gaya hoon reset kaise karun", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin change karna hai jaldi batao", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "main apna upi pin bhul gaya hoon, kya karun?", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking ka password reset karna hai", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm card ka pin bhul gaya hoon naya kaise banega", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin bhul gaye hain, ab kya karen?", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera net banking password expire ho gaya hai, change karna hai", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "meri 50000 ki fd hai, net banking ka password bhul gaya", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin change karne ka tarika batao na please", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin reset karna hai, bhul gaya hoon", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking password recover kaise hoga?", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin bhul gaya hoon, nikalne me problem ho rahi hai", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kal 20000 transfer karna hai, upi pin bhul gaya hoon", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking password change option kahan hai?", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin badalna hai, bhul gaya hoon purana wala", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin bhul gaya, please help karo", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking ka password reset link bhej do", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin bhul gaya hoon, naya pin kaise set hoga?", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "last 3 days se net banking password nahi chal raha", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin bhul jane par kya karna padta hai?", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera net banking ka password block ho gaya hai", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm card ka pin bhul gaye hain, forgot pin ka option nahi mil raha", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin change karna hai jaldi se", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking password bhul gaya hoon, reset karne me error aa raha hai", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin bhul gaya, naya pin generate kaise karein", "label": "password_pin", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್ ಪಾಸ್‌ವರ್ಡ್ ಮರೆತುಹೋಗಿದೆ, ರೀಸೆಟ್ ಮಾಡುವುದು ಹೇಗೆ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ UPI PIN ಮರೆತುಹೋಯ್ತು, ಹೊಸದು ಹೇಗೆ ಹಾಕೋದು?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM ಪಿನ್ ಮರೆತುಹೋಗಿದೆ, ಹೊಸ ಪಿನ್ ಜನರೇಟ್ ಮಾಡ್V100 ಕಳುಹಿಸಿ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್ ಪಾಸ್‌ವರ್ಡ್ ಚೇಂಜ್ ಮಾಡಬೇಕು", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಪಿನ್ ಮರೆತುಹೋಗಿದೆ, ಬ್ರಾಂಚ್ ಗೆ ಹೋಗಬೇಕಾ?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "UPI ಪಿನ್ ಮರಿದೆ, ರೂ 500 ಕಳುಹಿಸೋಕೆ ಆಗ್ತಿಲ್ಲ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹೇಗೆ ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್ ಪಾಸ್‌ವರ್ಡ್ ರಿಸೆಟ್ ಮಾಡೋದು?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ 2 ದಿನದಿಂದ UPI ಪಿನ್ ಮರೆತು ತೊಂದರೆ ಆಗ್ತಿದೆ, ಸಹಾಯ ಮಾಡಿ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹೊಸ UPI ಪಿನ್ ಹೇಗೆ ಸೆಟ್ ಮಾಡ್ಕೊಳ್ಳೋದು?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM ಪಿನ್ ಬ್ಲಾಕ್ ಆಗಿದೆ, ಚೇಂಜ್ ಮಾಡೋದು ಹೇಗೆ?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಪಾಸ್‌ವರ್ಡ್ ಮರೆತಿದ್ದೀನಿ, ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್ ಲಾಗಿನ್ ಆಗಲ್ಲ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಅಕೌಂಟ್ ಪಾಸ್‌ವರ್ಡ್ ಬದಲಾಯಿಸಬೇಕು", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "UPI ಪಿನ್ ರೀಸೆಟ್ ಲಿಂಕ್ ಕಳುಹಿಸಿ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಮೊಬೈಲ್ ಬ್ಯಾಂಕಿಂಗ್ ಪಿನ್ ಮರೆತುಹೋಗಿದೆ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮರೆತುಹೋದ ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್ ಪಾಸ್‌ವರ್ಡ್ ವಾಪಸ್ ಪಡೆಯುವುದು ಹೇಗೆ?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "UPI ಪಿನ್ ಬದಲಾಯಿಸಬೇಕು, ಸ್ಟೆಪ್ಸ್ ಹೇಳಿ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಪಿನ್ ಚೇಂಜ್ ಮಾಡೋದು ಹೇಗೆ ದಯವಿಟ್ಟು ತಿಳಿಸಿ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅರ್ಜೆಂಟ್ ಆಗಿ UPI ಪಿನ್ ರಿಸೆಟ್ ಮಾಡ್ಬೇಕು", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್ ಪಾಸ್‌ವರ್ಡ್ ಮರಿದೆ, ಅಕೌಂಟ್ ಬ್ಲಾಕ್ ಆಗುತ್ತಾ?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM ಕಾರ್ಡ್ ಪಿನ್ ಮರೆತುಹೋಗಿದೆ, ಹೊಸದು ಮಾಡಿಕೊಡಿ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "UPI ಪಿನ್ ಚೇಂಜ್ ಮಾಡ್ಬೇಕಾದ್ರೆ ಎಟಿಎಂಗೆ ಹೋಗ್ಬೇಕಾ?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಪಾಸ್‌ವರ್ಡ್ ಮರೆತುಹೋಗಿದೆ, ಅಕೌಂಟ್ ರೀಸೆಟ್ ಮಾಡಬೇಕು", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "UPI ಪಿನ್ ಮರೆತಿದ್ದೀನಿ, ಫೋನ್ಪೇ ಅಲ್ಲಿ ಹೇಗೆ ಚೇಂಜ್ ಮಾಡೋದು?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನೆಟ್ ಬ್ಯಾಂಕಿಂಗ್ ಪಾಸ್‌ವರ್ಡ್ ಮರೆತುಹೋಗಿದೆ, ಫರ್ಗೆಟ್ ಪಾಸ್‌ವರ್ಡ್ ಆಪ್ಷನ್ ಕೆಲಸ ಮಾಡ್ತಿಲ್ಲ", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹಳೆ UPI ಪಿನ್ ನೆನಪಿಲ್ಲ, ಹೊಸದು ಹೇಗೆ ಕ್ರಿಯೇಟ್ ಮಾಡೋದು?", "label": "password_pin", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera atm pin bhool gaya hu, reset kaise karu?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai upi pin change karna hai jaldi batao", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking password bhul gya yaar", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm card ka pin reset karne ka option kahan hai", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe apna upi pin change karna hai, bhool gaya hu purana wala", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "netbanking ka login password bhul gya, naya kaise banega?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forget pin ka option nahi mil raha app me", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin reset karne me error aa raha hai 5 min se", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera net banking password block ho gaya hai, help karo", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai atm pin change karna hai 2 din baad trip pe jaana hai", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin bhul gya hu, kya karu?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "reset net banking password please", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm ka pin bhul gaya hu, naya pin kaise set hoga?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "muje apna upi pin badalna hai urgently", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking ka password change karna hai, step bata do", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera upi pin kaam nahi kar raha, change karna padega", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "forgot password pe click karne par OTP nahi aa raha net banking ke liye", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin bhul gaya hu, kya branch jana padega?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "jaldi se net banking ka password reset karwa do", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "upi pin change karna hai, koi tarika hai bina branch gaye?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm card ka pin bhool gaya hu, naya pin generate karne ka process batao", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "net banking password bhul gaya hu, account lock ho gaya hai kya?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera upi pin reset nahi ho raha, please help", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai net banking ka password bhul gaya, kal 5000 transfer karne the", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm pin change karna hai, kitna time lagega?", "label": "password_pin", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mere a/c se 2 baar paise cut gye ek hi transaction ke liye pls check rn", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "arey yaar ek unrecognised transaction dikh rha hai 500 ka jo maine kiya hi nahi", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "amazon refund was initiated 5 days ago still not credited in my a/c", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm machine ne cash nahi diya par message aa gya ki debited 2000 rupees", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "double charge ho gya zomato order pe pls reverse extra amount asap", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "someone used my debit card for a transaction i never made wth", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera 10k kahan gaya?? atm machine hang ho gyi thi aur paise kat gye", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bro unrecognised payment of 1500 on my statement pls block card", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "refund missing from flipkart return delivered last week check pls", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai ek hi uber ride ke liye do baar paise kat gye fix this pls", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "txn amount 3000 debited twice today morning kya bakwaas hai ye", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "money deducted from a/c but atm gave error and no cash dispensed", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe ye 5000 ka unknown transaction kyu dikh rha hai statement me", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "amazon pay ke refund ka kuch pata nahi 3 din ho gye yaar", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm cash nahi nikla par account se 4000 gayab pls help", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "double debited for electricity bill payment pls refund fast", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mera card chori nahi hua phir bhi unknown charge kyu cuta", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "refund not credited yet for cancelled train ticket booked via app", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm se cash nikla nahi aur a/c se 10000 cut gye jaldi thik karo", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "merchant ko do baar payment chali gyi ek hi order ki fix it", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "unrecognised pos txn of 2500 done in some other city help me rn", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mere a/c se bina baat ke 500 kat gye is this a bug", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "myntra refund pending since 10 days where is my money", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm transaction failed but amount debited from savings a/c", "label": "dispute_refund", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera ek hi transaction ke liye do baar paisa cut gaya hai", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "jaldi se check karo mere account se double payment ho gaya hai", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ek hi bill ka payment do baar ho gaya, mera refund kab aayega?", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe lag raha hai mera double charge ho gaya hai ek order par", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yeh kya hai, same amount do baar debit ho gaya hai mere account se", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "meri ek payment do baar process ho gayi hai, please help", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ek hi swipe par do baar paise kat gaye hain bhai", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera double charge hua hai, 2500 rupees wapas karo", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "merchant ko ek baar diya tha par mere account se do baar paisa gaya hai", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ek anjaan payment dikh rahi hai mere account mein jo maine ki hi nahi", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yeh unrecognised payment kahan se aa gayi mere statement mein?", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "maine yeh transaction nahi kiya hai phir bhi paisa cut gaya", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kisi ne mera UPI use karke fraud kiya hai shayad, unrecognised transaction hai", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera ek unknown payment debit hua hai 5000 ka, block karo card", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yeh kaunsi payment hai jo mujhe yaad hi nahi hai?", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera refund abhi tak nahi aaya hai 5 din ho gaye", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "amazon wala refund missing hai, abhi tak account mein nahi aaya", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "flipkart ka refund aana tha par abhi tak status kuch nahi hai", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "refund miss ho gaya hai mera, please check karke credit karo", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera paisa cut gaya tha par refund abhi tak pending hai account mein", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM gaya tha paisa nikalne, machine se cash nahi nikla par account se cut gaya", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM machine hang ho gayi thi, cash nahi mila par message aa gaya debit ka", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM ne cash nahi diya par mere 10000 kat gaye, kya karun?", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kal ATM se paise nikal raha tha, cash nahi aaya par message aa gaya", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM cash issue hai, paisa nahi mila par account khali ho gaya hai", "label": "dispute_refund", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಒಂದು ಟ್ರಾನ್ಸಾಕ್ಷನ್ ಗೆ ಎರಡು ಸಾರಿ ಹಣ ಕಟ್ ಆಗಿದೆ ಏನು ಮಾಡೋದು", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಅಕೌಂಟ್ ಇಂದ ಡಬಲ್ ಚಾರ್ಜ್ ಆಗಿದೆ ಪ್ಲೀಸ್ ಹೆಲ್ಪ್ ಮಾಡಿ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಯಾರೋ ನನ್ನ ಪರ್ಮಿಷನ್ ಇಲ್ಲದೆ 5000 ರೂಪಾಯಿ ತೆಗೆದಿದ್ದಾರೆ ಅನ್ ರcognised payment ಇದು", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಅಕೌಂಟ್ ಇಂದ ಹಣ ಮಿಸ್ ಆಗಿದೆ ಅನ್ ನೋನ್ ಟ್ರಾನ್ಸಾಕ್ಷನ್ ತೋರಿಸ್ತಾ ಇದೆ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಂದು ಅಮೆಜಾನ್ ರಿಫಂಡ್ ಇನ್ನೂ ಬಂದಿಲ್ಲ ಏಳು ದಿನ ಆಯ್ತು", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಟಿಎಂ ಅಲ್ಲಿ ದುಡ್ಡು ಬಂದಿಲ್ಲ ಆದ್ರೆ ಅಕೌಂಟ್ ಇಂದ 2000 ಡೆಬಿಟ್ ಆಗಿದೆ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ರಿಫಂಡ್ ಬಂದಿಲ್ಲ ಸರ್ ನನ್ನ 1500 ರೂಪಾಯಿ ವಾಪಸ್ ಕೊಡ್ಸಿ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾನು ಶಾಪಿಂಗ್ ಮಾಡ್ಬೇಕಾದ್ರೆ ಡಬಲ್ ಅಮೌಂಟ್ ಕಟ್ ಆಗಿದೆ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅನ್ ನೋನ್ ಪೇಮೆಂಟ್ ಆಗಿದೆ ನನ್ನ ಕಾರ್ಡ್ ಬ್ಲಾಕ್ ಮಾಡಿ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಟಿಎಂ ಮಿಷನ್ ಹತ್ರ ಕ್ಯಾಶ್ ಕೊಡಲಿಲ್ಲ ಆದ್ರೆ ಅಕೌಂಟ್ ಇಂದ ಕಟ್ ಆಯ್ತು", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಿನ್ನೆ ರಾತ್ರಿ ಒಂದು ಟ್ರಾನ್ಸಾಕ್ಷನ್ ಆಗಿದೆ ಅದು ನಾನೇ ಮಾಡಿಲ್ಲ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಮಿಸ್ಡ್ ರಿಫಂಡ್ ಬಗ್ಗೆ ಮಾತಾಡಬೇಕಿತ್ತು", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಅಕೌಂಟ್ ಇಂದ ಎರಡು ಸಲ ದುಡ್ಡು ಹೋಗಿದೆ ಪ್ಲೀಸ್ ಚೆಕ್ ಮಾಡಿ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಟಿಎಂ ಇಂದ ದುಡ್ಡು ಬರಲಿಲ್ಲ ಆದ್ರೆ ಮೆಸೇಜ್ ಬಂದಿದೆ 10000 ಕಟ್ ಆಗಿದೆ ಅಂತ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಳೆದ ವಾರ ಕ್ಯಾನ್ಸಲ್ ಮಾಡಿದ ಆರ್ಡರ್ ದುಡ್ಡು ಇನ್ನೂ ಅಕೌಂಟ್ కి ಬಂದಿಲ್ಲ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಯಾವುದೋ ಅಪರಿಚಿತ ವ್ಯಕ್ತಿ ನನ್ನ ಯುಪಿಐ ಇಂದ 3000 ಪೇ ಮಾಡಿದ್ದಾನೆ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಡಬಲ್ ಚಾರ್ಜ್ ಆಗಿರೋದಕ್ಕೆ ರಿಫಂಡ್ ಹೇಗೆ ತಗೊಳ್ಳೋದು", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನಾನು ಮಾಡಿದ ಪೇಮೆಂಟ್ ಎರಡು ಸಾರಿ ಕಟ್ ಆಗಿದೆ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಟಿಎಂ ನಲ್ಲಿ ಕ್ಯಾಶ್ ಬರಲಿಲ್ಲ ಬಟ್ ನನ್ನ ಅಕೌಂಟ್ ಇಂದ ಡೆಬಿಟ್ ಆಗಿದೆ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಫ್ಲಿಪ್ಕಾರ್ಟ್ ರಿಫಂಡ್ ಮಿಸ್ ಆಗಿದೆ ನನ್ನ ಅಕೌಂಟ್ ಗೆ ಬಂದಿಲ್ಲ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅನ್ ರcognised ಟ್ರಾನ್ಸಾಕ್ಷನ್ ಆಗಿದೆ ನನ್ನ ಅಕೌಂಟ್ ಸೇಫ್ ಇದೆಯಾ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಒಂದು ಐಟಂ ತಗೊಂಡ್ರೆ ಎರಡು ಸಲ ಹಣ ಕಟ್ ಆಗಿದೆ ನೋಡಿ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಎಟಿಎಂ ಕ್ಯಾಶ್ ಮಷೀನ್ ಪ್ರಾಬ್ಲಮ್ ಇಂದ ದುಡ್ಡು ಕಟ್ ಆಗಿದೆ ಕ್ಯಾಶ್ ಸಿಗಲಿಲ್ಲ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ರಿಫಂಡ್ ಬರೋಕೆ ಇಷ್ಟು ದಿನ ಆಗ್ಬೇಕಾ ಬರ್ಲೇ ಇಲ್ಲ ಇನ್ನೂ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಅನ್ ನೋನ್ ಚಾರ್ಜಸ್ ಆಗಿದೆ ನನ್ನ ಅಕೌಂಟ್ ಇಂದ", "label": "dispute_refund", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera paisa do baar kat gaya ek hi transaction ke liye, double charge hua hai", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai mera ek transaction do baar process ho gaya, refund kab aayega?", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ek hi item ke liye do baar paise cut gaye account se", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yesterday I got charged twice for one swiggy order, please help", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera ek hi order ka payment do baar deduct ho gaya hai", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yeh unknown transaction kahan se aa gaya mere statement mein? maine yeh nahi kiya", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe yeh transaction nahi pata, mere card se paise kisne kaate?", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "fraudulent payment hua hai mere account se, jaldi block karo card", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ek aisi payment dikh rahi hai jo maine ki hi nahi", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe ek unrecognised payment mila hai history mein, 5000 ka", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera refund abhi tak nahi aaya Flipkart wala, 10 din ho gaye", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "amazon ka refund missing hai jo last week aana chahiye tha", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "return item ka paisa abhi tak bank account mein credit nahi hua", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "refund status batao na please, 3000 ka missing hai", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera refund kab tak aayega? 15 days ho gaye wait karte karte", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ATM gaya tha cash nikalne, account se cut gaya par cash nahi aaya", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm machine se paise nahi nikle par message aa gaya ki debit ho gaya", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "help me, ATM ne cash nahi diya par mera amount deduct ho gaya", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kal raat ATM se 2000 nikal raha tha, cash nahi mila par balance cut gaya", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm transaction failed ho gaya tha par mere paise kat gaye", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera 5000 ka double charge hua hai, check karo please", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "yeh 1500 ka unknown transaction kiska hai? maine nahi kiya", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "flipkart refund is still missing, please check", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "atm cash not dispensed par balance cut gaya yaar", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mera paisa do baar cut gaya ek hi payment ke liye", "label": "dispute_refund", "lang": "hinglish", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "connect to a human pls", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "need to speak to customer care rn", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai kisi bande se baat karao a/c block ho gya hai", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls connect me to customer care immediately", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe real person se baat karni hai", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "want to talk to bank agent about 50000 rs fraud", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "customer support se baat karao na yr", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls arrange a callback for me today", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bhai kisi senior manager ka number do ya connect karo", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "need human agent urgently for loan issue", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls transfer chat to human", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "call me back in 10 mins pls", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kisi live agent se connect karo yaar", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "want to speak to customer service regarding wrong debit of 2500", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls connect to a human executive", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kitna wait karu bot se baat karte karte, human lao", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe abhi ke abhi customer care se baat karni hai", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls call me back rn", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "kisi insaan se baat karao pls", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "want a callback regarding my credit card bill", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "agent se baat karao na pls bhaiya", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "mujhe human support chahiye yaar", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "pls connect me to an actual person", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "need a callback within 1 hour pls", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "bot bakwaas hai, kisi real person ko lao chat pe", "label": "human_agent", "lang": "en", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे किसी आदमी से बात करनी है", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कस्टमर केयर को लगाओ यार", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "एक इंसान से बात करवाओ जल्दी", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "भाई जरा किसी एजेंट से कनेक्ट कर दो", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे बैंक के आदमी से बात करनी है", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कॉल बैक चाहिए मुझे अभी", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कस्टमर केयर एग्जीक्यूटिव से बात कराओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "शिकायत दर्ज करनी है, किसी अधिकारी से बात करवाओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "क्या मैं किसी ह्यूमन एजेंट से बात कर सकता हूँ?", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे 50000 के ट्रांजेक्शन पर बात करनी है, एजेंट भेजो", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कोई इंसान है क्या यहाँ बात करने के लिए?", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "तुरंत किसी कस्टमर केयर वाले से बात करवाओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा 24 घंटे से UPI फंसा है, किसी सीनियर से बात कराओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "एफडी (FD) तोड़नी है, बैंक वाले से बात करवाओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "इतने दिन से EMI का चक्कर है, किसी से बात करनी है", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मुझे कस्टमर सपोर्ट से कॉल बैक चाहिए", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कृपया किसी एजेंट से चैट कनेक्ट कर दें", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "बोट से परेशान हो गया हूँ, आदमी से बात कराओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा फोन नंबर नोट करो और कॉल बैक करो", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कस्टमर केयर का नंबर दो या खुद कनेक्ट करो", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "खाता बंद करवाना है, किसी अधिकारी से बात कराओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "लोन डिपार्टमेंट वाले किसी बंदे से बात करवाओ यार", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "कस्टमर केयर ऑफिसर से बात करने का क्या तरीका है?", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "इंसानी मदद चाहिए, बोट समझ नहीं रहा", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "मेरा 10000 कट गया है, किसी जिम्मेदार आदमी से बात कराओ", "label": "human_agent", "lang": "hi", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನಗೆ ಹ್ಯೂಮನ್ ಏಜೆಂಟ್ ಜೊತೆ ಮಾತಾಡಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಸ್ಟಮರ್ ಕೇರ್‌ಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಒಬ್ಬ ರಿಯಲ್ ಪರ್ಸನ್ ಜೊತೆ ಚಾಟ್ ಮಾಡಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಂಪ್ಲೇಂಟ್ ಮಾಡೋದಿದೆ, ಯಾರಾದ್ರೂ ಮ್ಯಾನೇಜರ್ ಸಿಗ್ತಾರಾ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ದಯವಿಟ್ಟು ನನಗೆ ಕಾಲ್‌ಬ್ಯಾಕ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಅಕೌಂಟ್ ಬ್ಲಾಕ್ ಆಗಿದೆ, ಕೂಡಲೇ ಕಸ್ಟಮರ್ ಕೇರ್ ಗೆ ಫಾರ್ವರ್ಡ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹಲೋ, ಕಸ್ಟಮರ್ ಕೇರ್ ಎಕ್ಸಿಕ್ಯೂಟಿವ್ ಜೊತೆ ಮಾತಾಡಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಅಧಿಕಾರಿಗಳ ಜೊತೆ ಮಾತಾಡೋದು ಹೇಗೆ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನಗೆ 50000 ರೂಪಾಯಿ ಪ್ರಾಬ್ಲಮ್ ಇದೆ, ಏಜೆಂಟ್ ಹತ್ತಿರ ಕನೆಕ್ಟ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಸ್ಟಮರ್ ಸಪೋರ್ಟ್ ನಂಬರ್ ಕೊಡಿ ಅಥವಾ ನೀವೇ ಕನೆಕ್ಟ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಯಾರದಾದ್ರೂ ಹ್ಯೂಮನ್ ಜೊತೆ ಮಾತಾಡೋಕೆ ಆಗಲ್ವಾ ಈ ಬಾಟ್ ಬಿಟ್ಟು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ 2 ದಿನದಿಂದ ಸಾಲ್ವ್ ಆಗ್ತಿಲ್ಲ, ಕಸ್ಟಮರ್ ಕೇರ್ ಕಳಿಸಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಒಬ್ಬ ಪರ್ಸನ್ ಜೊತೆ ಮಾತಾಡಬೇಕು, ಪ್ಲೀಸ್", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕಾಲ್ ಬ್ಯಾಕ್ ಕೇಳಬಹುದಾ ನನಗೆ ತುರ್ತಾಗಿ ಮಾತಾಡಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಮ್ಯಾನೇಜರ್ ನ ಭೇಟಿ ಮಾಡೋಕೆ ಅಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಚಾರ್ಜ್ ಕಟ್ ಆಗಿದೆ, ಹ್ಯೂಮನ್ ಏಜೆಂಟ್ ಕನೆಕ್ಟ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಪ್ಲೀಸ್ ಕಸ್ಟಮರ್ ಕೇರ್ ಗೆ ಟ್ರಾನ್ಸ್ಫರ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬಾಟ್ ನನಗೆ ಅರ್ಥ ಆಗ್ತಿಲ್ಲ, ಲೈವ್ ಏಜೆಂಟ್ ಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಯಾರಾದ್ರೂ ಹ್ಯೂಮನ್ ಎಕ್ಸಿಕ್ಯೂಟಿವ್ ಜೊತೆ ಕನೆಕ್ಟ್ ಮಾಡಿ ರೀ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಕೂಡಲೇ ನನಗೆ ಒಂದು ಕಾಲ್ ಬ್ಯಾಕ್ ಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಲೋನ್ ಇಶ್ಯೂ ಇದೆ, ಕಸ್ಟಮರ್ ಕೇರ್ ಜೊತೆ ಮಾತಾಡಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಹಲೋ, ಕಂಪ್ಲೇಂಟ್ ರಿಜಿಸ್ಟರ್ ಮಾಡ್ಬೇಕು ಒಬ್ಬರ ಜೊತೆ ಮಾತಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಪ್ಲೀಸ್ ನನಗೆ ಕಸ್ಟಮರ್ ಕೇರ್ ಗೆ ಚಾಟ್ ಮೂವ್ ಮಾಡಿ", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ನನ್ನ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಕಳೆದುಹೋಗಿದೆ, ಮನುಷ್ಯರ ಜೊತೆ ಮಾತಾಡ್ಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "ಬ್ಯಾಂಕ್ ಸ್ಟಾಫ್ ಜೊತೆ ಮಾತಾಡೋಕೆ ಏನು ಮಾಡಬೇಕು", "label": "human_agent", "lang": "kn", "src": "gemini:gemini-3.5-flash-lite"}
+{"text": "Mujhe ek human agent se baat karni hai, please connect kar dijiye.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Yaar, aapke bot se kaam nahi ban raha, ab customer care ko call karo.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere account me 5,000 rupees ka extra charge aaya, abhi kisi se baat karna hai.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aap mujhe ek representative ke saath live chat karwa sakte hain?", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe complaint file karni hai, please ek insaan se baat karwa do.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Aaj subah se transaction pending hai, abhi kisi ko call karwa do.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere debit card ka PIN reset karna hai, human help chahiye.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere loan application status ke baare me baat karni hai, koi manager available hai?", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 2 din pehle ki fee ka explanation chahiye, please ek human se baat karwao.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aap mujhe ek callback schedule kar sakte hain? Main 4-5 PM ke beech available hoon.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere account me unauthorized transaction hua, abhi kisi se baat karna zaroori hai.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne fixed deposit ka interest rate confirm karna hai, human se baat karna hai.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Yeh bot baar baar same answer de raha hai, ab ek real person se baat karna chahta hoon.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere credit card ka limit increase karna hai, please ek agent ko connect karo.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Maine online transfer cancel kiya tha, lekin paisa abhi tak wapas nahi aaya, help chahiye.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account statement ka PDF chahiye, koi insaan mujhe guide kare.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere account me 10,000 rupees ka charge galat lag gaya, abhi kisi se baat karna hai.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe ek complaint register karni hai, aapke bot se solution nahi mil raha.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere mobile banking app me login issue aa raha hai, please ek human se baat karwao.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe aapke branch manager se baat karna hai, kya aap arrange kar sakte hain?", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere cheque deposit ka status check karna hai, abhi kisi ko connect karo.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Maine aapke chatbot ko 3 baar try kiya, ab ek real agent se baat karna chahta hoon.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe 2 din pehle ki transaction ka receipt chahiye, koi insaan help kare.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere account me 1 lakh ka loan repayment due hai, payment process me problem aa rahi hai.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe aapke customer care ka direct number chahiye, please call back arrange karo.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mere account lock ho gaya hai, abhi turant ek human agent se baat karna hai.", "label": "human_agent", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey, can u tell me the timing of my nearest branch?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "thanks for the help earlier!", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "good morning, i wanna open a savings a/c, what docs needed?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "pls let me know the interest rate for a 5 lakh FD for 2 years.", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hi, i forgot my debit card PIN, can i reset it here?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the charge for a NEFT transfer above 1 lakh?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey bot, any chance of getting a credit card with no annual fee?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i need to close my current a/c, how fast can it be done?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "thanks, that's all for now.", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "yo, can i get a loan statement for the last 6 months?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "pls tell me the max limit for cash withdrawal at an ATM.", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey, what's the policy on cheque bounce fees?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i want to add a joint holder to my savings a/c, steps?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "good evening, can i schedule a recurring fund transfer for 10k every month?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "thanks, you’re awesome!", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hi, is there a charge for receiving an international wire?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i need to update my address, how do i do that online?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey, can i get a prepaid card linked to my a/c?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "what's the minimum balance required for a current a/c?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "pls tell me the process to claim a lost debit card.", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "thanks for the quick reply!", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "hey, can i set up SMS alerts for transactions above 5k?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "i want to know the penalty for early FD withdrawal before 1 year.", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "good night, will my account be active after I deposit 2k today?", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "thanks, that'll do.", "label": "faq_general", "lang": "en", "src": "groq:openai/gpt-oss-120b"}
+{"text": "नमस्ते, मेरा खाता खोलने में मदद चाहिए।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "धन्यवाद, आपका दिन शुभ हो!", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं आज़ ही अपना नया FD खोल सकता हूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "उधार ली गई EMI का बकाया कितना है, बताइए।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं अपना मोबाइल बैंकिंग ऐप अपडेट करना चाहता हूँ, कैसे?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप मेरे पासबुक की कॉपी ईमेल कर सकते हैं?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "सुप्रभात, मेरे पास दो बचत खाते हैं, एक को बंद करना है।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं UPI से सीधे अपने FD में निवेश कर सकता हूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कृपया मेरे खाते का बैलेंस बताइए, पिछले 3 महीने का।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं अपने चेकबुक का स्टेटमेंट चाहता हूँ, कृपया भेजें।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप बता सकते हैं कि 5% सालाना ब्याज दर पर 1 लाख की FD कितनी कमाएगी?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "हाय, मेरा पासवर्ड भूल गया हूँ, रीसेट कैसे करूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं अपने खाते को ऑनलाइन ही बंद कर सकता हूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कृपया मेरे लोन की शर्तें और डॉक्यूमेंट्स की लिस्ट भेजें।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "नमस्कार, मेरे पास एक प्रॉम्प्ट है: क्या मैं दो महीने में अपना खाता बंद कर सकता हूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैंने अभी-अभी एक ट्रांसफ़र किया, लेकिन पैसे अभी तक नहीं पहुँचे।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप मेरे खाते में जमा हुए नकद को चेक में बदल सकते हैं?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मेरे पास एक सवाल है, क्या मैं हर महीने 10,000 रुपये की EMI दे सकता हूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कृपया मेरे खाते में आज की सभी लेनदेन की सूची भेजें।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "धन्यवाद, आपका सहयोग बहुत अच्छा रहा।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या मैं अपने बचत खाते को सिंगल से जॉइंट अकाउंट में बदल सकता हूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं अपनी नई सैलरी को सीधे मेरे खाते में जमा करवाना चाहता हूँ, क्या UPI से सेट अप करूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "क्या आप मेरे खाते की वार्षिक फीस में छूट दे सकते हैं?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "हाय, मेरे पास एक प्रॉम्प्ट है: क्या मैं 6 महीने के बाद FD को रिन्यू कर सकता हूँ?", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "कृपया मेरे खाते में आज का ब्याज दर बताइए।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "मैं अपना खाता बंद करने से पहले सभी लेनदेन का सारांश चाहता हूँ।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "धन्यवाद, अब मैं चैट बंद कर रहा हूँ।", "label": "faq_general", "lang": "hi", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಮಸ್ಕಾರ, ನನ್ನ ಖಾತೆ ಬ್ಯಾಲೆನ್ಸ್ ಎಷ್ಟು ಇದೆ ಎಂದು ತಿಳಿಸಬಹುದೇ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹಾಯ್, ನಾನು ಹೊಸ ಸೆವಿಂಗ್ ಅಕೌಂಟ್ ತೆರೆಯಲು ಬಯಸುತ್ತೇನೆ, ಪ್ರಕ್ರಿಯೆ ಏನು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಧನ್ಯವಾದಗಳು, ಇತ್ತೀಚೆಗೆ ನನ್ನ ಕಾರ್ಡ್‌ನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿದ್ದೇನೆ, ಮತ್ತೆ ಅನ್‌ಲಾಕ್ ಮಾಡಬಹುದು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಮಸ್ಕಾರ, ನಾನು 3 ತಿಂಗಳ ಹಿಂದೆ ತೆಗೆದುಕೊಂಡ ಲೋನ್‌ನ್ನು ಇನ್ನೂ ಪಾವತಿಸಿಲ್ಲ, ದಂಡ ಏನು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹೇಗೆ ಇದ್ದೀರಿ? ನನ್ನ ಪಾಸ್ವರ್ಡ್ ಮರೆತಿದ್ದೇನೆ, ರಿಸೆಟ್ ಮಾಡಿಸಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡು.", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಪ್ರಸ್ತುತ ಖಾತೆ ಪ್ರಕಾರ ಯಾವುವು, ಮತ್ತು ಪ್ರತಿ ಖಾತೆಗೆ ಯಾವ ಫೀಗಳು ಇವೆ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನೀವು ಯಾವ ಸಮಯದಲ್ಲಿ ಕಸ್ಟಮರ್ ಸಪೋರ್ಟ್ ಲೈವ್ ಚಾಟ್ ಮಾಡುತ್ತೀರಿ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಕಾರ್ಡ್‌ನ್ನು ಕಳೆದುಕೊಂಡಿದ್ದೇನೆ, ಹೊಸದು ಕಳುಹಿಸಬಹುದೇ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹಾಯ್, ನಾನು 5 ಲಕ್ಷ ರೂ. ಮೊತ್ತದ ಫಿಕ್ಸ್‌ಡ್ ಡಿಪಾಜಿಟ್ ತೆಗೆಯಲು ಬಯಸುತ್ತೇನೆ, ಪ್ರಕ್ರಿಯೆ ಏನು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಯಾವ ಯಾವ ಡಿಜಿಟಲ್ ಪೇಮೆಂಟ್ ಆಯ್ಕೆಗಳು ಇವೆ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಖಾತೆಗೆ ಇತ್ತೀಚೆಗೆ 10,000 ರೂ. ಕ್ರೆಡಿಟ್ ಆಗಿದೆ, ಇದು ಯಾವ ಟ್ರಾನ್ಸ್‌ಫರ್?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನೀವು ಯಾವ ಭಾಷೆಗಳಲ್ಲಿ ಚಾಟ್ ಬೆಂಬಲ ನೀಡುತ್ತೀರಿ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಖಾತೆ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಅನ್ನು ಇಮೇಲ್ ಮೂಲಕ ಕಳುಹಿಸಬಹುದೇ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಕಾರ್ಡ್‌ನ್ನು ಅಕ್ಟಿವೇಟ್ ಮಾಡಲು ಯಾವ ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳಬೇಕು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಖಾತೆ ತೆರೆಯುವಲ್ಲಿ ಕನಿಷ್ಠ ಮೊತ್ತ ಎಷ್ಟು ಬೇಕು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹಾಯ್, ನಾನು 2 ವರ್ಷಗಳ ಹಿಂದೆ ತೆರೆಯಲಾದ ಪ್ರಸ್ತುತ ಖಾತೆ ಮುಚ್ಚಲು ಬಯಸುತ್ತೇನೆ, ಹೇಗೆ ಮಾಡಬೇಕು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಯಾವ ಯಾವ ಪ್ರೊಮೋಶನ್‌ಗಳು ಇವೆ, ವಿಶೇಷವಾಗಿ ಕ್ಯಾಸ್ಟಮರ್ ರಿವಾರ್ಡ್‌ಗಳು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಖಾತೆಗೆ ಇತ್ತೀಚೆಗೆ 500 ರೂ. ಶುಲ್ಕ ಕತ್ತರಿಸಲಾಗಿದೆ, ಇದಕ್ಕೆ ಕಾರಣ ಏನು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಬದಲಾಯಿಸಲು ಯಾವ ಹಂತಗಳು ಬೇಕು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್‌ನ್ನು ಹೇಗೆ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವುದು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಖಾತೆ ಮೇಲೆ ಯಾವುದೇ ಹೋಲ್ಡ್ ಇದ್ದರೆ, ಅದನ್ನು ಹೇಗೆ ತೆಗೆದುಹಾಕಬಹುದು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್‌ನಲ್ಲಿ ಯಾವ ಯಾವ ಕರ್ಸಿ ಎಕ್ಸ್‌ಚೇಂಜ್ ರೇಟ್‌ಗಳು ಲಭ್ಯ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಖಾತೆ ಲಿಂಕ್ ಆಗಿರುವ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಹೇಗೆ ಬದಲಾಯಿಸಬಹುದು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನೀವು ಯಾವ ಯಾವ ATM‌ಗಳಲ್ಲಿ ನಗದು ತೆಗೆದುಕೊಳ್ಳಬಹುದು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ನನ್ನ ಖಾತೆಗೆ ಇತ್ತೀಚೆಗೆ 1,000 ರೂ. ಬೋನಸ್ ಕ್ರೆಡಿಟ್ ಆಗಿದೆ, ಇದನ್ನು ಹೇಗೆ ಬಳಸಬಹುದು?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "ಹಾಯ್, ನಾನು 6 ತಿಂಗಳ ಕಾಲ ನನ್ನ ಖಾತೆ ಬಳಸಿಲ್ಲ, ಇದರಿಂದ ಯಾವುದೇ ಫೀಗಳು ಬಂದಿವೆಯೇ?", "label": "faq_general", "lang": "kn", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Namaste, aapka din kaisa ja raha hai?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Hi, mujhe apne savings account ka balance check karna hai.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Bhai, kya aap mujhe bata sakte hain ki cheque book kaise request karun?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe ek naya fixed deposit kholna hai, 1 lakh rupees ke liye 6 mahine ka.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Thanks yaar, aapki madad se sab set ho gaya.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aapke paas koi student loan ke options hain?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne credit card ka limit increase karwana hai, kya possible hai?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Hello, aapke branch timings kya hain?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account se 5,000 rupees transfer karna hai, kya aap help karenge?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aapke paas koi zero balance savings account hai?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne lost debit card ko block karna hai, please.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Bhai, aapke loan interest rates ka latest update kya hai?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account statement last 3 months ki PDF chahiye.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Thanks for the quick response!", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aapke paas koi mobile banking app hai?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account me auto debit set karna hai electricity bill ke liye.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe pata karna tha ki NRI account kholne ke liye kya documents chahiye.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account se foreign currency purchase karna hai, process batao.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Kya aapke paas koi zero fee international transfer ka option hai?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account me 10% interest mil raha hai ya nahi, confirm kar do.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Good morning, aapke branch me COVID guidelines kya hain?", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account me joint holder add karna hai, steps batao.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Mujhe apne account se 2 lakh rupees ka loan chahiye, eligibility check kar do.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Thanks for the help, ab sab clear ho gaya.", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}
+{"text": "Bye, aapka din shubh ho!", "label": "faq_general", "lang": "hinglish", "src": "groq:openai/gpt-oss-120b"}

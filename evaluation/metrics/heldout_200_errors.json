@@ -1,0 +1,176 @@
+[
+ {
+  "text": "whats the available balence in my account",
+  "lang": "en",
+  "true": "check_balance",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "list everything I paid in the past 10 days",
+  "lang": "en",
+  "true": "transaction_history",
+  "pred": "fees_charges"
+ },
+ {
+  "text": "which category am I overspending on",
+  "lang": "en",
+  "true": "spending_summary",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "can i borrow ₹75,000 for a bike",
+  "lang": "en",
+  "true": "loan_eligibility",
+  "pred": "faq_general"
+ },
+ {
+  "text": "current home loan ROI please",
+  "lang": "en",
+  "true": "interest_rates",
+  "pred": "loan_eligibility"
+ },
+ {
+  "text": "can't find my credit card anywhere, please disable it",
+  "lang": "en",
+  "true": "card_block",
+  "pred": "card_issue"
+ },
+ {
+  "text": "got my new debit card in the post, how do i switch it on",
+  "lang": "en",
+  "true": "card_activate",
+  "pred": "card_block"
+ },
+ {
+  "text": "how do I generate a fresh ATM pin",
+  "lang": "en",
+  "true": "password_pin",
+  "pred": "card_issue"
+ },
+ {
+  "text": "i want to file a complaint with a person not a bot",
+  "lang": "en",
+  "true": "human_agent",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "good morning",
+  "lang": "en",
+  "true": "faq_general",
+  "pred": "spending_summary"
+ },
+ {
+  "text": "बैंक में किस किस तरह के लोन मिलते हैं",
+  "lang": "hi",
+  "true": "loan_products",
+  "pred": "loan_eligibility"
+ },
+ {
+  "text": "कल जो पैसे भेजे थे वो दोस्त को नहीं मिले",
+  "lang": "hi",
+  "true": "transfer_money",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "बॉट नहीं, इंसान से शिकायत करनी है",
+  "lang": "hi",
+  "true": "human_agent",
+  "pred": "transfer_money"
+ },
+ {
+  "text": "बचत खाता खोलने के लिए कौन से कागज़ चाहिए",
+  "lang": "hi",
+  "true": "faq_general",
+  "pred": "human_agent"
+ },
+ {
+  "text": "ಖಾತೆಯ ಶೇಷ ಮೊತ್ತ ತಿಳಿಯಬೇಕು",
+  "lang": "kn",
+  "true": "check_balance",
+  "pred": "spending_summary"
+ },
+ {
+  "text": "ಹೊಸ ಡೆಬಿಟ್ ಕಾರ್ಡ್ ಬಂತು, ಅದನ್ನು ಚಾಲೂ ಮಾಡೋದು ಹೇಗೆ",
+  "lang": "kn",
+  "true": "card_activate",
+  "pred": "card_issue"
+ },
+ {
+  "text": "ವಿದೇಶಕ್ಕೆ ಹೋಗ್ತಿದ್ದೀನಿ, ಕಾರ್ಡ್‌ನಲ್ಲಿ ಅಂತರರಾಷ್ಟ್ರೀಯ ವಹಿವಾಟು ಆನ್ ಮಾಡಿ",
+  "lang": "kn",
+  "true": "card_activate",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "ಅಮ್ಮನ ಖಾತೆಗೆ 5000 ರೂಪಾಯಿ ಕಳಿಸಿ",
+  "lang": "kn",
+  "true": "transfer_money",
+  "pred": "spending_summary"
+ },
+ {
+  "text": "ಬಾಟ್ ಬೇಡ, ಮನುಷ್ಯರ ಹತ್ರ ದೂರು ಕೊಡಬೇಕು",
+  "lang": "kn",
+  "true": "human_agent",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "ಶುಭೋದಯ",
+  "lang": "kn",
+  "true": "faq_general",
+  "pred": "spending_summary"
+ },
+ {
+  "text": "bhai mera balence check krdo",
+  "lang": "hinglish",
+  "true": "check_balance",
+  "pred": "faq_general"
+ },
+ {
+  "text": "pichle 10 din me kaunse payments gaye",
+  "lang": "hinglish",
+  "true": "transaction_history",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "6 lakh pe 4 saal ki kist kitni banegi",
+  "lang": "hinglish",
+  "true": "emi_calculation",
+  "pred": "spending_summary"
+ },
+ {
+  "text": "mere current loan ki monthly kist kitni hai",
+  "lang": "hinglish",
+  "true": "emi_calculation",
+  "pred": "loan_eligibility"
+ },
+ {
+  "text": "naya debit card aa gaya hai, chalu kaise karu",
+  "lang": "hinglish",
+  "true": "card_activate",
+  "pred": "card_block"
+ },
+ {
+  "text": "dukaan pe card tap karne se payment nahi ho raha",
+  "lang": "hinglish",
+  "true": "card_issue",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "mummy ke account me 5000 bhej do",
+  "lang": "hinglish",
+  "true": "transfer_money",
+  "pred": "faq_general"
+ },
+ {
+  "text": "kal jo paise bheje the dost ko nahi mile",
+  "lang": "hinglish",
+  "true": "transfer_money",
+  "pred": "dispute_refund"
+ },
+ {
+  "text": "good morning ji",
+  "lang": "hinglish",
+  "true": "faq_general",
+  "pred": "spending_summary"
+ }
+]
