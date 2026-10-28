@@ -1,0 +1,41 @@
+{
+  "deposits": {
+    "savings": {"rate": 3.0, "min_balance": 5000, "note": "Interest credited quarterly"},
+    "fd": [
+      {"tenor": "7-45 days", "rate": 3.5},
+      {"tenor": "46-179 days", "rate": 5.0},
+      {"tenor": "180 days-1 year", "rate": 6.0},
+      {"tenor": "1-2 years", "rate": 6.8},
+      {"tenor": "2-3 years", "rate": 7.0},
+      {"tenor": "3-5 years", "rate": 7.25}
+    ],
+    "senior_citizen_bonus": 0.5,
+    "rd": {"rate": 6.5, "min_monthly": 500}
+  },
+  "loans": {
+    "home": {"name": "Home Loan", "rate": 8.5, "max_tenure_months": 360, "min_income": 25000, "max_foir": 0.5, "processing_fee_pct": 0.5, "max_amount": 50000000},
+    "car": {"name": "Car Loan", "rate": 9.2, "max_tenure_months": 84, "min_income": 20000, "max_foir": 0.5, "processing_fee_pct": 1.0, "max_amount": 5000000},
+    "personal": {"name": "Personal Loan", "rate": 11.5, "max_tenure_months": 60, "min_income": 15000, "max_foir": 0.5, "processing_fee_pct": 2.0, "max_amount": 2500000},
+    "education": {"name": "Education Loan", "rate": 9.0, "max_tenure_months": 180, "min_income": 0, "max_foir": 0.5, "processing_fee_pct": 0.0, "max_amount": 7500000}
+  },
+  "cards": {
+    "debit_classic": {"annual_fee": 199, "atm_free_txns": 5, "atm_fee_after": 21},
+    "credit_platinum": {"annual_fee": 999, "interest_apr": 42.0, "late_fee": 600, "forex_markup_pct": 3.5}
+  },
+  "fees": {
+    "neft": 0, "rtgs": 0, "imps_upto_1L": 5, "cheque_book_25": 100,
+    "min_balance_penalty": 250, "sms_alerts_quarterly": 15
+  },
+  "faq": [
+    {"q": "How do I block my lost card?", "a": "Say 'block my card' here, use the app, or call 1800-000-0000 (24x7). Blocking is instant and free."},
+    {"q": "How long does a new debit card take to arrive?", "a": "New cards are dispatched within 2 working days and arrive in 5-7 working days."},
+    {"q": "What are the NEFT/RTGS charges?", "a": "Online NEFT and RTGS transfers are free. IMPS up to Rs 1 lakh costs Rs 5."},
+    {"q": "How can I reset my net banking password?", "a": "Use 'Forgot Password' on the login page; verify with OTP sent to your registered mobile."},
+    {"q": "What documents are needed for a loan?", "a": "PAN, Aadhaar, last 3 months salary slips, 6 months bank statement, and address proof."},
+    {"q": "How do I dispute a transaction?", "a": "Report within 30 days. We provisionally credit eligible disputes within 10 working days."},
+    {"q": "What is the minimum balance for savings?", "a": "Average monthly balance of Rs 5,000; a Rs 250 charge applies if not maintained."},
+    {"q": "Can I prepay my loan?", "a": "Floating-rate home loans have zero prepayment charges; other loans 2% of prepaid amount."},
+    {"q": "How is FD interest taxed?", "a": "FD interest is taxable; TDS of 10% applies above Rs 40,000 a year (Rs 50,000 for seniors). Submit Form 15G/15H if eligible."},
+    {"q": "What are branch hours?", "a": "Branches are open 10 AM to 4 PM, Monday to Saturday, except 2nd and 4th Saturdays."}
+  ]
+}
