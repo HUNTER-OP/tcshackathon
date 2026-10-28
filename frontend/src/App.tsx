@@ -73,7 +73,7 @@ export default function App() {
   }, [pending, messages, customerId, mode])
 
   // demo-only: ?demo=1&script=a|b|c sends prompts one after another (for screenshots / UI checks)
-  const script = DEMO ? new URLSearchParams(window.location.search).get('script') : null
+  const script = new URLSearchParams(window.location.search).get('script')
   useEffect(() => {
     if (!script || pending) return
     const steps = script.split('|')
