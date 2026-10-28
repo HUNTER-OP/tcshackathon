@@ -152,8 +152,12 @@ input[type="range"] { accent-color: var(--ground); width: 100%; }
 :root[data-theme="dark"] .hover\:bg-accent:hover,
 :root[data-theme="dark"] .hover\:bg-accent:hover * { color: #111111; }
 /* dark mode: the logo is a white-background JPEG, so show it on its own paper tile */
-:root[data-theme="dark"] img[src="/logo.jpeg"] { mix-blend-mode: normal; filter: none; background: #fff; border-radius: 10px; padding: 3px 8px; }
+/* the logo is a white-background JPEG: its whole box stays white in both themes */
+.logo-tile { background: #ffffff; }
 
 /* offer: calm cream card with a thin highlighter edge instead of a full yellow block */
 .offer-card { background: #fffbe6; border-color: #f3dc6b; border-left: 4px solid var(--accent); }
 :root[data-theme="dark"] .offer-card { background: #2a2a17; border-color: #5c5424; border-left-color: var(--accent); }
+
+/* chat composer: the form shows focus with its border; no second outline on the textarea */
+#composer:focus, #composer:focus-visible { outline: none; }

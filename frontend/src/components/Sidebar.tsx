@@ -25,10 +25,10 @@ export default function Sidebar(p: Props) {
   return (
     <nav className="flex h-full flex-col gap-5 overflow-y-auto bg-surface p-4 scroll-quiet" aria-label="Main">
       <div className="px-1">
-        <div className="rounded-2xl border border-line bg-surface px-3 py-2.5">
+        <div className="logo-tile rounded-2xl border border-line px-3 py-2.5">
           <img src="/logo.jpeg" alt="Hisab Kitab" className="mix-blend-multiply brightness-[1.1] contrast-[1.15] h-11 w-auto" />
         </div>
-        <p className="mt-2.5 text-[11px] font-semibold uppercase tracking-[0.06em] text-ink-2">AI-powered banking customer query assistant</p>
+        <p className="mt-2.5 text-[13px] font-semibold text-ink-2">Every Rupee, Explained.</p>
       </div>
 
       <div className="flex flex-col gap-1">

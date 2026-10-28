@@ -42,7 +42,7 @@ export default function ChatView({ messages, pending, lang, customerName, select
         <div className="mx-auto flex w-full max-w-[760px] flex-col gap-6 px-4 pb-6 pt-8 sm:px-6">
           {messages.length === 0 && (
             <div className="pt-[6vh]">
-              <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.08em] text-teal">AI-powered banking customer query assistant</p>
+              <p className="mb-3 text-[14px] font-semibold tracking-[0.01em] text-teal">Every Rupee, Explained.</p>
               <h1 className="font-display text-[38px] font-bold leading-[1.15] tracking-[-0.02em] sm:text-[52px]">{g.title}</h1>
               <p className="mt-4 max-w-[52ch] text-[17px] text-ink-2">{g.line}</p>
               {customerName && <p className="mt-2 text-[14px] text-ink-3">Signed in as {customerName}.</p>}
@@ -83,7 +83,7 @@ export default function ChatView({ messages, pending, lang, customerName, select
             ))}
           </div>
         )}
-        <form onSubmit={(e) => { e.preventDefault(); submit() }} className="flex items-end gap-2 rounded-2xl border border-line bg-surface p-2 focus-within:ring-4 focus-within:ring-accent">
+        <form onSubmit={(e) => { e.preventDefault(); submit() }} className="flex items-end gap-2 rounded-2xl border border-line bg-surface p-2 transition-colors focus-within:border-ground">
           <label htmlFor="composer" className="sr-only">Ask Hisab Kitab</label>
           <textarea id="composer" ref={box} rows={1} value={text} onChange={(e) => setText(e.target.value)}
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submit() } }}
