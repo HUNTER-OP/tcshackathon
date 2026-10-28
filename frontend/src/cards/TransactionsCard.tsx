@@ -45,7 +45,7 @@ export default function TransactionsCard({ data }: { data: { items: Tx[] } }) {
 function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button type="button" aria-pressed={on} onClick={onClick}
-      className={clsx('rounded-full px-2.5 py-1 text-[12px] transition-colors', on ? 'bg-ink text-ground' : 'bg-surface-3 text-ink-2 hover:text-ink')}>
+      className={clsx('rounded-full px-2.5 py-1 text-[12px] transition-colors', on ? 'bg-ground text-white' : 'bg-surface-3 text-ink-2 hover:text-ink')}>
       {children}
     </button>
   )

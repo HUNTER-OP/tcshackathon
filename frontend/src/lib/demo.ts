@@ -39,7 +39,7 @@ export async function demoChat(msg: string): Promise<ChatResult> {
       intent: 'loan_eligibility', confidence: 0.97, language: /kya|main/.test(m) ? 'hinglish' : 'en',
       entities: { amount_inr: 500000, loan_type: 'car', tenure_months: 60 },
       tool_calls: [{ tool: 'loan_eligibility', args: { loan_type: 'car', amount: 500000 }, ms: 6 }],
-      cards: [{ type: 'loan', data: { loan_type: 'car', product: 'Car Loan', requested_amount: 500000, tenure_months: 60, rate: 9.2, emi: 10427.6, eligible: true, max_amount: 2040000, affordable_emi: 42500, existing_emi: 0, monthly_income: 85000, credit_score: 768, foir_after: 0.123, processing_fee: 5000, reasons: [] } }],
+      cards: [{ type: 'loan', data: { loan_type: 'car', product: 'Car Loan', requested_amount: 500000, tenure_months: 60, rate: 9.2, emi: 10427.6, eligible: true, max_amount: 2040000, affordable_emi: 42500, existing_emi: 0, monthly_income: 85000, credit_score: 768, foir_after: 0.123, processing_fee: 5000, reasons: [] } }, { type: 'offer', data: { offer_id: 'PL-PREAPPROVED', title: 'Pre-approved Personal Loan', description: 'Based on your income and clean repayment record, you can get an instant personal loan with no paperwork.', rate: 11.5, amount: 2040000, cta: 'See my offer', reason: 'Income above ₹50,000, credit score 768, no existing EMIs' } }],
       suggestions: ['What about 7 years?', 'Show car loan rates', 'Talk to a loan officer'],
     })
   }
@@ -79,7 +79,7 @@ export async function demoChat(msg: string): Promise<ChatResult> {
     reply: 'Your savings balance is **₹1,48,210**.', intent: 'check_balance', confidence: 0.98,
     redactions: red ? 1 : 0, redacted_text: red ? msg.replace(/\d{4}\s?\d{4}\s?\d{4}\s?\d{4}/, '[CARD]') : msg,
     tool_calls: [{ tool: 'get_balance', args: { account_type: 'savings' }, ms: 3 }],
-    cards: [{ type: 'balance', data: { account: 'XXXX7731', account_type: 'savings', balance: 148210, currency: 'INR', as_of: new Date().toISOString() } }],
+    cards: [{ type: 'balance', data: { account: 'XXXX7731', account_type: 'savings', balance: 148210, currency: 'INR', as_of: new Date().toISOString() } }, { type: 'offer', data: { offer_id: 'FD-BEST', title: 'Fixed Deposit at 7.25%', description: 'Your savings balance has been above ₹1 lakh for 3 months. Lock some of it in an FD to earn more.', rate: 7.25, cta: 'Open an FD', reason: 'Idle balance above ₹1,00,000' } }],
     suggestions: ['Show my last 5 transactions', 'How much did I spend last month?'],
   })
 }

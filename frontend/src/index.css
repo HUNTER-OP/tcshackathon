@@ -1,43 +1,28 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
-
-/* Bahi-khata palette: ledger-cloth green ground, paper ink, marigold thread, bahi red. */
+/* Pitch-deck palette: forest-green slide, white notebook cards with black outline, highlighter yellow. */
 :root {
-  --ground: #0f1d19;
-  --surface: #15271f;
-  --surface-2: #1c3229;
-  --surface-3: #244036;
-  --edge: #2b4a3f;
-  --ink: #ece6d6;
-  --ink-2: #b9c2b4;
-  --ink-3: #849186;
-  --accent: #e3a72f;
-  --accent-ink: #1a1405;
-  --bahi: #b8232c;
-  --credit: #7fd1a0;
-  --debit: #f08a7e;
-  --warn: #f2c14e;
-  --focus: #e3a72f;
-  color-scheme: dark;
-}
-
-[data-theme="light"] {
-  --ground: #f4f5f1;
+  --ground: #2e6b43;
+  --ground-2: #285e3b;
   --surface: #ffffff;
-  --surface-2: #ebeee7;
-  --surface-3: #dfe4da;
-  --edge: #d3d9cd;
-  --ink: #13241f;
-  --ink-2: #3c4f47;
-  --ink-3: #66776f;
-  --accent: #a86a12;
-  --accent-ink: #ffffff;
-  --bahi: #9e1b22;
-  --credit: #1d7a4a;
-  --debit: #b4342a;
-  --warn: #8a6100;
-  --focus: #a86a12;
+  --surface-2: #f2f9ec;
+  --surface-3: #d3f0c2;
+  --edge: #d9e8cf;
+  --line: #111111;
+  --ink: #111111;
+  --ink-2: #3b3b4f;
+  --ink-3: #5f6b66;
+  --accent: #ffe14d;
+  --accent-ink: #111111;
+  --mint: #5bc27e;
+  --lime: #b8e08a;
+  --teal: #36777a;
+  --navy: #3b3b4f;
+  --bahi: #2e6b43;
+  --credit: #23874a;
+  --debit: #c8382f;
+  --warn: #b7791f;
+  --focus: #36777a;
   color-scheme: light;
 }
 
@@ -47,23 +32,32 @@
   --color-surface-2: var(--surface-2);
   --color-surface-3: var(--surface-3);
   --color-edge: var(--edge);
+  --color-line: var(--line);
   --color-ink: var(--ink);
   --color-ink-2: var(--ink-2);
   --color-ink-3: var(--ink-3);
   --color-accent: var(--accent);
   --color-accent-ink: var(--accent-ink);
+  --color-mint: var(--mint);
+  --color-lime: var(--lime);
+  --color-teal: var(--teal);
+  --color-navy: var(--navy);
   --color-bahi: var(--bahi);
   --color-credit: var(--credit);
   --color-debit: var(--debit);
   --color-warn: var(--warn);
-  --font-sans: "Instrument Sans", "Noto Sans Devanagari", "Noto Sans Kannada", system-ui, sans-serif;
-  --font-display: "Fraunces", "Noto Sans Devanagari", "Noto Sans Kannada", Georgia, serif;
+  --font-sans: "Inter", "Noto Sans Devanagari", "Noto Sans Kannada", system-ui, sans-serif;
+  --font-display: "Poppins", "Noto Sans Devanagari", "Noto Sans Kannada", system-ui, sans-serif;
 }
 
 html, body, #root { height: 100%; }
 body {
   margin: 0;
-  background: var(--ground);
+  background-color: var(--ground);
+  /* soft brush-stroke glow like the deck background */
+  background-image:
+    radial-gradient(ellipse 60% 40% at 8% 100%, rgba(91, 194, 126, 0.22), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 100% 0%, rgba(184, 224, 138, 0.18), transparent 70%);
   color: var(--ink);
   font-family: var(--font-sans);
   font-size: 15px;
@@ -71,11 +65,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3, .font-display { font-family: var(--font-display); }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 6px; }
 ::selection { background: var(--accent); color: var(--accent-ink); }
 
 .tabular { font-variant-numeric: tabular-nums; }
-.scroll-quiet { scrollbar-width: thin; scrollbar-color: var(--surface-3) transparent; }
+.scroll-quiet { scrollbar-width: thin; scrollbar-color: var(--lime) transparent; }
+
+/* white notebook surface with the deck's thick black outline */
+.nb { background: var(--surface); border: 3px solid var(--line); border-radius: 28px; }
+/* small flat card inside a notebook */
+.nb-card { background: var(--surface); border: 2px solid var(--line); border-radius: 18px; box-shadow: 4px 4px 0 var(--line); }
+/* highlighter bar, like "Build Better Money Habits" */
+.hl { background: var(--accent); color: var(--accent-ink); padding: 0.05em 0.45em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+/* spiral binding row on the notebook top */
+.spiral { display: flex; flex-shrink: 0; justify-content: space-around; align-items: center; padding: 0 28px; height: 30px; border-bottom: 2px dashed var(--edge); }
+.spiral span { width: 16px; height: 16px; border-radius: 999px; background: var(--ground); border: 3px solid var(--line); }
 
 /* markdown in messages */
 .md p { margin: 0 0 0.6em; }
@@ -84,12 +91,12 @@ body {
 .md ul { list-style: disc; }
 .md ol { list-style: decimal; }
 .md li { margin: 0.15em 0; }
-.md strong { font-weight: 600; color: var(--ink); }
+.md strong { font-weight: 700; color: var(--ink); background: linear-gradient(transparent 55%, rgba(255, 225, 77, 0.85) 55%); }
 .md table { border-collapse: collapse; margin: 0.4em 0; font-size: 0.92em; }
 .md th, .md td { padding: 4px 10px; border-bottom: 1px solid var(--edge); text-align: left; }
 .md code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 
-input[type="range"] { accent-color: var(--accent); width: 100%; }
+input[type="range"] { accent-color: var(--ground); width: 100%; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }

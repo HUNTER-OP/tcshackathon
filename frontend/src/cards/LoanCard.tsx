@@ -83,8 +83,8 @@ export default function LoanCard({ data }: { data: Loan }) {
             </div>
             <div className="relative mt-1.5 h-3 overflow-hidden rounded-full bg-surface-3" role="img"
               aria-label={`Existing EMIs ${rupees(data.existing_emi)}, new EMI ${rupees(emi)}, limit ${rupees(cap)}`}>
-              <span className="absolute inset-y-0 left-0 bg-ink-3" style={{ width: `${(data.existing_emi / data.monthly_income) * 100}%` }} />
-              <span className={clsx('absolute inset-y-0 transition-[width] duration-300', ok ? 'bg-accent' : 'bg-debit')}
+              <span className="absolute inset-y-0 left-0 bg-teal" style={{ width: `${(data.existing_emi / data.monthly_income) * 100}%` }} />
+              <span className={clsx('absolute inset-y-0 transition-[width] duration-300', ok ? 'bg-mint' : 'bg-debit')}
                 style={{ left: `${(data.existing_emi / data.monthly_income) * 100}%`, width: `${Math.min(100, (emi / data.monthly_income) * 100)}%` }} />
               <span className="absolute inset-y-[-2px] w-0.5 bg-ink" style={{ left: '50%' }} title="Bank limit: 50% of income" />
             </div>

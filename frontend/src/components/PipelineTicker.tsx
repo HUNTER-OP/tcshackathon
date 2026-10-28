@@ -18,7 +18,7 @@ export default function PipelineTicker() {
       {STEPS.map((s, k) => (
         <motion.div key={s} initial={reduce ? false : { opacity: 0, x: -6 }} animate={{ opacity: k <= i ? 1 : 0.35, x: 0 }} transition={{ duration: 0.25 }}
           className="flex items-center gap-2 text-[13px]">
-          <span className={clsx('grid h-4 w-4 place-items-center rounded-full', k < i ? 'bg-credit text-ground' : k === i ? 'bg-accent' : 'bg-surface-3')}>
+          <span className={clsx('grid h-4 w-4 place-items-center rounded-full', k < i ? 'bg-credit text-white' : k === i ? 'bg-accent' : 'bg-surface-3')}>
             {k < i && <Check size={10} strokeWidth={3} />}
             {k === i && <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-ink" />}
           </span>

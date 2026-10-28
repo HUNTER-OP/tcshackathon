@@ -29,7 +29,7 @@ export default function SpendingCard({ data }: { data: { days: number; total_deb
                 <Icon size={16} className="text-ink-3" aria-hidden />
                 <span className="truncate text-[13px] text-ink">{humanize(cat)}</span>
                 <span className="relative h-2.5 rounded-full bg-surface-3">
-                  <span className={clsx('absolute inset-y-0 left-0 rounded-full transition-[width,background-color] duration-500', i === 0 || hover === cat ? 'bg-accent' : 'bg-ink-3')}
+                  <span className={clsx('absolute inset-y-0 left-0 rounded-full transition-[width,background-color] duration-500', i === 0 || hover === cat ? 'bg-ground' : 'bg-mint')}
                     style={{ width: `${(amt / max) * 100}%` }} />
                 </span>
                 <span className="tabular w-[104px] text-right text-[13px] text-ink">{rupees(amt)} <span className="text-ink-3">{pct}%</span></span>
@@ -45,7 +45,7 @@ export default function SpendingCard({ data }: { data: { days: number; total_deb
 
 function Stat({ label, value, tone }: { label: string; value: string; tone?: 'credit' | 'debit' }) {
   return (
-    <div className="rounded-lg bg-surface p-3">
+    <div className="rounded-xl border-2 border-edge bg-surface-2 p-3">
       <p className="text-[12px] text-ink-3">{label}</p>
       <p className={clsx('font-display tabular mt-1 text-[20px] leading-tight', tone === 'credit' ? 'text-credit' : tone === 'debit' ? 'text-debit' : 'text-ink')}>{value}</p>
     </div>

@@ -4,7 +4,7 @@ import TransactionsCard from './TransactionsCard'
 import SpendingCard from './SpendingCard'
 import LoanCard from './LoanCard'
 import RatesCard from './RatesCard'
-import { CardActionCard, ConsentCard, FaqCard, FollowupCard, HandoffCard, TransferCard } from './ActionCards'
+import { CardActionCard, ConsentCard, FaqCard, FollowupCard, HandoffCard, OfferCard, TransferCard } from './ActionCards'
 
 const MAP: Record<string, React.ComponentType<{ data: any }>> = {
   balance: BalanceCard,
@@ -18,6 +18,7 @@ const MAP: Record<string, React.ComponentType<{ data: any }>> = {
   consent: ConsentCard,
   followup: FollowupCard,
   faq: FaqCard,
+  offer: OfferCard,
 }
 
 export function RenderCard({ card }: { card: Card }) {

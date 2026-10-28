@@ -20,6 +20,9 @@ export function shortDate(iso: string): string {
 
 export const humanize = (s: string) => s.replace(/_/g, ' ').replace(/^\w/, (c) => c.toUpperCase())
 
+const INTENT_LABEL: Record<string, string> = { sensitive_info: 'Sensitive info guard', faq_general: 'General question', human_agent: 'Talk to a human', emi_calculation: 'EMI calculation' }
+export const intentLabel = (s: string) => INTENT_LABEL[s] ?? humanize(s)
+
 export const LANG_LABEL: Record<string, string> = { en: 'English', hi: 'हिन्दी', kn: 'ಕನ್ನಡ', hinglish: 'Hinglish' }
 export const SPEECH_LANG: Record<string, string> = { en: 'en-IN', hi: 'hi-IN', kn: 'kn-IN', hinglish: 'hi-IN' }
 

@@ -4,8 +4,8 @@ import type { Metrics } from '../lib/types'
 import { getMetrics } from '../lib/api'
 import { LANG_LABEL, humanize, modelLabel } from '../lib/format'
 
-const tooltip = { contentStyle: { background: 'var(--surface-2)', border: 'none', borderRadius: 8, color: 'var(--ink)', fontSize: 13 }, itemStyle: { color: 'var(--ink)' }, cursor: { fill: 'var(--surface-2)' } }
-const SHADES = ['var(--accent)', 'var(--credit)', 'var(--ink-2)', 'var(--debit)', 'var(--ink-3)']
+const tooltip = { contentStyle: { background: '#fff', border: '2px solid var(--line)', borderRadius: 10, color: 'var(--ink)', fontSize: 13 }, itemStyle: { color: 'var(--ink)' }, cursor: { fill: 'var(--surface-2)' } }
+const SHADES = ['var(--ground)', 'var(--mint)', 'var(--accent)', 'var(--teal)', 'var(--navy)', 'var(--lime)']
 
 export default function Dashboard() {
   const [m, setM] = useState<Metrics | null>(null)
@@ -29,14 +29,14 @@ export default function Dashboard() {
       <div className="mx-auto max-w-[1100px] px-4 py-8 sm:px-8">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h1 className="font-display text-[34px] leading-tight tracking-[-0.02em]">Operations dashboard</h1>
+            <h1 className="font-display text-[34px] font-bold leading-tight tracking-[-0.02em]"><span className="hl">Operations dashboard</span></h1>
             <p className="text-[15px] text-ink-2">Every question Hisab Kitab has answered since the server started. Refreshes every 5 seconds.</p>
           </div>
           {err && <p className="rounded-md bg-debit/15 px-3 py-1.5 text-[13px] text-debit">Can't reach the server.</p>}
         </div>
 
         {!m ? <p className="text-ink-3">Loading…</p> : m.total === 0 ? (
-          <p className="rounded-xl bg-surface p-6 text-[15px] text-ink-2">No questions yet. Ask something in the assistant and this page fills in.</p>
+          <p className="nb-card p-6 text-[15px] text-ink-2">No questions yet. Ask something in the assistant and this page fills in.</p>
         ) : (
           <>
             <div className="grid grid-cols-2 gap-3 lg:grid-cols-5">
@@ -55,7 +55,7 @@ export default function Dashboard() {
                     <YAxis type="category" dataKey="name" width={140} tick={{ fill: 'var(--ink-2)', fontSize: 12 }} axisLine={false} tickLine={false} />
                     <Tooltip {...tooltip} formatter={(v) => [v, 'Questions']} />
                     <Bar dataKey="v" radius={[0, 4, 4, 0]} barSize={16} isAnimationActive={false}>
-                      {intents.map((_, i) => <Cell key={i} fill={i === 0 ? 'var(--accent)' : 'var(--ink-3)'} />)}
+                      {intents.map((_, i) => <Cell key={i} fill={i === 0 ? 'var(--ground)' : 'var(--mint)'} />)}
                     </Bar>
                   </BarChart>
                 </ResponsiveContainer>
@@ -120,7 +120,7 @@ export default function Dashboard() {
 
 function Kpi({ label, value, note, good }: { label: string; value: string; note?: string; good?: boolean }) {
   return (
-    <div className="rounded-xl bg-surface p-4">
+    <div className="nb-card p-4">
       <p className="text-[13px] text-ink-3">{label}</p>
       <p className="font-display tabular mt-1 text-[30px] leading-tight tracking-[-0.02em]">{value}</p>
       {note && <p className={good ? 'text-[12px] text-credit' : 'text-[12px] text-debit'}>{note}</p>}
@@ -130,7 +130,7 @@ function Kpi({ label, value, note, good }: { label: string; value: string; note?
 
 function Panel({ title, children, className = '' }: { title: string; children: React.ReactNode; className?: string }) {
   return (
-    <section className={`rounded-xl bg-surface p-5 ${className}`}>
+    <section className={`nb-card p-5 ${className}`}>
       <h2 className="mb-3 text-[14px] font-medium text-ink-2">{title}</h2>
       {children}
     </section>

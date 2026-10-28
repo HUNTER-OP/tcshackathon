@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import clsx from 'clsx'
-import { CheckCircle2, ChevronDown, Headset, Lock, PhoneCall, ShieldOff, XCircle } from 'lucide-react'
+import { CheckCircle2, ChevronDown, Headset, Lock, PhoneCall, ShieldOff, Sparkles, XCircle } from 'lucide-react'
 import { humanize, rupees } from '../lib/format'
 import { ActionButton, Shell, useSend } from './Shell'
 
@@ -12,16 +12,16 @@ export function CardActionCard({ data }: { data: { card: string; type: string; s
   return (
     <Shell title={`${humanize(data.type)} card`}>
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-        <div className="relative aspect-[1.586] w-full max-w-[260px] overflow-hidden rounded-xl bg-bahi p-4 text-[#f6efe0]">
+        <div className="relative aspect-[1.586] w-full max-w-[260px] overflow-hidden rounded-2xl border-2 border-line bg-ground p-4 text-white shadow-[4px_4px_0_var(--line)]">
           <p className="font-display text-[15px]">Hisab Kitab</p>
-          <div className="mt-4 h-6 w-9 rounded-[4px] bg-[#e3a72f]" aria-hidden />
+          <div className="mt-4 h-6 w-9 rounded-[4px] bg-accent" aria-hidden />
           <p className="tabular mt-4 text-[17px] tracking-[0.12em]">{data.card.replace('XXXX', '•••• •••• •••• ')}</p>
           <p className="mt-1 text-[11px] opacity-80">{humanize(data.type)}</p>
           {blocked && (
             <motion.div initial={reduce ? false : { opacity: 0, scale: 1.3, rotate: -14 }} animate={{ opacity: 1, scale: 1, rotate: -10 }}
               transition={{ type: 'spring', stiffness: 260, damping: 18, delay: 0.15 }}
               className="absolute inset-0 grid place-items-center bg-black/35">
-              <span className="rounded-md border-[3px] border-[#f6efe0] px-3 py-1 font-display text-[22px] font-semibold tracking-[0.06em]">Blocked</span>
+              <span className="rounded-md border-[3px] border-white px-3 py-1 font-display text-[22px] font-semibold tracking-[0.06em]">Blocked</span>
             </motion.div>
           )}
         </div>
@@ -85,14 +85,14 @@ export function ConsentCard({ data }: { data: { message: string } }) {
   )
 }
 
-export function FollowupCard({ data }: { data: { missing: string[]; question: string; options: string[] } }) {
+export function FollowupCard({ data }: { data: { missing?: string[]; question: string; options?: string[] } }) {
   const send = useSend()
   return (
     <Shell title={data.question}>
       <div className="flex flex-wrap gap-2">
-        {data.options.map((o) => <ActionButton key={o} onClick={() => send(o)}>{o}</ActionButton>)}
+        {(data.options ?? []).map((o, i) => <ActionButton key={o} tone={i === 0 ? 'accent' : 'quiet'} onClick={() => send(o)}>{o}</ActionButton>)}
       </div>
-      {data.missing.length > 0 && <p className="mt-3 text-[12px] text-ink-3">Needed: {data.missing.map((m) => humanize(m.replace('_inr', ''))).join(', ')}</p>}
+      {(data.missing?.length ?? 0) > 0 && <p className="mt-3 text-[12px] text-ink-3">Needed: {(data.missing ?? []).map((m) => humanize(m.replace('_inr', ''))).join(', ')}</p>}
     </Shell>
   )
 }
@@ -114,5 +114,30 @@ export function FaqCard({ data }: { data: { items: { q: string; a: string; score
         ))}
       </ul>
     </Shell>
+  )
+}
+
+export function OfferCard({ data }: { data: { offer_id?: string; title: string; description: string; rate?: number; amount?: number; cta?: string; reason?: string } }) {
+  const send = useSend()
+  return (
+    <section className="nb-card relative overflow-hidden p-4 sm:p-5" style={{ background: 'var(--accent)' }}>
+      <span className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-white/40" aria-hidden />
+      <p className="inline-flex items-center gap-1.5 rounded-full border-2 border-line bg-white px-2.5 py-0.5 text-[12px] font-bold uppercase tracking-[0.05em]">
+        <Sparkles size={13} aria-hidden />Recommended for you
+      </p>
+      <h3 className="mt-2.5 font-display text-[20px] font-bold leading-tight text-ink">{data.title}</h3>
+      <p className="mt-1 text-[14px] text-ink-2">{data.description}</p>
+      {(data.rate != null || data.amount != null) && (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {data.rate != null && <span className="tabular rounded-full border-2 border-line bg-white px-3 py-1 text-[13px] font-semibold">{data.rate}% p.a.</span>}
+          {data.amount != null && <span className="tabular rounded-full border-2 border-line bg-white px-3 py-1 text-[13px] font-semibold">{rupees(data.amount)}</span>}
+        </div>
+      )}
+      {data.reason && <p className="mt-3 text-[12px] text-ink-2">Why: {data.reason}</p>}
+      <button type="button" onClick={() => send(`Tell me more about ${data.title}`)}
+        className="mt-3 rounded-full border-2 border-line bg-ground px-4 py-1.5 text-[13px] font-semibold text-white shadow-[2px_2px_0_var(--line)] transition-transform active:translate-x-[1px] active:translate-y-[1px]">
+        {data.cta || 'Tell me more'}
+      </button>
+    </section>
   )
 }

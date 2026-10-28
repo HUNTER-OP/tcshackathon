@@ -17,7 +17,6 @@ const uid = () => Math.random().toString(36).slice(2, 10)
 const viewFromHash = () => (window.location.hash === '#/dashboard' ? 'dashboard' : 'chat') as 'chat' | 'dashboard'
 
 export default function App() {
-  const [theme, setTheme] = useState<'dark' | 'light'>(() => (store.get('hk-theme') as 'dark' | 'light') || 'dark')
   const [view, setView] = useState(viewFromHash)
   const [customers, setCustomers] = useState<Customer[]>([])
   const [customerId, setCustomerId] = useState('CUST001')
@@ -30,7 +29,7 @@ export default function App() {
   const [navOpen, setNavOpen] = useState(false)
   const [traceOpen, setTraceOpen] = useState(false)
 
-  useEffect(() => { document.documentElement.dataset.theme = theme; store.set('hk-theme', theme) }, [theme])
+  useEffect(() => { document.documentElement.dataset.theme = 'light'; store.set('hk-theme', 'light') }, [])
   useEffect(() => {
     const on = () => setView(viewFromHash())
     window.addEventListener('hashchange', on)
@@ -95,24 +94,25 @@ export default function App() {
 
   const sidebar = (
     <Sidebar customers={customers} customerId={customerId} onCustomer={pickCustomer} mode={mode} onMode={setMode} lang={lang} onLang={setLang}
-      view={view} onView={go} onNewChat={() => { setMessages([]); setSelectedId(null); go('chat') }} theme={theme} onTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
+      view={view} onView={go} onNewChat={() => { setMessages([]); setSelectedId(null); go('chat') }} />
   )
 
   return (
     <SendContext.Provider value={send}>
       <div className="flex h-full flex-col">
         {(!online || DEMO) && (
-          <div className={`flex items-center justify-center gap-2 px-4 py-1.5 text-[13px] ${DEMO ? 'bg-surface-3 text-ink-2' : 'bg-bahi text-white'}`} role="status">
+          <div className={`flex items-center justify-center gap-2 px-4 py-1.5 text-[13px] ${DEMO ? 'bg-accent text-ink font-medium' : 'bg-debit text-white'}`} role="status">
             {DEMO ? 'Demo mode: canned answers for interface testing.' : <><WifiOff size={14} />Can't reach the Hisab Kitab server at port 8000. Start the backend and this page reconnects on its own.</>}
           </div>
         )}
-        <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)] lg:grid-cols-[280px_minmax(0,1fr)] xl:grid-cols-[280px_minmax(0,1fr)_360px]">
-          <div className="hidden min-h-0 lg:block">{sidebar}</div>
+        <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)] gap-3 p-2 sm:p-3 lg:grid-cols-[290px_minmax(0,1fr)] xl:grid-cols-[290px_minmax(0,1fr)_360px]">
+          <div className="nb hidden min-h-0 overflow-hidden lg:block">{sidebar}</div>
 
-          <main className="relative flex min-h-0 min-w-0 flex-col">
+          <main className="nb relative flex min-h-0 min-w-0 flex-col overflow-hidden">
+            <div className="spiral" aria-hidden>{Array.from({ length: 12 }, (_, i) => <span key={i} />)}</div>
             <div className="flex items-center justify-between px-3 py-2 lg:hidden">
               <button type="button" onClick={() => setNavOpen(true)} className="rounded-md p-2 text-ink-2 hover:bg-surface" aria-label="Open menu"><Menu size={18} /></button>
-              <span className="font-display text-[17px]">Hisab Kitab</span>
+              <img src="/logo.jpeg" alt="Hisab Kitab" className="mix-blend-multiply brightness-[1.1] contrast-[1.15] h-7 w-auto" />
               <button type="button" onClick={() => setTraceOpen(true)} className="rounded-md p-2 text-ink-2 hover:bg-surface" aria-label="Open why this answer"><PanelRight size={18} /></button>
             </div>
             <div className="hidden justify-end px-3 pt-2 lg:flex xl:hidden">
@@ -126,7 +126,7 @@ export default function App() {
             </div>
           </main>
 
-          {view === 'chat' && <div className="hidden min-h-0 xl:block"><TracePanel result={selected} /></div>}
+          {view === 'chat' && <div className="nb hidden min-h-0 overflow-hidden xl:block"><TracePanel result={selected} /></div>}
         </div>
 
         <AnimatePresence>

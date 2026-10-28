@@ -19,7 +19,7 @@ export default function RatesCard({ data }: { data: { deposits?: Deposits; loans
         <div className="flex rounded-full bg-surface-3 p-0.5" role="tablist">
           {tabs.map((t) => (
             <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)}
-              className={clsx('rounded-full px-3 py-1 text-[12px] font-medium transition-colors', tab === t ? 'bg-ink text-ground' : 'text-ink-2 hover:text-ink')}>{t}</button>
+              className={clsx('rounded-full px-3 py-1 text-[12px] font-medium transition-colors', tab === t ? 'bg-ground text-white' : 'text-ink-2 hover:text-ink')}>{t}</button>
           ))}
         </div>
       )}>
@@ -60,7 +60,7 @@ export default function RatesCard({ data }: { data: { deposits?: Deposits; loans
               </div>
               <div className="flex items-center gap-3">
                 <span className="tabular font-display text-[22px] text-ink">{l.rate}%</span>
-                <button type="button" onClick={() => send(`Am I eligible for a ${k} loan?`)} className="rounded-full bg-surface-3 px-3 py-1 text-[12px] text-ink hover:bg-edge">Check eligibility</button>
+                <button type="button" onClick={() => send(`Am I eligible for a ${k} loan?`)} className="rounded-full border-2 border-line bg-white px-3 py-1 text-[12px] font-medium text-ink hover:bg-accent">Check eligibility</button>
               </div>
             </li>
           ))}
